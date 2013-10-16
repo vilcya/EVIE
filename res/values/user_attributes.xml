@@ -1,0 +1,33 @@
+
+    <resources>
+        <string-array name="schools_array">
+            <item>CFA</item>
+            <item>CIT</item>
+            <item>Dietrich</item>
+            <item>MCS</item>
+            <item>SCS</item>
+            <item>Tepper</item>
+        </string-array>
+        <string-array name="interests_array">
+            <item>Food</item>
+            <item>Service</item>
+            <item>Cultural</item>
+            <item>Entertainment</item>
+            <item>Professional</item>
+            <item>Arts</item>
+            <item>Sports</item>
+            <item>Academic</item>
+        </string-array>
+        <string name="prefs_file_name">com.example.evie.UserPrefsFile</string>
+        <string name="nameKey">name</string>
+        <string name="andrewKey">andrew</string>
+        <string name="collegeKey">college</string>
+        <string name="foodKey">food</string>
+        <string name="serviceKey">service</string>
+        <string name="entertainmentKey">entertainment</string>
+        <string name="culturalKey">cultural</string>
+        <string name="artsKey">arts</string>
+        <string name="sportsKey">sports</string>
+        <string name="academicKey">academic</string>
+        <string name="professionalKey">professional</string>
+    </resources>

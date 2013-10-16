@@ -9,18 +9,19 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tv_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
     <GridView
-    	android:id="@+id/main_grid_view"
+    	android:id="@+id/gv_main"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@id/tv_header"
+        android:layout_below="@id/tv_header"
         android:numColumns="auto_fit" >
     </GridView>
+
 
 </RelativeLayout>
