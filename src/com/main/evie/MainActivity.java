@@ -12,8 +12,11 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import com.example.evie.R;
 
@@ -36,13 +39,26 @@ public class MainActivity extends Activity {
 		this.dynamicEvents = new DynamicEventList();
 		dynamicEvents.initiateDummyEvents(); // REMOVE THIS - FOR MOCKS ONLY
 
-		TextView headerText = (TextView)this.findViewById(R.id.tv_header);
+		TextView headerText = (TextView) this.findViewById(R.id.tv_header);
 		headerText.setText("Hello " + userData.getString(getString(R.string.nameKey), "world") + "! You are in Gates 4307.");
 
 		LocationUpdates listener = new LocationUpdates(headerText);
 		LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
 		locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, listener);
-
+		
+		ToggleButton freeFoodToggle = (ToggleButton) this.findViewById(R.id.tb_free_food);
+		freeFoodToggle.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton button, boolean on) {
+				if (on) {
+					MainActivity.dynamicEvents.filterFreeFood();
+				} else {
+					MainActivity.dynamicEvents.removeFilters();
+				}
+				updateList();
+			}
+		});
+		
 		updateList();
 	}
 

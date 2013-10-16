@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_event_details">EventDetails</string>
     <string name="title_activity_sign_up">Sign Up</string>
+    <string name="free_food">Free Food?</string>
     
 </resources>

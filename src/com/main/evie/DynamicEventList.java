@@ -30,17 +30,21 @@ public class DynamicEventList{
 	int id = 0;	// REMOVE THIS - ONLY FOR MOCK UPS
 
 	public void initiateDummyEvents() {
-		allEvents.clear();
+		this.allEvents.clear();
+		this.filteredEvents.clear();
 		createEvent("Intelligence Lab", "It's demo time!", null, null);
 		createEvent("Random Tech Talk", "Come join us for free food!", null, null);
+		createEvent("Spontaneous BBQ", "JOIN US FOR STEAK AND MORE FOODS!", null, null);
 		createEvent("SCS Day", "We haz talents too.", null, null);
+		createEvent("Puppy Stress Relief", "Puppies!", null, null);
 	}
 
 	/* THIS FUNCTION IS FOR MOCK UPS - MUST INTEGRATE WITH TEUDU PARSER */
 	public void createEvent(String name, String description, Date startTime, Date endTime) {
 		Event newEvent = new Event(id, name, description, startTime, endTime, null, null, null, false);
 		id++;
-		allEvents.add(newEvent);
+		this.allEvents.add(newEvent);
+		this.filteredEvents.add(newEvent);
 	}
 
 	/**
@@ -54,6 +58,19 @@ public class DynamicEventList{
 	}
 	
 	public ArrayList<Event> getEvents() {
-		return allEvents;
+		return this.filteredEvents;
+	}
+
+	public void filterFreeFood() {
+		this.filteredEvents.clear();
+		for (Event event: this.allEvents) {
+			if (event.getDescription().toLowerCase().contains("food")) {
+				this.filteredEvents.add(event);
+			}
+		}
+	}
+	
+	public void removeFilters() {
+		this.filteredEvents = new ArrayList<Event>(this.allEvents);
 	}
 }
