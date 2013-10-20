@@ -15,7 +15,6 @@ import android.graphics.BitmapFactory;
  *
  */
 public class Event {
-	
 	private int id;
 	private final String name;
 	private final String description;

@@ -55,7 +55,6 @@
 	        android:id="@+id/b_rescan"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_alignRight="@+id/tv_header"
 	        android:layout_alignTop="@+id/tv_free_food_text"
 	        android:text="Scan Location" />
 

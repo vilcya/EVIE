@@ -1,10 +1,17 @@
 package com.main.evie;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import org.xmlpull.v1.XmlPullParserException;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -24,6 +31,15 @@ import com.example.evie.R;
 import com.wifi.evie.WifiScanClickListener;
 
 public class MainActivity extends Activity {
+	public static final String WIFI = "Wi-Fi";
+    public static final String ANY = "Any";
+    private static final String URL = "http://teudu.andrew.cmu.edu/events.xml";
+   
+    // Whether there is a Wi-Fi connection.
+    private static boolean wifiConnected = false; 
+    // Whether there is a mobile connection.
+    private static boolean mobileConnected = true; 
+    public static String sPref = null;
 
 	private static DynamicEventList dynamicEvents;
 	private WifiScanClickListener scanListener;
@@ -40,12 +56,7 @@ public class MainActivity extends Activity {
 		}
 
 		/* WILL Trigger ping of location based services  (currently using a location scan button) */
-		dynamicEvents = new DynamicEventList();
-		UpdateEventsCallback eventCallback = new UpdateEventsCallback(this);
-		eventCallback.updateList();
-		Handler eventChangeHandler = new Handler(Looper.getMainLooper(), eventCallback);
-		dynamicEvents.setHandler(eventChangeHandler);
-		dynamicEvents.initiateDummyEvents(); // REMOVE THIS - FOR MOCKS ONLY
+		loadEvents();
 
 		/* Setup welcome text */
 		TextView headerText = (TextView) this.findViewById(R.id.tv_header);
@@ -70,6 +81,26 @@ public class MainActivity extends Activity {
 			}
 		});
 	}
+
+	
+    // Uses AsyncTask to download the events XML from Teudu
+    public void loadEvents() {
+        if((wifiConnected || mobileConnected)) {
+            //new DownloadEventsXmlTask().execute(URL);
+        	try {
+	            dynamicEvents = new DownloadEventsXmlTask().loadXmlFromNetwork(URL);
+	        } catch (IOException e) {
+	            return;
+	        } catch (XmlPullParserException e) {
+	            return;
+	        }
+        }
+
+		UpdateEventsCallback eventCallback = new UpdateEventsCallback(this);
+		eventCallback.updateList();
+		Handler eventChangeHandler = new Handler(Looper.getMainLooper(), eventCallback);
+		dynamicEvents.setHandler(eventChangeHandler);
+    }
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -121,7 +152,7 @@ public class MainActivity extends Activity {
 		}
 	}
 	
-	/* ---- CALLBACK HANDLER ---- */
+	/* ---- MAIN UI CALLBACK HANDLER ---- */
 	
 	private static class UpdateEventsCallback implements Handler.Callback {
 		
@@ -152,5 +183,63 @@ public class MainActivity extends Activity {
 			return false;
 		}
 		
+	}
+	
+	/* ---- EVENT DOWNLOADING ---- */
+	
+	private class DownloadEventsXmlTask extends AsyncTask<String, Void, DynamicEventList> {
+		@Override
+	    protected DynamicEventList doInBackground(String... urls) {
+	        try {
+	            return loadXmlFromNetwork(urls[0]);
+	        } catch (IOException e) {
+	            return null;
+	        } catch (XmlPullParserException e) {
+	            return null;
+	        }
+	    }
+		
+		@Override
+	    protected void onPostExecute(DynamicEventList result) {  
+	        dynamicEvents = result;
+	    }
+
+		// Uploads XML from teudu, parses it, and combines it with
+		// HTML markup. Returns HTML string.
+		private DynamicEventList loadXmlFromNetwork(String urlString) throws XmlPullParserException, IOException {
+		    InputStream stream = null;
+		    // Instantiate the parser
+		    TeuduEventParser teuduEventParser = new TeuduEventParser();
+		    DynamicEventList events = null;
+		    String title = null;
+		    String url = null;
+		    String summary = null; 
+		         	         	         
+		    try {
+		        stream = downloadUrl(urlString);        
+		        events = teuduEventParser.parse(stream);
+		    // Makes sure that the InputStream is closed after the app is
+		    // finished using it.
+		    } finally {
+		        if (stream != null) {
+		            stream.close();
+		        } 
+		        return events;
+		    }
+		}
+		
+		// Given a string representation of a URL, sets up a connection and gets
+		// an input stream.
+		private InputStream downloadUrl(String urlString) throws IOException {
+			URL url = new URL(urlString);
+		    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		    conn.setReadTimeout(10000 /* milliseconds */);
+		    conn.setConnectTimeout(15000 /* milliseconds */);
+		    conn.setRequestMethod("GET");
+		    conn.setDoInput(true);
+		    // Starts the query
+		    conn.connect();
+		    return conn.getInputStream();
+		}
 	}
 }

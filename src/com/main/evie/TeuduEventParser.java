@@ -16,22 +16,28 @@ import android.util.Xml;
 
 public class TeuduEventParser {
 	private static final String ns = null;
+	private DynamicEventList events = null;
 	
-	public List<Event> parse(InputStream in) throws XmlPullParserException, IOException {
+	public TeuduEventParser() {
+		events = new DynamicEventList();
+	}
+	
+	public DynamicEventList parse(InputStream in) throws XmlPullParserException, IOException {
 		try {
 			XmlPullParser parser = Xml.newPullParser();
 			parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
 			parser.setInput(in, null);
 			parser.nextTag();
 			return readEvents(parser);
+		} catch(XmlPullParserException e) {
+			System.out.println(e.getMessage());
+			return null;
 		} finally {
 			in.close();
 		}
 	}
 	
-	private List<Event> readEvents(XmlPullParser parser) throws XmlPullParserException, IOException {
-		List<Event> events = new ArrayList<Event>();
-		
+	private DynamicEventList readEvents(XmlPullParser parser) throws XmlPullParserException, IOException {
 		parser.require(XmlPullParser.START_TAG, ns, "events");
 		while (parser.next() != XmlPullParser.END_TAG) {
 			if (parser.getEventType() != XmlPullParser.START_TAG) {
@@ -39,7 +45,7 @@ public class TeuduEventParser {
 			}
 			String name = parser.getName();
 			if (name.equals("event")) {
-				events.add(readEvent(parser));
+				readEvent(parser);
 			} else {
 				skip(parser);
 			}
@@ -47,7 +53,7 @@ public class TeuduEventParser {
 		return events;
 	}
 	
-	private Event readEvent(XmlPullParser parser) throws XmlPullParserException, IOException {
+	private void readEvent(XmlPullParser parser) throws XmlPullParserException, IOException {
 		parser.require(XmlPullParser.START_TAG, ns, "event");
 		int id = -1;
 		String name = null;
@@ -73,7 +79,7 @@ public class TeuduEventParser {
 				description = readDescription(parser);
 			} else if (tag.equals("summary")) {
 				/* Ignore the summary */
-				continue;
+				skip(parser);
 			} else if (tag.equals("starttime")) {
 				try {
 					startTime = dateFormat.parse(readStarttime(parser));
@@ -98,11 +104,8 @@ public class TeuduEventParser {
 				skip(parser);
 			}
 		}
-		
-		
-		return new Event(id, name, description,
-				startTime, endTime, location, imgUrl, 
-				categories, cancelled);
+
+		events.createEvent(name, description, null, null);
 	}
 	
 	private int readID(XmlPullParser parser) throws XmlPullParserException, IOException {
@@ -121,51 +124,51 @@ public class TeuduEventParser {
 	
 	private String readDescription(XmlPullParser parser) throws XmlPullParserException, IOException {
 		parser.require(XmlPullParser.START_TAG, ns, "description");
-		String name = readText(parser);
+		String description = readText(parser);
 		parser.require(XmlPullParser.END_TAG, ns, "description");
-		return name;
+		return description;
 	}
 	
 	private String readSummary(XmlPullParser parser) throws XmlPullParserException, IOException {
 		parser.require(XmlPullParser.START_TAG, ns, "summary");
-		String name = readText(parser);
+		String summary = readText(parser);
 		parser.require(XmlPullParser.END_TAG, ns, "summary");
-		return name;
+		return summary;
 	}
 	
 	private String readStarttime(XmlPullParser parser) throws XmlPullParserException, IOException {
 		parser.require(XmlPullParser.START_TAG, ns, "starttime");
-		String name = readText(parser);
+		String starttime = readText(parser);
 		parser.require(XmlPullParser.END_TAG, ns, "starttime");
-		return name;
+		return starttime;
 	}
 	
 	private String readEndtime(XmlPullParser parser) throws XmlPullParserException, IOException {
 		parser.require(XmlPullParser.START_TAG, ns, "endtime");
-		String name = readText(parser);
+		String endtime = readText(parser);
 		parser.require(XmlPullParser.END_TAG, ns, "endtime");
-		return name;
+		return endtime;
 	}
 	
 	private String readLocation(XmlPullParser parser) throws XmlPullParserException, IOException {
 		parser.require(XmlPullParser.START_TAG, ns, "location");
-		String name = readText(parser);
+		String location = readText(parser);
 		parser.require(XmlPullParser.END_TAG, ns, "location");
-		return name;
+		return location;
 	}
 	
 	private String readImage(XmlPullParser parser) throws XmlPullParserException, IOException {
 		parser.require(XmlPullParser.START_TAG, ns, "image");
-		String name = readText(parser);
+		String image = readText(parser);
 		parser.require(XmlPullParser.END_TAG, ns, "image");
-		return name;
+		return image;
 	}
 	
 	private String readCategories(XmlPullParser parser) throws XmlPullParserException, IOException {
 		parser.require(XmlPullParser.START_TAG, ns, "categories");
-		String name = readText(parser);
+		String categories = readText(parser);
 		parser.require(XmlPullParser.END_TAG, ns, "categories");
-		return name;
+		return categories;
 	}
 	
 	private boolean readCancelled(XmlPullParser parser) throws XmlPullParserException, IOException {
