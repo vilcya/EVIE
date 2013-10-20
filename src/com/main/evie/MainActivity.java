@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
 		});
 		
 		updateList();
-	}
+	}	
 	
     // Uses AsyncTask to download the events XML from Teudu
     public void loadEvents() {
