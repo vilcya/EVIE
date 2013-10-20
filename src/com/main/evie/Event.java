@@ -11,7 +11,6 @@ import com.example.evie.R;
  *
  */
 public class Event {
-	
 	private int id;
 	private final String name;
 	private final String description;
