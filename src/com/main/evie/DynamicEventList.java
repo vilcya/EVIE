@@ -30,7 +30,7 @@ public class DynamicEventList{
 		DynamicEventList.eventChangeHandler = eventChangeHandler;
 	}
 
-	public void initiateDummyEvents() {
+	/*public void initiateDummyEvents() {
 		DynamicEventList.allEvents.clear();
 		DynamicEventList.filteredEvents.clear();
 		createEvent("Intelligence Lab", "It's demo time!", null, null);
@@ -38,11 +38,12 @@ public class DynamicEventList{
 		createEvent("Spontaneous BBQ", "JOIN US FOR STEAK AND MORE FOODS!", null, null);
 		createEvent("SCS Day", "We haz talents too.", null, null);
 		createEvent("Puppy Stress Relief", "Puppies!", null, null);
-	}
+	}*/
 
 	/* THIS FUNCTION IS FOR MOCK UPS - MUST INTEGRATE WITH TEUDU PARSER */
-	public void createEvent(String name, String description, Date startTime, Date endTime) {
-		Event newEvent = new Event(id, name, description, startTime, endTime, null, null, null, false);
+	public void createEvent(int id, String name, String description, Date startTime, Date endTime, 
+					String location, String imgUrl, String categories, boolean cancelled) {
+		Event newEvent = new Event(id, name, description, startTime, endTime, location, imgUrl, categories, cancelled);
 		id++;
 		DynamicEventList.allEvents.add(newEvent);
 		DynamicEventList.filteredEvents.add(newEvent);
