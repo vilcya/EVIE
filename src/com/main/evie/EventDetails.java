@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.evie.R;
@@ -33,6 +34,9 @@ public class EventDetails extends Activity {
 		eventName.setText(this.event.getName());
 		TextView eventDescription = (TextView) this.findViewById(R.id.tv_event_detail_description);
 		eventDescription.setText(this.event.getDescription());
+		
+		ImageView eventImage = (ImageView) this.findViewById(R.id.iv_event_detail_image);
+		eventImage.setImageBitmap(this.event.getImageBitmap());
 	}
 
 	@Override

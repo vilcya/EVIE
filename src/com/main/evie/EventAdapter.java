@@ -1,5 +1,7 @@
 package com.main.evie;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 
 import com.example.evie.R;
@@ -46,10 +48,14 @@ public class EventAdapter extends ArrayAdapter<Event>{
 		}
 
 		Event event = this.events.get(position);
-
+		
 		eventViews.eventName.setText(event.getName());
-		Bitmap image = BitmapFactory.decodeResource(context.getResources(), event.getImageResource());
-		eventViews.eventImage.setImageBitmap(image);
+
+		try {
+			eventViews.eventImage.setImageBitmap(event.getImageBitmap());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		return row;
 	}
