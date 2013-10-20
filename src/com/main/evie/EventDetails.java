@@ -19,7 +19,7 @@ public class EventDetails extends Activity {
 		setContentView(R.layout.activity_event_details);
 
 		Intent myIntent = getIntent(); 
-		
+
 		int eventPosition = myIntent.getIntExtra(getString(R.string.event_position), -1);
 		if (eventPosition == -1) {
 			throw new IllegalArgumentException("There is no event information for event details!");
