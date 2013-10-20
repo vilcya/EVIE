@@ -1,10 +1,14 @@
 package com.main.evie;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 
-import com.example.evie.R;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
 /**
  * Contains data from event.
@@ -18,7 +22,7 @@ public class Event {
 	private final Date startTime;
 	private final Date endTime;
 	private final String location;
-	private final String imgUrl;
+	private URL imgUrl;					/* May not exist */
 	private final ArrayList<String> categories;
 	private final boolean cancelled;
 	
@@ -37,7 +41,12 @@ public class Event {
 		this.location = location;
 		
 		// Do url validation
-		this.imgUrl = imgUrl;
+		try {
+			this.imgUrl = new URL("http://cdn-www.dailypuppy.com/media/dogs/anonymous/11415/20090205138257_.jpg_w200.jpg");
+		} catch (MalformedURLException e) {
+			this.imgUrl = null;
+			e.printStackTrace();
+		}
 		
 		// Do category validation
 		if (categories != null) {
@@ -49,8 +58,13 @@ public class Event {
 	}
 
 	/* TEMP Function to use android launcher icon as placeholder */
-	public int getImageResource() {
-		return R.drawable.ic_launcher;
+	public Bitmap getImageBitmap() {
+		try {
+			return BitmapFactory.decodeStream(this.imgUrl.openConnection().getInputStream());
+		} catch (IOException e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
 	
 	public int getId() {
@@ -77,7 +91,7 @@ public class Event {
 		return this.location;
 	}
 	
-	public String getImgUrl() {
+	public URL getImgUrl() {
 		return this.imgUrl;
 	}
 	

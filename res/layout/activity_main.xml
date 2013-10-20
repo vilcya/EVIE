@@ -21,32 +21,34 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_header"
         android:layout_marginTop="5dp"
+        android:layout_marginBottom="60dp"
         android:numColumns="auto_fit" >
+
     </GridView>
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/ll_food_toggle"
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/gv_main" >
     </LinearLayout>
 
-    <ToggleButton
-        android:id="@+id/tb_free_food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true" />
+	    <ToggleButton
+	        android:id="@+id/tb_free_food"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true" />
 
-    <TextView
-        android:id="@+id/tv_free_food_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tb_free_food"
-        android:layout_alignTop="@+id/tb_free_food"
-        android:layout_centerHorizontal="true"
-        android:text="@string/free_food"
-        android:textSize="20sp" />
+	    <TextView
+	        android:id="@+id/tv_free_food_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/tb_free_food"
+	        android:layout_marginRight="20dp"
+	        android:layout_toLeftOf="@+id/tb_free_food"
+	        android:text="@string/free_food"
+	        android:textSize="20sp" />
 
 </RelativeLayout>
