@@ -105,7 +105,8 @@ public class TeuduEventParser {
 			}
 		}
 
-		events.createEvent(name, description, null, null);
+		events.createEvent(id, name, description, null, null, 
+				location, imgUrl, categories, cancelled);
 	}
 	
 	private int readID(XmlPullParser parser) throws XmlPullParserException, IOException {

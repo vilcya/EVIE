@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 
+import com.example.evie.R;
+
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
@@ -24,6 +27,7 @@ public class Event {
 	private URL imgUrl;					/* May not exist */
 	private final ArrayList<String> categories;
 	private final boolean cancelled;
+	private static Bitmap defaultBitmap;
 	
 	Event(int id, String name, String description, Date startTime, Date endTime, 
 			String location, String imgUrl, String categories,
@@ -41,7 +45,7 @@ public class Event {
 		
 		// Do url validation
 		try {
-			this.imgUrl = new URL("http://cdn-www.dailypuppy.com/media/dogs/anonymous/11415/20090205138257_.jpg_w200.jpg");
+			this.imgUrl = new URL("http://teudu.andrew.cmu.edu" + imgUrl);
 		} catch (MalformedURLException e) {
 			this.imgUrl = null;
 			e.printStackTrace();
@@ -54,10 +58,16 @@ public class Event {
 			this.categories = null;
 		}
 		this.cancelled = cancelled;
+		
+		this.defaultBitmap = BitmapFactory.decodeResource(Resources.getSystem(), R.drawable.ic_launcher);
 	}
 
 	/* TEMP Function to use android launcher icon as placeholder */
 	public Bitmap getImageBitmap() {
+		if (this.imgUrl == null) {
+			return this.defaultBitmap;
+		}
+		
 		try {
 			return BitmapFactory.decodeStream(this.imgUrl.openConnection().getInputStream());
 		} catch (IOException e) {

@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Default string for placeholder purposes -->
+    <string name="hello_world">Hello world!</string>
+    
     <string name="app_name">EVIE</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_event_details">EventDetails</string>
     <string name="title_activity_sign_up">Sign Up</string>
     <string name="free_food">Free Food?</string>
+    
+    <!-- Wifi updates -->
+    <string name="wifi_enable_toast">Wifi is disabled. Enabling;#8230;</string>
+    <string name="wifi_enable_unsuccessful">Wifi cannot be enabled.</string>
+    <string name="wifi_enable_successful">Wifi was successfully enabled!</string>
+    <string name="wifi_scan_successful">Scan successfully started. Please wait as events refresh.</string>
+    <string name="wifi_scan_unsuccessful">Scan was not successfully started. Please try again.</string>
     
 </resources>
