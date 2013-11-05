@@ -104,7 +104,7 @@ public class Event {
 		return this.imgUrl;
 	}
 	
-	public ArrayList<String> getCategories() {
+	public ArrayList<String> getEventCategories() {
 		return this.categories;
 	}
 	

@@ -2,6 +2,8 @@ package com.main.evie;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.Locale;
 
@@ -17,15 +19,13 @@ import android.os.Message;
  *
  */
 public class DynamicEventList{
-
+	
 	/** Includes all events */
 	private static ArrayList<Event> allEvents = new ArrayList<Event>();
 	/** Events that the user sees at a given time */
 	private static ArrayList<Event> filteredEvents = new ArrayList<Event>();
 	private static Handler eventChangeHandler = null;
 	
-	int id = 0;	// REMOVE THIS - ONLY FOR MOCK UPS
-
 	public void setHandler(Handler eventChangeHandler) {
 		DynamicEventList.eventChangeHandler = eventChangeHandler;
 	}
@@ -40,7 +40,7 @@ public class DynamicEventList{
 		createEvent("Puppy Stress Relief", "Puppies!", null, null);
 	}*/
 
-	/* THIS FUNCTION IS FOR MOCK UPS - MUST INTEGRATE WITH TEUDU PARSER */
+	
 	public void createEvent(int id, String name, String description, Date startTime, Date endTime, 
 					String location, String imgUrl, String categories, boolean cancelled) {
 		Event newEvent = new Event(id, name, description, startTime, endTime, location, imgUrl, categories, cancelled);
