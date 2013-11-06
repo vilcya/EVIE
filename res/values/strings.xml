@@ -17,4 +17,6 @@
     <string name="wifi_scan_successful">Scan successfully started. Please wait as events refresh.</string>
     <string name="wifi_scan_unsuccessful">Scan was not successfully started. Please try again.</string>
     
+    <!-- File I/O -->
+    <string name="filename_trained_data">trainedData</string>
 </resources>

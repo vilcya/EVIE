@@ -1,33 +1,30 @@
 package com.main.evie;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.Message;
 import android.view.Menu;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.example.evie.R;
+import com.smart.evie.BagOfWords;
 import com.wifi.evie.WifiScanClickListener;
 
 public class MainActivity extends Activity {
@@ -49,25 +46,33 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		setupStartPageFeatures();
+		setupSmartSystem();
+	}
+
+	/**
+	 * Setups what the user sees on launch
+	 */
+	private void setupStartPageFeatures() {
 		/* Check for first-time users: tell them to complete profile if first time */
 		SharedPreferences userData = getSharedPreferences(getString(R.string.prefs_file_name), 0);
 		if (!userData.contains(getString(R.string.nameKey))) {
 			goToSignUp();
 		}
-
-		loadEvents();
-
+		
 		/* Setup welcome text */
 		TextView headerText = (TextView) this.findViewById(R.id.tv_header);
 		headerText.setText("Hello " + userData.getString(getString(R.string.nameKey), "world") + "! You are in Gates 4307.");
+
+		loadEvents();
 		
-		/* Location scan button */
+		/* Setup location scan button */
 		this.scanListener = new WifiScanClickListener(this);
 		Button scanLocationButton = (Button) this.findViewById(R.id.b_rescan);
 		scanLocationButton.setOnClickListener(this.scanListener);
 		this.scanListener.registerReceiver();
-		
-		/* Free food toggle */
+
+		/* Setup free food toggle */
 		ToggleButton freeFoodToggle = (ToggleButton) this.findViewById(R.id.tb_free_food);
 		freeFoodToggle.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			@Override
@@ -80,10 +85,34 @@ public class MainActivity extends Activity {
 			}
 		});
 	}
+	
+	/**
+	 * Sets up all systems that have smartness
+	 * Currently: 
+	 * 		1. Triggers k-means training if it is needed 
+	 */
+	private void setupSmartSystem() {
+		String filename = this.getResources().getString(R.string.filename_trained_data);
+		File file = this.getApplicationContext().getFileStreamPath(filename); 
 
+		if (file.exists()) {
+			/* We've already trained on this data */
+			return;
+		}
+		
+		/* Loads training data into dynamicEvents */
+		InputStream stream = this.getResources().openRawResource(R.raw.rawtrainingdata);
+		dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(stream);
+
+		BagOfWords bag = new BagOfWords(dynamicEvents);
+		ArrayList<double[]> results = bag.pollWords();
+		
+		/* TODO: Insert call to KMeans here using results, call bagOfWords with parameters as 
+		 * 		results from KMeans, and file information */
+	}
 	
     // Uses AsyncTask to download the events XML from Teudu
-    public void loadEvents() {
+    private void loadEvents() {
         if((wifiConnected || mobileConnected)) {
             //new DownloadEventsXmlTask().execute(URL);
         	try {
@@ -95,7 +124,7 @@ public class MainActivity extends Activity {
 	        }
         }
 
-		UpdateEventsCallback eventCallback = new UpdateEventsCallback(this);
+		UpdateEventsCallback eventCallback = new UpdateEventsCallback(this, dynamicEvents);
 		eventCallback.updateList();
 		Handler eventChangeHandler = new Handler(Looper.getMainLooper(), eventCallback);
 		dynamicEvents.setHandler(eventChangeHandler);
@@ -130,59 +159,7 @@ public class MainActivity extends Activity {
 		startActivity(signupIntent);
 	}
 
-	/* ---- CLICK LISTENERS ---- */
-
-	private static class EventDetailClickListener implements OnItemClickListener {
-
-		private final Context context;
-		EventDetailClickListener(Context context, DynamicEventList dynamicEvents) {
-			this.context = context;
-		}
-
-		@Override
-		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-			goToEventDetails(position);
-		}
-		
-		private void goToEventDetails(int eventPosition) {
-			Intent eventDetailsIntent = new Intent(context, EventDetails.class);
-			eventDetailsIntent.putExtra(context.getString(R.string.event_position), eventPosition);
-			context.startActivity(eventDetailsIntent);
-		}
-	}
 	
-	/* ---- MAIN UI CALLBACK HANDLER ---- */
-	
-	private static class UpdateEventsCallback implements Handler.Callback {
-		
-		private final Context context;
-		private int updateListMessage;
-		
-		public UpdateEventsCallback(Context context) {
-			this.context = context;
-			this.updateListMessage = ((MainActivity)context).getResources().getInteger(R.integer.message_update_events);
-		}
-
-		/**
-		 * Updates the adapter for the new filtered items
-		 */
-		protected void updateList() {
-			EventAdapter adapter = new EventAdapter(this.context, R.layout.event_grid_item, dynamicEvents.getEvents());
-			GridView gridView = (GridView) ((MainActivity)this.context).findViewById(R.id.gv_main);
-			gridView.setAdapter(adapter);
-			gridView.setOnItemClickListener(new EventDetailClickListener(this.context, dynamicEvents));
-		}
-
-		@Override
-		public boolean handleMessage(Message message) {
-			if (message.what == this.updateListMessage) {
-				updateList();
-				return true;
-			}
-			return false;
-		}
-		
-	}
 	
 	/* ---- EVENT DOWNLOADING ---- */
 	
@@ -225,6 +202,22 @@ public class MainActivity extends Activity {
 		        } 
 		        return events;
 		    }
+		}
+
+		/**
+		 * Used for training
+		 */
+		private DynamicEventList loadXmlFromFile(InputStream stream) {
+			TeuduEventParser teuduEventParser = new TeuduEventParser();
+			DynamicEventList events = null;
+
+			try {
+				events = teuduEventParser.parse(stream);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
+			return events;
 		}
 		
 		// Given a string representation of a URL, sets up a connection and gets
