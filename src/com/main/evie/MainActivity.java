@@ -55,7 +55,6 @@ public class MainActivity extends Activity {
 			goToSignUp();
 		}
 
-		/* WILL Trigger ping of location based services  (currently using a location scan button) */
 		loadEvents();
 
 		/* Setup welcome text */
