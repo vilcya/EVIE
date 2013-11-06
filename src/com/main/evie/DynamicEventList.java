@@ -21,10 +21,19 @@ import android.os.Message;
 public class DynamicEventList{
 	
 	/** Includes all events */
-	private static ArrayList<Event> allEvents = new ArrayList<Event>();
+	private ArrayList<Event> allEvents;
 	/** Events that the user sees at a given time */
-	private static ArrayList<Event> filteredEvents = new ArrayList<Event>();
+	private ArrayList<Event> filteredEvents;
 	private static Handler eventChangeHandler = null;
+	
+	public DynamicEventList() {
+		this.allEvents = new ArrayList<Event>();
+		this.filteredEvents = new ArrayList<Event>();
+		
+		if (eventChangeHandler != null) { 
+			sendChangeEventMessage();
+		}
+	}
 	
 	public void setHandler(Handler eventChangeHandler) {
 		DynamicEventList.eventChangeHandler = eventChangeHandler;
@@ -45,8 +54,8 @@ public class DynamicEventList{
 					String location, String imgUrl, String categories, boolean cancelled) {
 		Event newEvent = new Event(id, name, description, startTime, endTime, location, imgUrl, categories, cancelled);
 		id++;
-		DynamicEventList.allEvents.add(newEvent);
-		DynamicEventList.filteredEvents.add(newEvent);
+		this.allEvents.add(newEvent);
+		this.filteredEvents.add(newEvent);
 	}
 
 	/**
@@ -60,14 +69,14 @@ public class DynamicEventList{
 	}
 	
 	public ArrayList<Event> getEvents() {
-		return DynamicEventList.filteredEvents;
+		return this.filteredEvents;
 	}
 
 	public void filterFreeFood() {
-		DynamicEventList.filteredEvents.clear();
-		for (Event event: DynamicEventList.allEvents) {
+		this.filteredEvents.clear();
+		for (Event event: this.allEvents) {
 			if (event.getDescription().toLowerCase(Locale.getDefault()).contains("food")) {
-				DynamicEventList.filteredEvents.add(event);
+				this.filteredEvents.add(event);
 			}
 		}
 		
@@ -80,7 +89,7 @@ public class DynamicEventList{
 	}
 
 	public void removeFilters() {
-		DynamicEventList.filteredEvents = new ArrayList<Event>(DynamicEventList.allEvents);
+		this.filteredEvents = new ArrayList<Event>(this.allEvents);
 		sendChangeEventMessage();
 	}
 	
