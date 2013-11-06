@@ -9,6 +9,7 @@ package com.example.evie;
 
 public final class R {
     public static final class array {
+        public static final int categories_array=0x7f090002;
         public static final int interests_array=0x7f090001;
         public static final int schools_array=0x7f090000;
     }
@@ -28,7 +29,6 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int b_rescan=0x7f0b0008;
         public static final int button1=0x7f0b001b;
         public static final int checkBox1=0x7f0b0013;
         public static final int checkBox2=0x7f0b0014;
@@ -46,6 +46,7 @@ public final class R {
         public static final int iv_event_detail_image=0x7f0b0002;
         public static final int ll_food_toggle=0x7f0b0005;
         public static final int relativeLayout1=0x7f0b0009;
+        public static final int s_category=0x7f0b0008;
         public static final int spinner1=0x7f0b0011;
         public static final int tb_free_food=0x7f0b0006;
         public static final int textView1=0x7f0b000a;

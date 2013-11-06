@@ -2,17 +2,15 @@ package com.main.evie;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.List;
 import java.util.Locale;
 
-import com.example.evie.R;
-
-import android.content.res.Resources;
 import android.net.wifi.ScanResult;
 import android.os.Handler;
 import android.os.Message;
+
+import com.smart.evie.BagOfWords;
+import com.smart.evie.KMeans;
 
 /**
  * Contains list of events that dynamically updates based on location changes.
@@ -88,9 +86,26 @@ public class DynamicEventList{
 		sendChangeEventMessage();
 	}
 
+	public void filterByCategory(int category) {
+		this.filteredEvents.clear();
+		for (Event event: this.allEvents) {
+			
+		}
+	}
+	
 	public void removeFilters() {
 		this.filteredEvents = new ArrayList<Event>(this.allEvents);
 		sendChangeEventMessage();
+	}
+
+	public void categorize(ArrayList<double[]> trainingData, BagOfWords bagOfWords) {
+
+		for (Event event: this.filteredEvents) {
+			double[] featureVector = bagOfWords.poll(event.getDescription());
+			KMeans classifier = new KMeans();
+			int category = classifier.label(trainingData, featureVector);
+			event.categorize(category);
+		}
 	}
 	
 	/**

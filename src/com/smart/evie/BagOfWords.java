@@ -82,6 +82,19 @@ public class BagOfWords {
 
 		return allPolls;
 	}
+
+	public double[] poll(String words) {
+		double[] featureVector = new double[wordIndexMap.size()];
+		
+		for (String word: words.split(REGEX_WHITESPACE)) {
+			/* CURRENTLY IGNORES NEW WORDS - UPDATE THIS!!! */
+			if (this.wordIndexMap.containsKey(word)) { 
+				featureVector[this.wordIndexMap.get(word)]++;
+			}
+		}
+
+		return null;
+	}
 	
 	/**
 	 * Retrieves polling result

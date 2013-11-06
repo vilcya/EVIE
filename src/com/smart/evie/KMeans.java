@@ -9,8 +9,13 @@ public class KMeans {
 	 * K-means implementation for classifying event descriptions into
 	 * unlabelled clusters.
 	 */
+	private static final int DEFAULT_K = 10;
 	
 	private int k;
+	
+	public KMeans() {
+		this(DEFAULT_K);
+	}
 	
 	public KMeans(int numClusters) {
 		this.k = numClusters;

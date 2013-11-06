@@ -17,14 +17,21 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.example.evie.R;
 import com.smart.evie.BagOfWords;
+import com.smart.evie.KMeans;
 import com.wifi.evie.WifiScanClickListener;
 
 public class MainActivity extends Activity {
@@ -67,10 +74,10 @@ public class MainActivity extends Activity {
 		loadEvents();
 		
 		/* Setup location scan button */
-		this.scanListener = new WifiScanClickListener(this);
+		/* this.scanListener = new WifiScanClickListener(this);
 		Button scanLocationButton = (Button) this.findViewById(R.id.b_rescan);
 		scanLocationButton.setOnClickListener(this.scanListener);
-		this.scanListener.registerReceiver();
+		this.scanListener.registerReceiver(); */
 
 		/* Setup free food toggle */
 		ToggleButton freeFoodToggle = (ToggleButton) this.findViewById(R.id.tb_free_food);
@@ -92,23 +99,45 @@ public class MainActivity extends Activity {
 	 * 		1. Triggers k-means training if it is needed 
 	 */
 	private void setupSmartSystem() {
+		Toast.makeText(getApplicationContext(), "Setting up smart system", Toast.LENGTH_LONG).show();
+
 		String filename = this.getResources().getString(R.string.filename_trained_data);
 		File file = this.getApplicationContext().getFileStreamPath(filename); 
 
+		Toast.makeText(getApplicationContext(), "Got the file", Toast.LENGTH_LONG).show();
+		
 		if (file.exists()) {
 			/* We've already trained on this data */
+			Toast.makeText(getApplicationContext(), "File exists", Toast.LENGTH_LONG).show();
 			return;
 		}
+		
+		Toast.makeText(getApplicationContext(), "File does not exist", Toast.LENGTH_LONG).show();
 		
 		/* Loads training data into dynamicEvents */
 		InputStream stream = this.getResources().openRawResource(R.raw.rawtrainingdata);
 		dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(stream);
 
 		BagOfWords bag = new BagOfWords(dynamicEvents);
-		ArrayList<double[]> results = bag.pollWords();
+		ArrayList<double[]> trainingData = bag.pollWords();
+
+		Toast.makeText(getApplicationContext(), "TRAINING DATA: " + trainingData.toString(), Toast.LENGTH_LONG).show();
 		
-		/* TODO: Insert call to KMeans here using results, call bagOfWords with parameters as 
-		 * 		results from KMeans, and file information */
+		KMeans kmeans = new KMeans();
+		ArrayList<double[]> results = kmeans.train(trainingData);
+		
+		dynamicEvents.categorize(results, bag);
+		populateCategorySpinner();
+	}
+	
+	private void populateCategorySpinner() {
+		Spinner categorySpinner = (Spinner) findViewById(R.id.s_category);
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+		        R.array.categories_array, android.R.layout.simple_spinner_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		categorySpinner.setAdapter(adapter);
+
+		categorySpinner.setOnItemSelectedListener(new CategorySortSpinnerListener(dynamicEvents));
 	}
 	
     // Uses AsyncTask to download the events XML from Teudu
@@ -233,5 +262,19 @@ public class MainActivity extends Activity {
 		    conn.connect();
 		    return conn.getInputStream();
 		}
+	}
+	
+	private static class CategorySortSpinnerListener implements OnItemSelectedListener {
+
+		@Override
+		public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+			MainActivity.dynamicEvents.filterByCategory(pos);
+		}
+
+		@Override
+		public void onNothingSelected(AdapterView<?> arg0) {
+			/* Do nothing */
+		}
+		
 	}
 }
