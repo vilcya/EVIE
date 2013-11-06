@@ -26,6 +26,7 @@ public class Event {
 	private final String location;
 	private URL imgUrl;					/* May not exist */
 	private final ArrayList<String> categories;
+	private int labelledCategory;
 	private final boolean cancelled;
 	private static Bitmap defaultBitmap;
 	
