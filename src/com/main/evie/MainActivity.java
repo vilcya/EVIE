@@ -21,7 +21,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.Spinner;
@@ -48,13 +47,16 @@ public class MainActivity extends Activity {
 	private static DynamicEventList dynamicEvents;
 	private WifiScanClickListener scanListener;
 	
+	ArrayList<double[]> trainingResults;
+	BagOfWords bagOfWords;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		setupStartPageFeatures();
 		setupSmartSystem();
+		setupStartPageFeatures();
 	}
 
 	/**
@@ -118,15 +120,25 @@ public class MainActivity extends Activity {
 		InputStream stream = this.getResources().openRawResource(R.raw.rawtrainingdata);
 		dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(stream);
 
-		BagOfWords bag = new BagOfWords(dynamicEvents);
-		ArrayList<double[]> trainingData = bag.pollWords();
+		this.bagOfWords = new BagOfWords(dynamicEvents);
+		ArrayList<double[]> trainingData = this.bagOfWords.pollWords();
 
 		Toast.makeText(getApplicationContext(), "TRAINING DATA: " + trainingData.toString(), Toast.LENGTH_LONG).show();
 		
 		KMeans kmeans = new KMeans();
-		ArrayList<double[]> results = kmeans.train(trainingData);
+		this.trainingResults = kmeans.train(trainingData);
+
+		 // TEMPORARY
+		/*String resultsString = "";
 		
-		dynamicEvents.categorize(results, bag);
+		for (double[] means: this.trainingResults) {
+			for (double mean: means) {
+				resultsString += mean;
+			}
+		}*/
+		
+		Toast.makeText(getApplicationContext(), "Training RESULTS: " + this.trainingResults, Toast.LENGTH_LONG).show();
+
 		populateCategorySpinner();
 	}
 	
@@ -137,7 +149,7 @@ public class MainActivity extends Activity {
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		categorySpinner.setAdapter(adapter);
 
-		categorySpinner.setOnItemSelectedListener(new CategorySortSpinnerListener(dynamicEvents));
+		categorySpinner.setOnItemSelectedListener(new CategorySortSpinnerListener());
 	}
 	
     // Uses AsyncTask to download the events XML from Teudu
@@ -157,6 +169,8 @@ public class MainActivity extends Activity {
 		eventCallback.updateList();
 		Handler eventChangeHandler = new Handler(Looper.getMainLooper(), eventCallback);
 		dynamicEvents.setHandler(eventChangeHandler);
+		
+		dynamicEvents.categorize(this.trainingResults, this.bagOfWords);
     }
 
 	@Override
@@ -169,14 +183,14 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onPause() {
 		super.onPause();
-		this.scanListener.deregisterReceiver();
+		//this.scanListener.deregisterReceiver();
 		/* TODO: clean up listeners */
 	}
 	
 	@Override
 	protected void onResume() {
 		super.onResume();
-		this.scanListener.registerReceiver();
+		//this.scanListener.registerReceiver();
 		/* TODO: re-register listeners */
 	}
 

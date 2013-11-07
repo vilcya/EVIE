@@ -5,10 +5,10 @@ import java.util.Random;
 
 public class KMeans {
 	/* 
-	 * K-means implementation for classifying event descriptions into
-	 * unlabelled clusters.
+	 * K-means implementation for classifying event descriptions into`
+	 * unlabeled clusters.
 	 */
-	private static final int DEFAULT_K = 10;
+	private static final int DEFAULT_K = 2;
 	
 	private int k;
 	
@@ -36,8 +36,10 @@ public class KMeans {
 		boolean stop = false;
 		
 		// randomly choose k centers and initialize cluster sizes to 0 for all clusters
-		for (int i = 0; i < means.size(); ++i) {
-			means.add(trainingData.get(rand.nextInt(trainingData.size())));
+		for (int i = 0; i < this.k; ++i) {
+			int randIndex = rand.nextInt(trainingData.size());
+			double[] eventData = trainingData.get(randIndex);
+			means.add(eventData);
 			initSizes.add(0);
 			initSums.add(new double[means.get(i).length]);
 		}
@@ -47,7 +49,7 @@ public class KMeans {
 			clusterSizes.clear();
 			clusterSizes.addAll(initSizes);
 			clusterSums.addAll(initSums);
-			
+
 			// assign training data to a cluster
 			for (double[] featureVector : trainingData) {
 				int clusterLabel = label(means, featureVector);
@@ -59,12 +61,14 @@ public class KMeans {
 			 * as a threshold of change if nothing is completely converging. */
 			boolean allSame = true;
 			for (int clusterIndex = 0; clusterIndex < clusterSums.size(); ++clusterIndex) {
-				double[] clusterMean = divideVector(clusterSums.get(clusterIndex), clusterSizes.get(clusterIndex));
+				int clusterSize = clusterSizes.get(clusterIndex);
+				double[] clusterMean = divideVector(clusterSums.get(clusterIndex), clusterSize == 0? 1 : clusterSize);
 				
-				if (!means.get(clusterIndex).equals(clusterMean)) {
+				double epsilon = this.euclideanDistance(means.get(clusterIndex), clusterMean);
+				if ( epsilon > 3) {
 					allSame = false;
 				}
-				
+
 				means.set(clusterIndex, clusterMean);
 			}
 			
@@ -81,7 +85,7 @@ public class KMeans {
 		 * Return: index of the mean of the cluster the thing you want to label should be in.
 		 */
 		int clusterLabel = 0;
-		double minDistance = 0;
+		double minDistance = Double.MAX_VALUE;
 		
 		for (int meanIndex = 0; meanIndex  < means.size(); ++meanIndex) {
 			double distance = euclideanDistance(means.get(meanIndex), toTrainFeatures);
@@ -104,7 +108,7 @@ public class KMeans {
 		for (int i = 0; i < Math.max(v1.length, v2.length); ++i ) {
 			sum += Math.pow((v1[i] - v2[i]),2);
 		}
-		
+
 		return Math.sqrt(sum);
 	}
 	

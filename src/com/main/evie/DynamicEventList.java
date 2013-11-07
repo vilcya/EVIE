@@ -86,11 +86,15 @@ public class DynamicEventList{
 		sendChangeEventMessage();
 	}
 
-	public void filterByCategory(int category) {
+	public void filterByCategory(int label) {
 		this.filteredEvents.clear();
 		for (Event event: this.allEvents) {
-			
+			if (event.getLabel() == label) {
+				this.filteredEvents.add(event);
+			}
 		}
+		
+		sendChangeEventMessage();
 	}
 	
 	public void removeFilters() {

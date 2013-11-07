@@ -110,6 +110,10 @@ public class Event {
 		return this.categories;
 	}
 	
+	public int getLabel() {
+		return this.category;
+	}
+	
 	public boolean isCancelled() {
 		return this.cancelled;
 	}

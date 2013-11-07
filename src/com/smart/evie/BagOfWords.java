@@ -93,7 +93,7 @@ public class BagOfWords {
 			}
 		}
 
-		return null;
+		return featureVector;
 	}
 	
 	/**
