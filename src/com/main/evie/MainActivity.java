@@ -119,11 +119,11 @@ public class MainActivity extends Activity {
 
 		if (file.exists()) {
 			/* We've already trained on this data */
-			Toast.makeText(getApplicationContext(), "File exists", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), "We already trained", Toast.LENGTH_LONG).show();
 			return;
 		}
 		
-		Toast.makeText(getApplicationContext(), "File does not exist", Toast.LENGTH_LONG).show();
+		Toast.makeText(getApplicationContext(), "We have not trained ... training ....", Toast.LENGTH_LONG).show();
 		
 		/* Loads training data into dynamicEvents */
 		dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(true, this);
@@ -271,7 +271,7 @@ public class MainActivity extends Activity {
 		private DynamicEventList loadXmlFromFile(boolean training, Context context) {
 			InputStream stream = null;
 			if (training) {
-				stream = context.getResources().openRawResource(R.raw.rawtrainingdata);
+				stream = context.getResources().openRawResource(R.raw.testdata);
 			} else {
 				stream = context.getResources().openRawResource(R.raw.testdata);
 			}

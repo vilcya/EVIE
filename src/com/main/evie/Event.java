@@ -66,6 +66,8 @@ public class Event {
 
 	/* TEMP Function to use android launcher icon as placeholder */
 	public Bitmap getImageBitmap() {
+		return this.defaultBitmap;	/* For efficiency - temporary */
+		/*
 		if (this.imgUrl == null) {
 			return this.defaultBitmap;
 		}
@@ -75,7 +77,7 @@ public class Event {
 		} catch (IOException e) {
 			e.printStackTrace();
 			return null;
-		}
+		}*/
 	}
 	
 	public int getId() {

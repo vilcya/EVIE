@@ -3,12 +3,14 @@ package com.smart.evie;
 import java.util.ArrayList;
 import java.util.Random;
 
+import android.util.Log;
+
 public class KMeans {
 	/* 
 	 * K-means implementation for classifying event descriptions into`
 	 * unlabeled clusters.
 	 */
-	private static final int DEFAULT_K = 3;
+	private static final int DEFAULT_K = 2;
 	
 	private int k;
 	
@@ -65,14 +67,26 @@ public class KMeans {
 				double[] clusterMean = divideVector(clusterSums.get(clusterIndex), clusterSize == 0? 1 : clusterSize);
 				
 				double epsilon = this.euclideanDistance(means.get(clusterIndex), clusterMean);
-				if ( epsilon > 3) {
+				
+				if ( epsilon > 0.0001) { 
 					allSame = false;
 				}
+				Log.i("evie_debug", "EPSILON " + epsilon);
 
 				means.set(clusterIndex, clusterMean);
 			}
 			
+			
 			stop = allSame;
+		}
+
+		for (double[] meanList : means) {
+			Log.i("evie_debug", "start cluster");
+			for (double mean : meanList) {
+				Log.i("evie_debug", "cluster means" + mean);
+			}
+					
+			Log.i("evie_debug", "end cluster");
 		}
 		
 		return means;
@@ -87,7 +101,7 @@ public class KMeans {
 		int clusterLabel = 0;
 		double minDistance = Double.MAX_VALUE;
 		
-		for (int meanIndex = 0; meanIndex  < means.size(); ++meanIndex) {
+		for (int meanIndex = 0; meanIndex < means.size(); ++meanIndex) {
 			double distance = euclideanDistance(means.get(meanIndex), toTrainFeatures);
 			if (distance < minDistance) {
 				clusterLabel = meanIndex;
@@ -95,6 +109,7 @@ public class KMeans {
 			}
 		}
 		
+		Log.i("evie_debug", "Cluster labelled as " + Double.toString(clusterLabel));
 		return clusterLabel;
 	}
 	

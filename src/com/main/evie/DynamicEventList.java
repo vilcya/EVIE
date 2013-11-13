@@ -54,7 +54,7 @@ public class DynamicEventList{
 	 * @return Event at the given position
 	 */
 	public Event getEventAt(int position) throws ArrayIndexOutOfBoundsException {
-		return DynamicEventList.allEvents.get(position);
+		return DynamicEventList.filteredEvents.get(position);
 	}
 	
 	public ArrayList<Event> getEvents() {

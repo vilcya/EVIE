@@ -372,7 +372,7 @@ Come to a brief information session to learn more about the possibility of study
   </event>
   <event>
     <id type="integer">188</id>
-    <name>Poster Session: Independent Study &amp;amp; Senior Thesis</name>
+    <name>Poster Session: Independent Study and Senior Thesis</name>
     <description>A poster session or poster presentation is the presentation of research information by an individual or representatives of research teams at a congress or conference with an academic or professional focus. The work is usually peer reviewed. Poster sessions are particularly prominent at scientific conferences such as medical congresses.</description>
     <location>TBA</location>
     <start-time>2013-11-12 12:00</start-time>
@@ -399,7 +399,7 @@ Come to a brief information session to learn more about the possibility of study
   <event>
     <id type="integer">100</id>
     <name>Study Abroad Information Session</name>
-    <description>Over 500 CMU students, from all majors, study abroad annually.  All are welcome to attend this overview of study abroad, from general curriculum compatibility to finances.  Returned students will also speak about their individual study abroad experiences and will be available for a Q &amp;amp; A.</description>
+    <description>Over 500 CMU students, from all majors, study abroad annually.  All are welcome to attend this overview of study abroad, from general curriculum compatibility to finances.  Returned students will also speak about their individual study abroad experiences and will be available for a Q and A.</description>
     <location>Dowd, University Center </location>
     <start-time>2013-12-02 14:00</start-time>
     <end-time>2013-12-02 15:00</end-time>
@@ -416,7 +416,7 @@ Come to a brief information session to learn more about the possibility of study
     <flyer-updated-at type="datetime">2013-02-10T14:57:11-05:00</flyer-updated-at>
     <created-at type="datetime">2013-02-10T14:57:11-05:00</created-at>
     <updated-at type="datetime">2013-02-10T14:57:11-05:00</updated-at>
-    <summary>Over 500 CMU students, from all majors, study abroad annually.  All are welcome to attend this overview of study abroad, from general curriculum compatibility to finances.  Returned students will also speak about their individual study abroad experiences and will be available for a Q &amp;amp; A.</summary>
+    <summary>Over 500 CMU students, from all majors, study abroad annually.  All are welcome to attend this overview of study abroad, from general curriculum compatibility to finances.  Returned students will also speak about their individual study abroad experiences and will be available for a Q and A.</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">15</organization-id>
     <user-id type="integer">6</user-id>
@@ -713,7 +713,7 @@ $3 Student/$5 General
 
 Show times are:
 February 15th at 8pm
-February 16th at 2pm &amp;amp; 6pm
+February 16th at 2pm and 6pm
 
 Director: James Alexander
 Assistant Director: Ethan Crystal
@@ -756,7 +756,7 @@ Bailiff: Billy Veer</description>
   </event>
   <event>
     <id type="integer">102</id>
-    <name>Mocktails &amp;amp; Karaoke</name>
+    <name>Mocktails and Karaoke</name>
     <description>Come out for a night of fun singing karaoke with friends or sing solo.... or just watch your friends singing ridiculous songs while enjoying mocktail beverages!</description>
     <location>UC Commons </location>
     <start-time>2013-15-02 21:00</start-time>
@@ -970,7 +970,7 @@ Above, you can learn a little bit more about all of these events, and maybe this
   </event>
   <event>
     <id type="integer">148</id>
-    <name>Olympus Show &amp;amp; Tell Event</name>
+    <name>Olympus Show and Tell Event</name>
     <description>Project Olympus, a Carnegie Mellon innovation center, operates at the earliest stages of the value creation chain. It aims to augment and accelerate the process of moving cutting-edge research and great ideas to development and business stages through licensing, creating start-ups, and through corporate collaboration and strategic partnerships. Olympus provides start-up advice, micro-grants, incubator space, and connections for faculty and students across campus and with the wider regional, national and global business communities. How to work with us
 
 A main goal is to create a climate, culture and community to enable talent and ideas to grow, creating a dynamic commercialization eco-system. An initiative of the School of Computer Science, Project Olympus works collaboratively with all members of the university’s Innovation Eco-system. Based within the university’s academic sector, Olympus can easily tap into promising innovations that build on the wealth of university research and student ingenuity. Fostering collaborations, both on and off campus, Olympus leverages considerable community expertise and resources.</description>
@@ -1185,7 +1185,7 @@ A main goal is to create a climate, culture and community to enable talent and i
   <event>
     <id type="integer">154</id>
     <name>Lupe Fiasco Concert</name>
-    <description>Wasalu Muhammad Jaco (born February 16, 1982), better known by his stage name Lupe Fiasco, is an American rapper, record producer, and entrepreneur. He rose to fame in 2006 following the success of his debut album, Lupe Fiasco's Food &amp; Liquor. He also performs as the frontman of rock band Japanese Cartoon under his real name. As an entrepreneur, Fiasco is the chief executive officer of 1st and 15th Entertainment. Activities Board Spring Carnival Concert: Lupe Fiasco with CMU Turntables</description>
+    <description>Wasalu Muhammad Jaco (born February 16, 1982), better known by his stage name Lupe Fiasco, is an American rapper, record producer, and entrepreneur. He rose to fame in 2006 following the success of his debut album, Lupe Fiasco's Food and Liquor. He also performs as the frontman of rock band Japanese Cartoon under his real name. As an entrepreneur, Fiasco is the chief executive officer of 1st and 15th Entertainment. Activities Board Spring Carnival Concert: Lupe Fiasco with CMU Turntables</description>
     <location>UC Wiegand Gym</location>
     <start-time>2013-20-04 20:00</start-time>
     <end-time>2013-20-04 22:00</end-time>
