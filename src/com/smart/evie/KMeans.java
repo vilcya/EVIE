@@ -10,7 +10,7 @@ public class KMeans {
 	 * K-means implementation for classifying event descriptions into`
 	 * unlabeled clusters.
 	 */
-	private static final int DEFAULT_K = 2;
+	private static final int DEFAULT_K = 3;
 	
 	private int k;
 	
@@ -36,6 +36,7 @@ public class KMeans {
 		ArrayList<double[]> initSums = new ArrayList<double[]>(this.k);
 		Random rand = new Random();
 		boolean stop = false;
+		final double epsilon = 0.0001;
 		
 		// randomly choose k centers and initialize cluster sizes to 0 for all clusters
 		for (int i = 0; i < this.k; ++i) {
@@ -66,12 +67,12 @@ public class KMeans {
 				int clusterSize = clusterSizes.get(clusterIndex);
 				double[] clusterMean = divideVector(clusterSums.get(clusterIndex), clusterSize == 0? 1 : clusterSize);
 				
-				double epsilon = this.euclideanDistance(means.get(clusterIndex), clusterMean);
+				double similarity = this.cosineSimilarity(means.get(clusterIndex), clusterMean);
 				
-				if ( epsilon > 0.0001) { 
+				if ( similarity < 1-epsilon) { 
 					allSame = false;
 				}
-				Log.i("evie_debug", "EPSILON " + epsilon);
+				Log.i("evie_debug", "SIMILARITY " + similarity);
 
 				means.set(clusterIndex, clusterMean);
 			}
@@ -99,13 +100,13 @@ public class KMeans {
 		 * Return: index of the mean of the cluster the thing you want to label should be in.
 		 */
 		int clusterLabel = 0;
-		double minDistance = Double.MAX_VALUE;
+		double maxCosine = -1;
 		
 		for (int meanIndex = 0; meanIndex < means.size(); ++meanIndex) {
-			double distance = euclideanDistance(means.get(meanIndex), toTrainFeatures);
-			if (distance < minDistance) {
+			double distance = cosineSimilarity(means.get(meanIndex), toTrainFeatures);
+			if (distance > maxCosine) {
 				clusterLabel = meanIndex;
-				minDistance = distance;
+				maxCosine = distance;
 			}
 		}
 		
@@ -124,6 +125,30 @@ public class KMeans {
 			sum += Math.pow((v1[i] - v2[i]),2);
 		}
 
+		return Math.sqrt(sum);
+	}
+	
+	private double cosineSimilarity(double[] v1, double[] v2) {
+		return dotProduct(v1, v2)/(magnitude(v1)*magnitude(v2));
+	}
+	
+	private double dotProduct(double[] v1, double[] v2) {
+		double sum = 0;
+		
+		for (int i = 0; i < Math.max(v1.length, v2.length); ++i) {
+			sum += v1[i]*v2[i];
+		}
+		
+		return sum;
+	}
+	
+	private double magnitude(double[] v) {
+		double sum = 0;
+		
+		for (int i = 0; i < v.length; ++i) {
+			sum += Math.pow(v[i],2);
+		}
+		
 		return Math.sqrt(sum);
 	}
 	
