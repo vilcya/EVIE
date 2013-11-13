@@ -31,13 +31,13 @@
   <event>
     <id type="integer">36</id>
     <name>Late Night - Film Festival</name>
-    <description>An Engineers Without Borders Late Night event:r
-r
-Come to the UC at 9pm for a touching film festival. r
-r
-We will be showing:r
-1. From Rutgers University, the film "Thailand Untapped" It's extremely well made and the audience feedback has been very positive.r
-2. From the Hartford Professional Chapter, we have "Welcome to Abheypur". r
+    <description>An Engineers Without Borders Late Night event:
+
+Come to the UC at 9pm for a touching film festival. 
+
+We will be showing:
+1. From Rutgers University, the film "Thailand Untapped" It's extremely well made and the audience feedback has been very positive.
+2. From the Hartford Professional Chapter, we have "Welcome to Abheypur". 
 3. The last film is from Princeton University. It takes place in Ghana and follows the construction of a school library.</description>
     <location>UC Black Chairs, Rangos</location>
     <start-time>2012-01-09 18:00</start-time>
@@ -64,22 +64,22 @@ We will be showing:r
   <event>
     <id type="integer">63</id>
     <name>Madrigal Dinner </name>
-    <description>Music, Magic, Mime, Mirth, and More!r
-Celebrate the end of the semester and welcome the holiday season with a unique dining and entertainment experience!r
-r
-Featuring:r
-CMU School of Music Chamber Singersr
-Directed by Michael Van Campr
-r
-Master of Ceremoniesr
-Lord of Misrule, Sir Jester, Will Weinerr
-r
-Ticketsr
-$10 CMU Students (or use a meal Block)r
-$20 All other Guestsr
-$10 Children under 12 yearsr
-Tickets sold at the UC Information Deskr
-r
+    <description>Music, Magic, Mime, Mirth, and More!
+Celebrate the end of the semester and welcome the holiday season with a unique dining and entertainment experience!
+
+Featuring:
+CMU School of Music Chamber Singers
+Directed by Michael Van Camp
+
+Master of Ceremonies
+Lord of Misrule, Sir Jester, Will Weiner
+
+Tickets
+$10 CMU Students (or use a meal Block)
+$20 All other Guests
+$10 Children under 12 years
+Tickets sold at the UC Information Desk
+
 Hosted by Anne Witchner. Sponsored by Office of Orientation, Student Affairs, Alumni relations, Student Senate, Carnegie Mellon School of Music, SDC, Culinart</description>
     <location>Kirr Commons and Rangos Ballroom</location>
     <start-time>2012-01-12 18:30</start-time>
@@ -97,7 +97,7 @@ Hosted by Anne Witchner. Sponsored by Office of Orientation, Student Affairs, Al
     <flyer-updated-at type="datetime">2012-11-18T14:12:37-05:00</flyer-updated-at>
     <created-at type="datetime">2012-11-18T14:12:37-05:00</created-at>
     <updated-at type="datetime">2012-11-18T14:12:37-05:00</updated-at>
-    <summary>Music, Magic, Mime, Mirth, and More!r
+    <summary>Music, Magic, Mime, Mirth, and More!
 Celebrate the end of the semester and welcome the holiday season with a unique dining and entertainment experience!</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">26</organization-id>
@@ -159,14 +159,14 @@ Celebrate the end of the semester and welcome the holiday season with a unique d
   <event>
     <id type="integer">56</id>
     <name>Los Valientes: Celebrating Hispanic Heritage</name>
-    <description>Los Valientes (The Courageous Ones) is a live music theater work based on the lives of three heroic Latinos, the show celebrates Mexian painter Diego Rivera, martyred Salvadoran Archbishop Oscar Romero and Mexican-American outlaw Joaquin Murrieta (some say the Zorro character was based on this historical figure).r
-r
-Dessert Reception to follow in CFA Lobbyr
-r
-FREE TICKETED EVENTr
-r
-Tickets available at University Center Info Deskr
-r
+    <description>Los Valientes (The Courageous Ones) is a live music theater work based on the lives of three heroic Latinos, the show celebrates Mexian painter Diego Rivera, martyred Salvadoran Archbishop Oscar Romero and Mexican-American outlaw Joaquin Murrieta (some say the Zorro character was based on this historical figure).
+
+Dessert Reception to follow in CFA Lobby
+
+FREE TICKETED EVENT
+
+Tickets available at University Center Info Desk
+
 Sponsored by Modern Languages, Student Affairs and the Vice Provost for Education</description>
     <location>Kresge Theater, CFA </location>
     <start-time>2012-09-10 19:00</start-time>
@@ -219,15 +219,15 @@ Sponsored by Modern Languages, Student Affairs and the Vice Provost for Educatio
   <event>
     <id type="integer">58</id>
     <name>Sleigh Bells</name>
-    <description>AB Concerts is bringing Sleigh Bells to Carnegie Mellon for Fall Concert! r
-r
-Who: Sleigh Bellsr
-What: Fall Concert 2012r
-Where: Wiegand Gym in the University Centerr
-When: November 10, 2012 || Doors at 8PMr
-r
-Tickets are free for CMU students with ID.r
-10 dollars for everyone else!r
+    <description>AB Concerts is bringing Sleigh Bells to Carnegie Mellon for Fall Concert! 
+
+Who: Sleigh Bells
+What: Fall Concert 2012
+Where: Wiegand Gym in the University Center
+When: November 10, 2012 || Doors at 8PM
+
+Tickets are free for CMU students with ID.
+10 dollars for everyone else!
 Pick up your tickets at the UC Information Desk starting - TBA.</description>
     <location>Wiegand Gym</location>
     <start-time>2012-10-11 20:00</start-time>
@@ -245,7 +245,7 @@ Pick up your tickets at the UC Information Desk starting - TBA.</description>
     <flyer-updated-at type="datetime">2012-10-28T15:05:24-04:00</flyer-updated-at>
     <created-at type="datetime">2012-10-28T15:05:24-04:00</created-at>
     <updated-at type="datetime">2012-10-28T15:40:02-04:00</updated-at>
-    <summary>AB Concerts is bringing Sleigh Bells to Carnegie Mellon for Fall Concert! r
+    <summary>AB Concerts is bringing Sleigh Bells to Carnegie Mellon for Fall Concert! 
 </summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">7</organization-id>
@@ -307,12 +307,8 @@ Pick up your tickets at the UC Information Desk starting - TBA.</description>
   <event>
     <id type="integer">53</id>
     <name>Moonrise Kingdom</name>
-    <description>AB Films is showing Moonrise Kingdom on Thursday, October 11, at 8pm, 10pm, and Midnight.r
-r
-Runtime: 94 minutes (1hr 34min) | Price: $1 with CMU ID (must show ID); $3 otherwiser
-r
- r
-r
+    <description>AB Films is showing Moonrise Kingdom on Thursday, October 11, at 8pm, 10pm, and Midnight. 
+Runtime: 94 minutes (1hr 34min) | Price: $1 with CMU ID (must show ID); $3 otherwise
 This comedy/drama is loaded with stars - Bruce Willis, Bill Murray, Frances McDormand, Edward Norton. Set on a little island off the New England coast in the 1960s, this film tells the tale of a young couple that ran away in love and the town that searches after them.</description>
     <location>UC McConomy Auditorium</location>
     <start-time>2012-11-10 20:00</start-time>
@@ -339,9 +335,7 @@ This comedy/drama is loaded with stars - Bruce Willis, Bill Murray, Frances McDo
   <event>
     <id type="integer">49</id>
     <name>Demosplash</name>
-    <description>Demosplash is a computer art festival in the spirit of the demoscene, going into greater depth on the artistic and technical skills of the demoscene through a series of short talks, tutorial/hacking events, and several competitions. In addition to demos, of course.r
-r
-Check out www.demosplash.org for a list of events and more information.</description>
+    <description>Demosplash is a computer art festival in the spirit of the demoscene, going into greater depth on the artistic and technical skills of the demoscene through a series of short talks, tutorial/hacking events, and several competitions. In addition to demos, of course. Check out www.demosplash.org for a list of events and more information.</description>
     <location>GHC 4th floor</location>
     <start-time>2012-12-10 15:00</start-time>
     <end-time>2012-13-10 16:00</end-time>
@@ -367,12 +361,12 @@ Check out www.demosplash.org for a list of events and more information.</descrip
   <event>
     <id type="integer">54</id>
     <name>Code 2600</name>
-    <description>AB Films is showing Code 2600 on Friday, October 12, at 7pm*, and 10pm.r
-r
-Runtime: 82 minutes (1hr 22min) | Price: All showings of this film are FREE!r
-r
-This is the Pittsburgh Premier of Code 2600. There will be a special Q&amp;A with the director after the 7pm showing!r
-r
+    <description>AB Films is showing Code 2600 on Friday, October 12, at 7pm*, and 10pm.
+
+Runtime: 82 minutes (1hr 22min) | Price: All showings of this film are FREE!
+
+This is the Pittsburgh Premier of Code 2600. There will be a special Q&amp;A with the director after the 7pm showing!
+
 This documentary explores the age of information technology, and the benefits it has for connecting the world, while putting personal security on the edge.</description>
     <location>UC McConomy</location>
     <start-time>2012-12-10 19:00</start-time>
@@ -399,11 +393,11 @@ This documentary explores the age of information technology, and the benefits it
   <event>
     <id type="integer">55</id>
     <name>Indie Game: The Movie</name>
-    <description>AB Films is showing Indie Game: The Movie on Saturday, October 13, at 10pm and Midnight.r
-r
-Runtime: 94 minutes (1hr 34min) | Price: $1 with CMU ID (must show ID); $3 otherwiser
-r
-r
+    <description>AB Films is showing Indie Game: The Movie on Saturday, October 13, at 10pm and Midnight.
+
+Runtime: 94 minutes (1hr 34min) | Price: $1 with CMU ID (must show ID); $3 otherwise
+
+
 Watch this documentary that follows the unique story of indie games and the people who make them.</description>
     <location>UC McConomy</location>
     <start-time>2012-13-10 22:00</start-time>
@@ -430,15 +424,15 @@ Watch this documentary that follows the unique story of indie games and the peop
   <event>
     <id type="integer">61</id>
     <name>Batman Begins</name>
-    <description>As part of BATMAN WEEKEND, AB Films is showing Batman Begins on Thursday, November 15r
-r
-Showtimes:r
-r
-7:00 pmr
-10:00 pmr
-1:00 amr
-Runtime: 140 minutes (2hr 20min)r
-r
+    <description>As part of BATMAN WEEKEND, AB Films is showing Batman Begins on Thursday, November 15
+
+Showtimes:
+
+7:00 pm
+10:00 pm
+1:00 am
+Runtime: 140 minutes (2hr 20min)
+
 Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <location>UC McConomy Auditorium</location>
     <start-time>2012-15-11 19:00</start-time>
@@ -465,11 +459,11 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
   <event>
     <id type="integer">40</id>
     <name>Rango </name>
-    <description>AB Films is showing Rango on Sunday, September 16, at 6pm, 8pm, and 10pm.r
-r
-Runtime: 107 minutes (1hr 47min)r
-Price: $1 with CMU ID (must show ID); $3 otherwiser
-r
+    <description>AB Films is showing Rango on Sunday, September 16, at 6pm, 8pm, and 10pm.
+
+Runtime: 107 minutes (1hr 47min)
+Price: $1 with CMU ID (must show ID); $3 otherwise
+
 Johnny Depp is the voice of Rango - a regular chameleon who winds up in a lawless town in the heart of the Wild West - in this animated adventure/comedy.</description>
     <location>UC McConomy</location>
     <start-time>2012-16-09 18:00</start-time>
@@ -496,18 +490,18 @@ Johnny Depp is the voice of Rango - a regular chameleon who winds up in a lawles
   <event>
     <id type="integer">60</id>
     <name>The Dark Knight</name>
-    <description>As part of BATMAN WEEKEND, AB Films is showing The Dark Knight on Friday, November 16r
-r
-Showtimes:r
-r
-7:00 pmr
-10:00 pmr
-1:00 amr
-Runtime: 152 minutes (2hr 32min)r
-r
-Price: $1 with CMU ID (must show ID); $3 otherwiser
-r
-Director/Writer Christopher Nolan is back with the second installment in his trilogy of Batman films. We all know the story of Bruce Wayne (Christian Bale) who loses his parents as a child and later becomes the Batman - protecting his city from crime. This time around we get a closer look at one of Batman's most infamous foes, the Joker (Heath Ledger).r
+    <description>As part of BATMAN WEEKEND, AB Films is showing The Dark Knight on Friday, November 16
+
+Showtimes:
+
+7:00 pm
+10:00 pm
+1:00 am
+Runtime: 152 minutes (2hr 32min)
+
+Price: $1 with CMU ID (must show ID); $3 otherwise
+
+Director/Writer Christopher Nolan is back with the second installment in his trilogy of Batman films. We all know the story of Bruce Wayne (Christian Bale) who loses his parents as a child and later becomes the Batman - protecting his city from crime. This time around we get a closer look at one of Batman's most infamous foes, the Joker (Heath Ledger).
 </description>
     <location>UC McConomy</location>
     <start-time>2012-16-11 19:00</start-time>
@@ -525,7 +519,7 @@ Director/Writer Christopher Nolan is back with the second installment in his tri
     <flyer-updated-at type="datetime">2012-11-11T14:26:16-05:00</flyer-updated-at>
     <created-at type="datetime">2012-11-11T14:25:35-05:00</created-at>
     <updated-at type="datetime">2012-11-11T14:54:00-05:00</updated-at>
-    <summary>We all know the story of Bruce Wayne (Christian Bale) who loses his parents as a child and later becomes the Batman - protecting his city from crime. This time around we get a closer look at one of Batman's most infamous foes, the Joker (Heath Ledger).r
+    <summary>We all know the story of Bruce Wayne (Christian Bale) who loses his parents as a child and later becomes the Batman - protecting his city from crime. This time around we get a closer look at one of Batman's most infamous foes, the Joker (Heath Ledger).
 </summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">14</organization-id>
@@ -587,19 +581,19 @@ Director/Writer Christopher Nolan is back with the second installment in his tri
   <event>
     <id type="integer">62</id>
     <name>The Dark Knight Rises</name>
-    <description>As part of BATMAN WEEKEND, AB Films is showing The Dark Knight Rises on Saturday, November 17r
-r
-Showtimes:r
-r
-7:00 pmr
-10:00 pmr
-1:00 amr
-Runtime: 165 minutes (2hr 45min)r
-r
-Price: $1 with CMU ID (must show ID); $3 otherwiser
-r
-This film features the city of Pittsburgh, and part was shot on CMU's campus!r
-r
+    <description>As part of BATMAN WEEKEND, AB Films is showing The Dark Knight Rises on Saturday, November 17
+
+Showtimes:
+
+7:00 pm
+10:00 pm
+1:00 am
+Runtime: 165 minutes (2hr 45min)
+
+Price: $1 with CMU ID (must show ID); $3 otherwise
+
+This film features the city of Pittsburgh, and part was shot on CMU's campus!
+
 Director/Writer Christopher Nolan returns for the final installment in his trilogy of Batman films. We all know the story of Bruce Wayne (Christian Bale) who loses his parents as a child and later becomes the Batman - protecting his city from crime. But eight years have passed since we last saw him, and much has changed. When a new villain, Bane (Tom Hardy), surfaces, the Batman emerges once again, despite facing a city that has turned against him.</description>
     <location>UC McConomy</location>
     <start-time>2012-17-11 19:00</start-time>
@@ -704,8 +698,8 @@ Director/Writer Christopher Nolan returns for the final installment in his trilo
   <event>
     <id type="integer">14</id>
     <name>Olympus Spring Carnival Show and Tell</name>
-    <description>Project Olympus plays host to various speakers doing research within SCS, as well as start-up professionals and application developers. Speakers include Prof. Red Whittaker, Prof Justine Cassell, Kit Needham, Amy Quispe, and Joshua Baer.r
-r
+    <description>Project Olympus plays host to various speakers doing research within SCS, as well as start-up professionals and application developers. Speakers include Prof. Red Whittaker, Prof Justine Cassell, Kit Needham, Amy Quispe, and Joshua Baer.
+
 For more information about registration and directions, please visit http://www.olympus.cs.cmu.edu/events</description>
     <location>UC McConomy Auditorium</location>
     <start-time>2012-19-04 16:30</start-time>
@@ -810,9 +804,9 @@ For more information about registration and directions, please visit http://www.
   <event>
     <id type="integer">16</id>
     <name>Robotics Project Demos</name>
-    <description>The Robotics Institute will celebrate the third annual National Robotics Week on April 20 with project demonstrations, lab tours, the annual Mobot (mobile robot) races, a special lecture by Professor Howie Choset and a Robot reception. Demos will include River Exploration Vehicles, Snake Robots, Calliope, and Canine. r
-r
-Pre-registration is required. Please register at the following link: https://www.surveymonkey.com/s/r
+    <description>The Robotics Institute will celebrate the third annual National Robotics Week on April 20 with project demonstrations, lab tours, the annual Mobot (mobile robot) races, a special lecture by Professor Howie Choset and a Robot reception. Demos will include River Exploration Vehicles, Snake Robots, Calliope, and Canine. 
+
+Pre-registration is required. Please register at the following link: https://www.surveymonkey.com/s/
 2012NRWRSVP</description>
     <location>Planetary Robotics Lab Highbay - Gates and Hillman 1st Floor</location>
     <start-time>2012-20-04 12:00</start-time>
@@ -995,8 +989,8 @@ Pre-registration is required. Please register at the following link: https://www
   <event>
     <id type="integer">26</id>
     <name>CMU Film Festival 2012: The Loop</name>
-    <description>The CMU Filmmaking Club proudly presents our annual Spring Carnival festival which showcases and premieres student film works of the past year. This year's festival theme, "The Loop", celebrates a return to the basics of filmmaking and encourages innovation and creative storytelling.r
-Music Composed by Sean Packr
+    <description>The CMU Filmmaking Club proudly presents our annual Spring Carnival festival which showcases and premieres student film works of the past year. This year's festival theme, "The Loop", celebrates a return to the basics of filmmaking and encourages innovation and creative storytelling.
+Music Composed by Sean Pack
 Choreography JR Wong</description>
     <location>UC McConomy Auditorium</location>
     <start-time>2012-20-04 14:30</start-time>
@@ -1014,7 +1008,7 @@ Choreography JR Wong</description>
     <flyer-updated-at type="datetime">2012-04-19T14:02:01-04:00</flyer-updated-at>
     <created-at type="datetime">2012-04-19T14:02:01-04:00</created-at>
     <updated-at type="datetime">2012-04-19T16:18:59-04:00</updated-at>
-    <summary>This year's festival theme, "The Loop", celebrates a return to the basics of filmmaking and encourages innovation and creative storytelling.r
+    <summary>This year's festival theme, "The Loop", celebrates a return to the basics of filmmaking and encourages innovation and creative storytelling.
 </summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">8</organization-id>
@@ -1154,13 +1148,13 @@ Choreography JR Wong</description>
   <event>
     <id type="integer">45</id>
     <name>Scotch'n'Soda Theatre presents: The Cambridge Footlights</name>
-    <description>Come see our friends from across the pond!r
-r
-The Cambridge Footlights are a sketch comedy troupe from Cambridge University. Their list of alumni is impressive, including Sacha Baron Cohen, Eric Idle, Hugh Laurie, Emma Thompson and more! They'll only be here for one night, so make sure you see them before they move on to their next stop on their international tour!r
-r
-Two Shows: 8:00 PM and 10:00 PM r
-r
-Tickets are $5 w/ student id, and $10 without. r
+    <description>Come see our friends from across the pond!
+
+The Cambridge Footlights are a sketch comedy troupe from Cambridge University. Their list of alumni is impressive, including Sacha Baron Cohen, Eric Idle, Hugh Laurie, Emma Thompson and more! They'll only be here for one night, so make sure you see them before they move on to their next stop on their international tour!
+
+Two Shows: 8:00 PM and 10:00 PM 
+
+Tickets are $5 w/ student id, and $10 without. 
 Reserve tickets now at snstheatre.org</description>
     <location>UC McConomy</location>
     <start-time>2012-21-09 20:00</start-time>
@@ -1187,17 +1181,17 @@ Reserve tickets now at snstheatre.org</description>
   <event>
     <id type="integer">46</id>
     <name>Scotch'n'Soda Theatre's 5th Annual Charity Cabaret Auditions</name>
-    <description>Come audition for Scotch'n'Soda's 5th Annual Charity Cabaret benefitting the Alumni Theater Company which helps provide opportunities for Pittsburgh youth to participate in theater. Find out more at http://www.alumnitheatercompany.org/r
-r
-Sign up for an audition slot at scotch.snstheatre.orgr
-r
-Auditions will take place from Saturday, September 22 to Sunday, September 23. Time slots will vary.r
-r
-r
-The performance will be Friday, October 5th at 8:30pm (Ceilidh Weekend).r
-r
-Please read the description below for exact details about how to prepare for your audition:r
-r
+    <description>Come audition for Scotch'n'Soda's 5th Annual Charity Cabaret benefitting the Alumni Theater Company which helps provide opportunities for Pittsburgh youth to participate in theater. Find out more at http://www.alumnitheatercompany.org/
+
+Sign up for an audition slot at scotch.snstheatre.org
+
+Auditions will take place from Saturday, September 22 to Sunday, September 23. Time slots will vary.
+
+
+The performance will be Friday, October 5th at 8:30pm (Ceilidh Weekend).
+
+Please read the description below for exact details about how to prepare for your audition:
+
 Auditioners need to come prepared with one musical theatre song that they will sing. This song should be performance ready. They should bring an extra copy of the sheet music for their song that the director will keep to give to their accompanist, should they be cast. Auditioners can audition with a maximum of one individual song and then can (but are not required to) audition with others for one additional duet or small group number. If this is the case please select one audition slot for the individual song and then one person in the group should select an additional audition slot for the group number. If you have any questions or are interested in accompanying, please email Will Weiner at wweiner@andrew.cmu.edu</description>
     <location>University Center</location>
     <start-time>2012-22-09 12:00</start-time>
@@ -1224,8 +1218,8 @@ Auditioners need to come prepared with one musical theatre song that they will s
   <event>
     <id type="integer">44</id>
     <name>SCHLAGFEST 2012</name>
-    <description>Hamerschlag's Major Fall Event!r
-r
+    <description>Hamerschlag's Major Fall Event!
+
 SchlagFest 2012- a carnival styled atmosphere constructed entirely by the men of Hamerschalg house. It is hamerschlags coming out party to the entire campus. The entire community will be in awe of the wonderful attraction that will be constructed by the men of Hamerschlag House.</description>
     <location>Carnegie Mellon University (Outdoor Event)</location>
     <start-time>2012-28-09 16:00</start-time>
@@ -1243,7 +1237,7 @@ SchlagFest 2012- a carnival styled atmosphere constructed entirely by the men of
     <flyer-updated-at type="datetime">2012-09-16T01:52:08-04:00</flyer-updated-at>
     <created-at type="datetime">2012-09-16T01:49:26-04:00</created-at>
     <updated-at type="datetime">2012-09-16T01:52:08-04:00</updated-at>
-    <summary>Hamerschlag's Major Fall Event!r
+    <summary>Hamerschlag's Major Fall Event!
 </summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">18</organization-id>
@@ -1253,20 +1247,20 @@ SchlagFest 2012- a carnival styled atmosphere constructed entirely by the men of
   <event>
     <id type="integer">37</id>
     <name>General Body Meeting</name>
-    <description>Engineers Without Borders is having an interest meeting... this Wednesday!r
-r
-Project Symbiosistr
-Our chapter's capstone project, we're working in Rampur to bring sustainable energy to a school in the community. We are working on getting this project off the ground and going strong, so sign up to help out. Check out the India project page to learn more about the village and project.r
-r
-Water Supply &amp; Purification in Ecuadortr
-In partnership with the EWB Pittsburgh Professional Chapter, we are working to design and implement a sustainable water supply system for the 150 residents of the Tingo Pucara community.r
-r
-OUR MISSIONr
-   EWB-USA supports community-driven development programs worldwide by collaborating with local partners to design and implement sustainable engineering projects, while creating transformative experiences and responsible leaders.r
-   The Carnegie Mellon Chapter of EWB-USA seeks to better our members, our university, and our world by implementing socially and environmentally sustainable engineering projects in partnership with developing communities around the globe.r
-r
-OUR HISTORYr
-   The Carnegie Mellon Chapter of Engineers Without Borders-USA was established in 2008, and has been growing strong ever since. One of the fastest growing engineering clubs on campus, we started as just a handful of students interested in similar things but now boast a chapter size of 70 active members. And we don't plan on slowing down. r
+    <description>Engineers Without Borders is having an interest meeting... this Wednesday!
+
+Project Symbiosist
+Our chapter's capstone project, we're working in Rampur to bring sustainable energy to a school in the community. We are working on getting this project off the ground and going strong, so sign up to help out. Check out the India project page to learn more about the village and project.
+
+Water Supply &amp; Purification in Ecuadort
+In partnership with the EWB Pittsburgh Professional Chapter, we are working to design and implement a sustainable water supply system for the 150 residents of the Tingo Pucara community.
+
+OUR MISSION
+   EWB-USA supports community-driven development programs worldwide by collaborating with local partners to design and implement sustainable engineering projects, while creating transformative experiences and responsible leaders.
+   The Carnegie Mellon Chapter of EWB-USA seeks to better our members, our university, and our world by implementing socially and environmentally sustainable engineering projects in partnership with developing communities around the globe.
+
+OUR HISTORY
+   The Carnegie Mellon Chapter of Engineers Without Borders-USA was established in 2008, and has been growing strong ever since. One of the fastest growing engineering clubs on campus, we started as just a handful of students interested in similar things but now boast a chapter size of 70 active members. And we don't plan on slowing down.
 </description>
     <location>DH 2315</location>
     <start-time>2012-29-08 19:00</start-time>
@@ -1284,7 +1278,7 @@ OUR HISTORYr
     <flyer-updated-at type="datetime">2012-08-27T18:03:13-04:00</flyer-updated-at>
     <created-at type="datetime">2012-08-27T17:59:06-04:00</created-at>
     <updated-at type="datetime">2012-08-27T18:03:13-04:00</updated-at>
-    <summary>Engineers Without Borders is having an interest meeting... this Wednesday!r
+    <summary>Engineers Without Borders is having an interest meeting... this Wednesday!
 </summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">1</organization-id>
@@ -1294,10 +1288,10 @@ OUR HISTORYr
   <event>
     <id type="integer">48</id>
     <name>Super</name>
-    <description>AB Films is showing Super on Sunday, September 30, at 6pm, 8pm, and 10pm.r
-r
-Runtime: 96 minutes (1hr 36min) | Price: $1 with CMU ID (must show ID); $3 otherwiser
-r
+    <description>AB Films is showing Super on Sunday, September 30, at 6pm, 8pm, and 10pm.
+
+Runtime: 96 minutes (1hr 36min) | Price: $1 with CMU ID (must show ID); $3 otherwise
+
 Rainn Wilson (Dwight from The Office) stars in this action comedy about an average guy who becomes a superhero without the skills to match the title.</description>
     <location>UC McConomy</location>
     <start-time>2012-30-09 18:00</start-time>
@@ -1324,17 +1318,17 @@ Rainn Wilson (Dwight from The Office) stars in this action comedy about an avera
   <event>
     <id type="integer">80</id>
     <name>Beasts of the Southern Wild</name>
-    <description>AB Films is showing Beasts of the Southern Wild on Friday, February 1r
-r
-Showtimes:r
-r
-8:00 pmr
-10:00 pmr
-Midnightr
-Runtime: 93 minutes (1hr 33min)r
-r
-Price: $1 with CMU ID (must show ID); $3 otherwiser
-r
+    <description>AB Films is showing Beasts of the Southern Wild on Friday, February 1
+
+Showtimes:
+
+8:00 pm
+10:00 pm
+Midnight
+Runtime: 93 minutes (1hr 33min)
+
+Price: $1 with CMU ID (must show ID); $3 otherwise
+
 Nominated for 4 Oscars (2013) including Best Picture and Best Actress (Quvenzhan'e9 Wallis), and winner of the 2012 Sundance Grand Jury Prize, this film explores the journey of one six-year-old girl searching for her mother and her place in the universe - amidst a flooded town and dangerous beasts.</description>
     <location>UC McConomy Auditorium </location>
     <start-time>2013-01-02 20:00</start-time>
@@ -1413,7 +1407,7 @@ Nominated for 4 Oscars (2013) including Best Picture and Best Actress (Quvenzhan
   <event>
     <id type="integer">121</id>
     <name>[SCS Day] Talent Show</name>
-    <description>Gates Hillman Center Rashid Auditorium and Lobby.r
+    <description>Gates Hillman Center Rashid Auditorium and Lobby.
 There will be FREE FOOD and SCS DAY SWAG.</description>
     <location>Rashid</location>
     <start-time>2013-01-03 20:00</start-time>
@@ -1431,7 +1425,7 @@ There will be FREE FOOD and SCS DAY SWAG.</description>
     <flyer-updated-at type="datetime">2013-02-24T16:28:41-05:00</flyer-updated-at>
     <created-at type="datetime">2013-02-24T16:21:19-05:00</created-at>
     <updated-at type="datetime">2013-02-24T16:30:22-05:00</updated-at>
-    <summary>Gates Hillman Center Rashid Auditorium and Lobby.r
+    <summary>Gates Hillman Center Rashid Auditorium and Lobby.
 There will be FREE FOOD and SCS DAY SWAG.</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">3</organization-id>
@@ -1467,12 +1461,12 @@ There will be FREE FOOD and SCS DAY SWAG.</summary>
   <event>
     <id type="integer">162</id>
     <name>TSA</name>
-    <description>Come and kick start your semester with the Official Labor Day Party hosted by ASA, TSA and Mayur-SASA!r
-r
-Buses will run from the UC Turnaround and William Pitt Union starting from 10 PM and will leave every 20 minutes!r
-r
-Tickets are $8 pre-sale and $10 at the door. Look for ASA/TSA/Mayur-SASA members selling tickets inside the UC all week! r
-r
+    <description>Come and kick start your semester with the Official Labor Day Party hosted by ASA, TSA and Mayur-SASA!
+
+Buses will run from the UC Turnaround and William Pitt Union starting from 10 PM and will leave every 20 minutes!
+
+Tickets are $8 pre-sale and $10 at the door. Look for ASA/TSA/Mayur-SASA members selling tickets inside the UC all week! 
+
 Don't miss out!</description>
     <location>Static Nightclub</location>
     <start-time>2013-01-09 22:00</start-time>
@@ -1603,10 +1597,10 @@ Don't miss out!</description>
   <event>
     <id type="integer">82</id>
     <name>Campus Contra Dance!</name>
-    <description>CATS Dance returns to monthly contras, this time with Ron Buchanan calling to Band du Jour! r
-r
-As always, the first few dances will gently introduce beginners to the moves and mindset of contra dancing.r
-r
+    <description>CATS Dance returns to monthly contras, this time with Ron Buchanan calling to Band du Jour! 
+
+As always, the first few dances will gently introduce beginners to the moves and mindset of contra dancing.
+
 If you're able to, bring a snack to share at the break!</description>
     <location>Skibo Small Gym: 5098 Tech Street</location>
     <start-time>2013-03-02 17:30</start-time>
@@ -1624,10 +1618,10 @@ If you're able to, bring a snack to share at the break!</description>
     <flyer-updated-at type="datetime">2013-02-01T12:35:41-05:00</flyer-updated-at>
     <created-at type="datetime">2013-02-01T12:35:41-05:00</created-at>
     <updated-at type="datetime">2013-02-01T12:35:41-05:00</updated-at>
-    <summary>CATS Dance returns to monthly contras, this time with Ron Buchanan calling to Band du Jour! r
-r
-As always, the first few dances will gently introduce beginners to the moves and mindset of contra dancing.r
-r
+    <summary>CATS Dance returns to monthly contras, this time with Ron Buchanan calling to Band du Jour! 
+
+As always, the first few dances will gently introduce beginners to the moves and mindset of contra dancing.
+
 If you're able to, bring a snack to share at the break!</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">23</organization-id>
@@ -1637,17 +1631,17 @@ If you're able to, bring a snack to share at the break!</summary>
   <event>
     <id type="integer">78</id>
     <name>Anna Karenina</name>
-    <description>AB Films is showing Anna Karenina on Sunday, February 3r
-r
-Showtimes:r
-r
-7:30 pmr
-10:00 pmr
-12:30 amr
-Runtime: 129 minutes (2hr 09min)r
-r
-Price: $1 with CMU ID (must show ID); $3 otherwiser
-r
+    <description>AB Films is showing Anna Karenina on Sunday, February 3
+
+Showtimes:
+
+7:30 pm
+10:00 pm
+12:30 am
+Runtime: 129 minutes (2hr 09min)
+
+Price: $1 with CMU ID (must show ID); $3 otherwise
+
 In high-society Russia in the late 19th-century, Anna Karenina - an aristocratic woman who married too young - enters into an affair that shocked the nation. From the director of Pride and Predjudice, comes another tale about love - Keira Knightley, Jude Law, and Aaron Taylor-Johnson star in this 4-time Oscar nominated film (for 2013, including Best Costume Design, and Best Cinematography).</description>
     <location>UC McConomy Auditorium </location>
     <start-time>2013-03-02 19:00</start-time>
@@ -1804,8 +1798,8 @@ In high-society Russia in the late 19th-century, Anna Karenina - an aristocratic
   <event>
     <id type="integer">163</id>
     <name>Fall Activities Fair</name>
-    <description>Carnegie Mellon University is home to 280+ student-run organizations recognized by Student Government. The Office of Student Activities organizes a Fall Activities Fair that will showcase many of our student organizations. Groups span a wide variety of interests and passions representing religious/spiritual, community service/philanthropy, student government, media/publications, club sports/martial arts, professional/academic, political, performance/artistic, gaming, technology, and general interest opportunities.r
-r
+    <description>Carnegie Mellon University is home to 280+ student-run organizations recognized by Student Government. The Office of Student Activities organizes a Fall Activities Fair that will showcase many of our student organizations. Groups span a wide variety of interests and passions representing religious/spiritual, community service/philanthropy, student government, media/publications, club sports/martial arts, professional/academic, political, performance/artistic, gaming, technology, and general interest opportunities.
+
 Recognized Student Organizations will be able to register for the Activities Fair starting Monday, August 19, 2013 through a form on The Bridge. Information will be sent out to all student organization Presidents and Primary Contacts (please make sure you update this information). Register: https://thebridge.cmu.edu/form/start/25350 (copy and paste link)</description>
     <location>CFA Lawn (Rain Location: Wiegand Gym, UC)</location>
     <start-time>2013-04-09 16:30</start-time>
@@ -1832,17 +1826,17 @@ Recognized Student Organizations will be able to register for the Activities Fai
   <event>
     <id type="integer">164</id>
     <name>Bat Boy the Musical Auditions</name>
-    <description>Auditions will take place September 4th, 5th, and 6th.r
-r
-If you'd like to audition, please prepare 16 bars of a musical theatre song and be prepared to read a few scenes from the show.r
-r
-Callbacks will be Sunday, September 8th.r
-r
-Sign up for auditions at snstheatre.org. Clicking attend on this event will not automatically give you an audition time.r
-r
-If you have questions about auditions, email ther
-co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@andrew.cmu.edu. The musical directors, Alex Petti (apetti@andrew.cmu.edu) and Emma Harger (eharger@andrew.cmu.edu) will also be available for contact.r
-r
+    <description>Auditions will take place September 4th, 5th, and 6th.
+
+If you'd like to audition, please prepare 16 bars of a musical theatre song and be prepared to read a few scenes from the show.
+
+Callbacks will be Sunday, September 8th.
+
+Sign up for auditions at snstheatre.org. Clicking attend on this event will not automatically give you an audition time.
+
+If you have questions about auditions, email the
+co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@andrew.cmu.edu. The musical directors, Alex Petti (apetti@andrew.cmu.edu) and Emma Harger (eharger@andrew.cmu.edu) will also be available for contact.
+
 If performing isn't for you, you are welcome to attend our tech interest meeting. All details can be found at https://www.facebook.com/events/191834810995342/?notif_t=plan_user_joined</description>
     <location>UC 318G</location>
     <start-time>2013-04-09 17:30</start-time>
@@ -1860,7 +1854,7 @@ If performing isn't for you, you are welcome to attend our tech interest meeting
     <flyer-updated-at type="datetime">2013-09-01T15:01:15-04:00</flyer-updated-at>
     <created-at type="datetime">2013-09-01T15:01:15-04:00</created-at>
     <updated-at type="datetime">2013-09-01T15:01:15-04:00</updated-at>
-    <summary>If you have questions about auditions, email ther
+    <summary>If you have questions about auditions, email the
 co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@andrew.cmu.edu. The musical directors, Alex Petti (apetti@andrew.cmu.edu) and Emma Harger (eharger@andrew.cmu.edu) will also be available for contact.</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">19</organization-id>
@@ -2286,13 +2280,13 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
   <event>
     <id type="integer">77</id>
     <name>Monsters, Inc.</name>
-    <description>Showtimes:r
-r
-8:00 pmr
-10:00 pmr
-Midnightr
-Runtime: 92 minutes (1hr 32min)r
-r
+    <description>Showtimes:
+
+8:00 pm
+10:00 pm
+Midnight
+Runtime: 92 minutes (1hr 32min)
+
 Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <location>UC McConomy Auditorium</location>
     <start-time>2013-07-02 20:00</start-time>
@@ -2397,18 +2391,18 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
   <event>
     <id type="integer">169</id>
     <name>Stand Up Paddleboarding</name>
-    <description>Pittsburgh Connections goes Stand Up Paddleboarding, the fastest growing water sport in the world!  Join us on this lazy afternoon to try something new and exciting.  No experience is necessary and all equipment is provided.r
-r
-Don't know what Stand Up Paddleboarding is?  That's ok!  Come give it a try anyway.  We promise you'll have a good time.r
-r
-Ticket Cost: $10 (one per CMU ID) Tickets go on sale Sept 2 @ 8am.r
-r
-Bus Departs: 1:15pm from the UC Turnaroundr
-r
-Bus Returns: approx 4:30pmr
-r
- r
-r
+    <description>Pittsburgh Connections goes Stand Up Paddleboarding, the fastest growing water sport in the world!  Join us on this lazy afternoon to try something new and exciting.  No experience is necessary and all equipment is provided.
+
+Don't know what Stand Up Paddleboarding is?  That's ok!  Come give it a try anyway.  We promise you'll have a good time.
+
+Ticket Cost: $10 (one per CMU ID) Tickets go on sale Sept 2 @ 8am.
+
+Bus Departs: 1:15pm from the UC Turnaround
+
+Bus Returns: approx 4:30pm
+
+ 
+
 The Pittsburgh Connections program is coordinated through the Office of Student Activities and is generously funded by the RK Mellon Foundation, the Dozzi family, and the Division of Student Affairs. The program strives to engage students in outdoor recreation, environmental stewardship, and cultural awareness throughout Pittsburgh and Western Pennsylvania. The core goals of these activities are to help students develop and maintain a physically active lifestyle, build leadership skills, and increase their appreciation for the Western Pennsylvania region.</description>
     <location>Northeast Paddleboard Company, McKeesport, PA </location>
     <start-time>2013-07-09 13:00</start-time>
@@ -2435,17 +2429,17 @@ The Pittsburgh Connections program is coordinated through the Office of Student 
   <event>
     <id type="integer">79</id>
     <name>Wreck-It Ralph</name>
-    <description>AB Films is showing Wreck-It Ralph on Friday, February 8r
-r
-Showtimes:r
-r
-8:00 pmr
-10:00 pmr
-Midnightr
-Runtime: 108 minutes (1hr 48min)r
-r
-Price: $1 with CMU ID (must show ID); $3 otherwiser
-r
+    <description>AB Films is showing Wreck-It Ralph on Friday, February 8
+
+Showtimes:
+
+8:00 pm
+10:00 pm
+Midnight
+Runtime: 108 minutes (1hr 48min)
+
+Price: $1 with CMU ID (must show ID); $3 otherwise
+
 Nominated for Best Animated Film for 2013, Disney's "Wreck-It Ralph" follows a video game villain who is tired of being bad in the arcade game where he lives.</description>
     <location>UC McConomy Auditorium </location>
     <start-time>2013-08-02 20:00</start-time>
@@ -2498,27 +2492,26 @@ Nominated for Best Animated Film for 2013, Disney's "Wreck-It Ralph" follows a v
   <event>
     <id type="integer">83</id>
     <name>Chinese New Year Dinner</name>
-    <description>Come celebrate the beginning of the Year of the Snake with Awareness of Roots in Chinese Culture (ARCC) by enjoying traditional Chinese dishes! Here's the menu:r
-r
-~APPETIZERS~r
-Dumplingsr
-Tea eggsr
-r
-~SOUP~r
-Beef meatball soup with wintermelonr
-r
-~ENTREES~r
-Double cooked porkr
-Braised mince porkr
-Chicken legsr
-Bok choyr
-Stir fried noodles with veggiesr
-Pumpkin and porkr
-r
-~DESSERTS~r
-Creamy custard bunr
-Nian gao (year cake)r
-r
+    <description>Come celebrate the beginning of the Year of the Snake with Awareness of Roots in Chinese Culture (ARCC) by enjoying traditional Chinese dishes! Here's the menu:
+~APPETIZERS~
+Dumplings
+Tea eggs
+
+~SOUP~
+Beef meatball soup with wintermelon
+
+~ENTREES~
+Double cooked pork
+Braised mince pork
+Chicken legs
+Bok choy
+Stir fried noodles with veggies
+Pumpkin and pork
+
+~DESSERTS~
+Creamy custard bun
+Nian gao (year cake)
+
 Tickets are $10 pre-sale and $12 at the door if there are any left over. We'll be tabling the week before Chinese New Year Dinner (week of 2/4) and selling tickets along with dumplings.</description>
     <location>UC Connan </location>
     <start-time>2013-09-02 18:00</start-time>
@@ -2545,17 +2538,17 @@ Tickets are $10 pre-sale and $12 at the door if there are any left over. We'll b
   <event>
     <id type="integer">81</id>
     <name>The Incredibles</name>
-    <description>AB Films is showing The Incredibles on Saturday, February 9r
-r
-Showtimes:r
-r
-8:00 pmr
-10:00 pmr
-Midnightr
-Runtime: 115 minutes (1hr 55min)r
-r
-Price: $1 with CMU ID (must show ID); $3 otherwiser
-r
+    <description>AB Films is showing The Incredibles on Saturday, February 9
+
+Showtimes:
+
+8:00 pm
+10:00 pm
+Midnight
+Runtime: 115 minutes (1hr 55min)
+
+Price: $1 with CMU ID (must show ID); $3 otherwise
+
 Winner of the Best Animated Film at the Oscars in 2005, Disney/Pixar's "The Incredibles" is the hilarious and action-filled tale about a super family trying to blend in, and the dad who can't let go of his heroic past.</description>
     <location>UC McConomy Auditorium </location>
     <start-time>2013-09-02 20:00</start-time>
@@ -2582,9 +2575,9 @@ Winner of the Best Animated Film at the Oscars in 2005, Disney/Pixar's "The Incr
   <event>
     <id type="integer">170</id>
     <name>CMU Bhangra Tryouts</name>
-    <description>Come audition for CMU Bhangra! Sign up at bit.ly/cmubhangrar
-r
-r
+    <description>Come audition for CMU Bhangra! Sign up at bit.ly/cmubhangra
+
+
 The tryouts involve a learning session to learn the tryout choregraphy, and an audition slot during which you will perform that choreography. Please sign up for one of each (on the form linked above).</description>
     <location>Buildings on campus</location>
     <start-time>2013-09-09 17:00</start-time>
@@ -2663,7 +2656,7 @@ The tryouts involve a learning session to learn the tryout choregraphy, and an a
   <event>
     <id type="integer">180</id>
     <name>Spiceworks Tech Talk</name>
-    <description>Spiceworks will be giving CMU students the chance to '93show off their smarts'94 and win. They will have a scavenger hunt style programming game and will be giving away 10 Raspberry Pi'92s and maybe more :)r
+    <description>Spiceworks will be giving CMU students the chance to '93show off their smarts'94 and win. They will have a scavenger hunt style programming game and will be giving away 10 Raspberry Pi'92s and maybe more :)
 </description>
     <location>GHC 4405</location>
     <start-time>2013-09-10 18:00</start-time>
@@ -2681,7 +2674,7 @@ The tryouts involve a learning session to learn the tryout choregraphy, and an a
     <flyer-updated-at type="datetime">2013-10-09T11:46:08-04:00</flyer-updated-at>
     <created-at type="datetime">2013-10-08T16:27:49-04:00</created-at>
     <updated-at type="datetime">2013-10-09T11:46:08-04:00</updated-at>
-    <summary>Spiceworks will be giving CMU students the chance to '93show off their smarts'94 and win. They will have a scavenger hunt style programming game and will be giving away 10 Raspberry Pi'92s and maybe more :)r
+    <summary>Spiceworks will be giving CMU students the chance to '93show off their smarts'94 and win. They will have a scavenger hunt style programming game and will be giving away 10 Raspberry Pi'92s and maybe more :)
 </summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">3</organization-id>
@@ -2795,10 +2788,10 @@ The tryouts involve a learning session to learn the tryout choregraphy, and an a
   <event>
     <id type="integer">173</id>
     <name>Study Abroad Information Session</name>
-    <description>Interested in learning more about study abroad? r
-r
-Where you can go, what you can do?r
-r
+    <description>Interested in learning more about study abroad? 
+
+Where you can go, what you can do?
+
 Come to a brief information session to learn more about the possibility of study abroad!</description>
     <location>Dowd Room, UC</location>
     <start-time>2013-10-09 12:00</start-time>
@@ -2816,10 +2809,10 @@ Come to a brief information session to learn more about the possibility of study
     <flyer-updated-at type="datetime">2013-09-01T15:15:59-04:00</flyer-updated-at>
     <created-at type="datetime">2013-09-01T15:15:59-04:00</created-at>
     <updated-at type="datetime">2013-09-01T15:15:59-04:00</updated-at>
-    <summary>Interested in learning more about study abroad? r
-r
-Where you can go, what you can do?r
-r
+    <summary>Interested in learning more about study abroad? 
+
+Where you can go, what you can do?
+
 Come to a brief information session to learn more about the possibility of study abroad!</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">15</organization-id>
@@ -3011,12 +3004,12 @@ Come to a brief information session to learn more about the possibility of study
   <event>
     <id type="integer">98</id>
     <name>Origami Rose Sales</name>
-    <description>Origami Club will be selling beautiful Origami Roses!  Come buy your sweetheart a rose that will last forever, just like your love! r
-r
-We will be selling on February 12 and 13, from 5-9PM in the UCr
-r
-One rose for $2r
-r
+    <description>Origami Club will be selling beautiful Origami Roses!  Come buy your sweetheart a rose that will last forever, just like your love! 
+
+We will be selling on February 12 and 13, from 5-9PM in the UC
+
+One rose for $2
+
 Three roses for $5.</description>
     <location>UC</location>
     <start-time>2013-12-02 17:00</start-time>
@@ -3034,7 +3027,7 @@ Three roses for $5.</description>
     <flyer-updated-at type="datetime">2013-02-10T14:43:16-05:00</flyer-updated-at>
     <created-at type="datetime">2013-02-10T14:43:16-05:00</created-at>
     <updated-at type="datetime">2013-02-10T14:43:16-05:00</updated-at>
-    <summary>Origami Club will be selling beautiful Origami Roses!  Come buy your sweetheart a rose that will last forever, just like your love! r
+    <summary>Origami Club will be selling beautiful Origami Roses!  Come buy your sweetheart a rose that will last forever, just like your love! 
 </summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">34</organization-id>
@@ -3096,8 +3089,8 @@ Three roses for $5.</description>
   <event>
     <id type="integer">97</id>
     <name>AB Skibo Presents - Craig Schoedler</name>
-    <description>For a change of pace, come see Craig Schoedler jazz it up with the bass in Skibo Cafe. His critically acclaimed music has been well-recieved both in the US and Europe, exploring styles ranging from Bach Cello Suites to Beatles covers.r
-r
+    <description>For a change of pace, come see Craig Schoedler jazz it up with the bass in Skibo Cafe. His critically acclaimed music has been well-recieved both in the US and Europe, exploring styles ranging from Bach Cello Suites to Beatles covers.
+
 Craig Schoedler will be at Skibo Cafe Wednesday, Feb. 13 at 6:00pm.</description>
     <location>Skibo Cafe </location>
     <start-time>2013-13-02 18:00</start-time>
@@ -3176,15 +3169,15 @@ Craig Schoedler will be at Skibo Cafe Wednesday, Feb. 13 at 6:00pm.</description
   <event>
     <id type="integer">94</id>
     <name>The Master</name>
-    <description>AB Films is showing The Master on Thursday, February 14r
-r
-Showtimes:r
-r
-7:30 pmr
-10:00 pmr
-12:30 amr
-Runtime: 144 minutes (2hr 24min)r
-r
+    <description>AB Films is showing The Master on Thursday, February 14
+
+Showtimes:
+
+7:30 pm
+10:00 pm
+12:30 am
+Runtime: 144 minutes (2hr 24min)
+
 Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <location>UC McConomy Auditorium</location>
     <start-time>2013-14-02 19:30</start-time>
@@ -3237,13 +3230,13 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
   <event>
     <id type="integer">93</id>
     <name>Life of Pi</name>
-    <description>AB Films is showing Life of Pi on Friday, February 15r
-Showtimes:r
-7:30 pmr
-10:00 pmr
-12:30 amr
-Runtime: 127 minutes (2hr 7min)r
-r
+    <description>AB Films is showing Life of Pi on Friday, February 15
+Showtimes:
+7:30 pm
+10:00 pm
+12:30 am
+Runtime: 127 minutes (2hr 7min)
+
 Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <location>UC McConomy Auditorium </location>
     <start-time>2013-15-02 19:30</start-time>
@@ -3270,29 +3263,29 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
   <event>
     <id type="integer">96</id>
     <name>12 ANGRY MEN</name>
-    <description>Tickets are available at snstheatre.orgr
-$3 Student/$5 Generalr
-r
-Show times are:r
-February 15th at 8pmr
-February 16th at 2pm &amp; 6pmr
-r
-Director: James Alexanderr
-Assistant Director: Ethan Crystalr
-r
-CAST r
-Juror #1: Diane Koeller r
-Juror #2: Emma Harger r
-Juror #3: Kevin Handerhan r
-Juror #4: Eleanor Lewis r
-Juror #5: Raz Golden r
-Juror #6: Tyler Harper r
-Juror #7: Bradley Plaxen r
-Juror #8: Andrew Bueno r
-Juror #9: Erika Tang r
-Juror #10: Christopher Sparks r
-Juror #11: SL Rao r
-Juror #12: Richman Neumann r
+    <description>Tickets are available at snstheatre.org
+$3 Student/$5 General
+
+Show times are:
+February 15th at 8pm
+February 16th at 2pm &amp; 6pm
+
+Director: James Alexander
+Assistant Director: Ethan Crystal
+
+CAST 
+Juror #1: Diane Koeller 
+Juror #2: Emma Harger 
+Juror #3: Kevin Handerhan 
+Juror #4: Eleanor Lewis 
+Juror #5: Raz Golden 
+Juror #6: Tyler Harper 
+Juror #7: Bradley Plaxen 
+Juror #8: Andrew Bueno 
+Juror #9: Erika Tang 
+Juror #10: Christopher Sparks 
+Juror #11: SL Rao 
+Juror #12: Richman Neumann 
 Bailiff: Billy Veer</description>
     <location>UC Peter/Wright/McKenna </location>
     <start-time>2013-15-02 20:00</start-time>
@@ -3397,8 +3390,8 @@ Bailiff: Billy Veer</description>
   <event>
     <id type="integer">104</id>
     <name>Battlezone 6: Freestyle Dance Battles</name>
-    <description>Battlezone 6, hosted by International Freestylers, is an annual hip hop dance event.r
-We will have two events: breakdance 1v1's and all style(where any style of hip hop goes) 1v1's.r
+    <description>Battlezone 6, hosted by International Freestylers, is an annual hip hop dance event.
+We will have two events: breakdance 1v1's and all style(where any style of hip hop goes) 1v1's.
 This is an awesome opportunity to see freestyle battles and to be exposed to hip hop dance. Admission is free!</description>
     <location>UC Commons </location>
     <start-time>2013-16-02 21:00</start-time>
@@ -3416,8 +3409,8 @@ This is an awesome opportunity to see freestyle battles and to be exposed to hip
     <flyer-updated-at type="datetime">2013-02-10T15:03:42-05:00</flyer-updated-at>
     <created-at type="datetime">2013-02-10T15:03:42-05:00</created-at>
     <updated-at type="datetime">2013-02-10T15:03:42-05:00</updated-at>
-    <summary>Battlezone 6, hosted by International Freestylers, is an annual hip hop dance event.r
-We will have two events: breakdance 1v1's and all style(where any style of hip hop goes) 1v1's.r
+    <summary>Battlezone 6, hosted by International Freestylers, is an annual hip hop dance event.
+We will have two events: breakdance 1v1's and all style(where any style of hip hop goes) 1v1's.
 This is an awesome opportunity to see freestyle battles and to be exposed to hip hop dance. Admission is free!</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">31</organization-id>
@@ -3661,7 +3654,7 @@ This is an awesome opportunity to see freestyle battles and to be exposed to hip
   <event>
     <id type="integer">151</id>
     <name>Why Capitalism? </name>
-    <description>Join a discussion and book signing with Dr. Allan Meltzer, The Allan H. Meltzer Professor of Political Economy. Pick up a copy of the book at the bookstore.r
+    <description>Join a discussion and book signing with Dr. Allan Meltzer, The Allan H. Meltzer Professor of Political Economy. Pick up a copy of the book at the bookstore.
 </description>
     <location>Mellon Auditorium, Tepper</location>
     <start-time>2013-20-04 10:00</start-time>
@@ -3679,7 +3672,7 @@ This is an awesome opportunity to see freestyle battles and to be exposed to hip
     <flyer-updated-at type="datetime">2013-04-19T17:49:05-04:00</flyer-updated-at>
     <created-at type="datetime">2013-04-19T17:42:46-04:00</created-at>
     <updated-at type="datetime">2013-04-19T17:49:05-04:00</updated-at>
-    <summary>Join a discussion and book signing with Dr. Allan Meltzer, The Allan H. Meltzer Professor of Political Economy. Pick up a copy of the book at the bookstore.r
+    <summary>Join a discussion and book signing with Dr. Allan Meltzer, The Allan H. Meltzer Professor of Political Economy. Pick up a copy of the book at the bookstore.
 </summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">1</organization-id>
@@ -3689,7 +3682,7 @@ This is an awesome opportunity to see freestyle battles and to be exposed to hip
   <event>
     <id type="integer">152</id>
     <name>Zumba Networking Mixer</name>
-    <description>You've never networked like this! Join the Hispanic and Latino Alumni Association for a 30 minute Zumba session and refreshments. Don't know what Zumba is? Now is your opportunity to see what all the excitement is about. Plan to move your body! r
+    <description>You've never networked like this! Join the Hispanic and Latino Alumni Association for a 30 minute Zumba session and refreshments. Don't know what Zumba is? Now is your opportunity to see what all the excitement is about. Plan to move your body! 
 </description>
     <location>Activities Room, UC</location>
     <start-time>2013-20-04 11:00</start-time>
@@ -3707,7 +3700,7 @@ This is an awesome opportunity to see freestyle battles and to be exposed to hip
     <flyer-updated-at type="datetime">2013-04-19T17:49:31-04:00</flyer-updated-at>
     <created-at type="datetime">2013-04-19T17:43:46-04:00</created-at>
     <updated-at type="datetime">2013-04-19T17:49:31-04:00</updated-at>
-    <summary>You've never networked like this! Join the Hispanic and Latino Alumni Association for a 30 minute Zumba session and refreshments. Don't know what Zumba is? Now is your opportunity to see what all the excitement is about. Plan to move your body! r
+    <summary>You've never networked like this! Join the Hispanic and Latino Alumni Association for a 30 minute Zumba session and refreshments. Don't know what Zumba is? Now is your opportunity to see what all the excitement is about. Plan to move your body! 
 </summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">10</organization-id>
@@ -4133,8 +4126,8 @@ This is an awesome opportunity to see freestyle battles and to be exposed to hip
   <event>
     <id type="integer">67</id>
     <name>Midnight Snack and Break to Sign the Fence</name>
-    <description>Mmmhm paint...r
-r
+    <description>Mmmhm paint...
+
 Beware of lead poisoning.</description>
     <location>GHC + The Fence</location>
     <start-time>2013-26-01 00:00</start-time>
@@ -4152,8 +4145,8 @@ Beware of lead poisoning.</description>
     <flyer-updated-at type="datetime">2013-01-20T15:16:23-05:00</flyer-updated-at>
     <created-at type="datetime">2013-01-20T15:15:02-05:00</created-at>
     <updated-at type="datetime">2013-01-20T15:16:23-05:00</updated-at>
-    <summary>Mmmhm paint...r
-r
+    <summary>Mmmhm paint...
+
 Beware of lead poisoning.</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">29</organization-id>
@@ -4189,8 +4182,8 @@ Beware of lead poisoning.</summary>
   <event>
     <id type="integer">72</id>
     <name>END OF HACKING and Dinnertime</name>
-    <description>You must complete a submission to the Audition submission system, available through TartanHacks' OnStage platform before 6:00:00PM EST on Saturday, January 26th, 2013.r
-r
+    <description>You must complete a submission to the Audition submission system, available through TartanHacks' OnStage platform before 6:00:00PM EST on Saturday, January 26th, 2013.
+
 Hacks submitted late will not be eligible for prizes.</description>
     <location>Gates-Hillman Center</location>
     <start-time>2013-26-01 18:00</start-time>
@@ -4243,7 +4236,7 @@ Hacks submitted late will not be eligible for prizes.</description>
   <event>
     <id type="integer">70</id>
     <name>Judging and Talk on Startups</name>
-    <description>Demos have been complete, and the judges are ready to decide the best hacks of the night! Drumroll please...r
+    <description>Demos have been complete, and the judges are ready to decide the best hacks of the night! Drumroll please...
 Later, a sweet startup talk to inspire you to innovate!</description>
     <location>Rashid Auditorium</location>
     <start-time>2013-26-01 20:30</start-time>
@@ -4322,7 +4315,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
   <event>
     <id type="integer">122</id>
     <name>[Google] Tech Talk (Search Engines)</name>
-    <description>Come learn about what goes into building and designing a product that serves r
+    <description>Come learn about what goes into building and designing a product that serves 
 100 billion searches a month (and counting!)</description>
     <location>Rashid</location>
     <start-time>2013-26-02 17:00</start-time>
@@ -4340,7 +4333,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <flyer-updated-at type="datetime">2013-02-24T16:30:06-05:00</flyer-updated-at>
     <created-at type="datetime">2013-02-24T16:21:19-05:00</created-at>
     <updated-at type="datetime">2013-02-24T16:30:06-05:00</updated-at>
-    <summary>Come learn about what goes into building and designing a product that serves r
+    <summary>Come learn about what goes into building and designing a product that serves 
 100 billion searches a month (and counting!)</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">3</organization-id>
@@ -4393,13 +4386,13 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <flyer-updated-at type="datetime">2013-02-24T16:25:34-05:00</flyer-updated-at>
     <created-at type="datetime">2013-02-24T16:21:19-05:00</created-at>
     <updated-at type="datetime">2013-02-24T16:25:34-05:00</updated-at>
-    <summary>Topics:r
- Kerberos/AFSr
- CLI Applicationsr
- MacPortsr
- CLI Tricksr
- Bash Scriptingr
- Apache Setupr
+    <summary>Topics:
+ Kerberos/AFS
+ CLI Applications
+ MacPorts
+ CLI Tricks
+ Bash Scripting
+ Apache Setup
  Making Debian Packages</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">3</organization-id>

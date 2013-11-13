@@ -20,6 +20,7 @@ public class TeuduEventParser {
 	
 	public TeuduEventParser() {
 		events = new DynamicEventList();
+		events.clear();
 	}
 	
 	public DynamicEventList parse(InputStream in) throws XmlPullParserException, IOException {

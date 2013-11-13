@@ -1,7 +1,12 @@
 package com.smart.evie;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.Set;
+
+import android.util.Log;
 
 import com.main.evie.DynamicEventList;
 import com.main.evie.Event;
@@ -31,6 +36,10 @@ public class BagOfWords {
 	/** The events instance that is used for allPolls **/
 	private final DynamicEventList events;
 	
+	/** List of trivial words we don't want to include in classification **/
+	private Set<String> trivialWords = new HashSet<String>
+							(Arrays.asList("the", "a", "of", "is", "in", "an", "and", "or"));
+	
 	public BagOfWords(DynamicEventList events) {
 		int wordCount = 0;
 		this.wordIndexMap = new Hashtable<String, Integer>();
@@ -42,17 +51,78 @@ public class BagOfWords {
 		
 		/* Count words and create mappings of words to indices */
 		for (Event event: events.getEvents()) {
-			/* Tokenize on whitespace */
-			String[] description = event.getDescription().split(REGEX_WHITESPACE);
+			/* Remove all punctuation, lowercase, and tokenize on whitespace */
+			String[] description = sanitizeDescription(event);
 			
 			/* Map each word to indices */
 			for (String word: description) {
+
+				word = removeFormatting(word);
+				
+				if ( inTrivialWordList(word) ) {
+					/* We don't need to consider the word */
+					continue;
+				}
+				
 				if (!this.wordIndexMap.containsKey(word)) {
 					this.wordIndexMap.put(word, wordCount);
 					wordCount++;
 				}
 			}
 		}
+		
+		//logWords();
+	}
+
+	private String[] sanitizeDescription(Event event) {
+		String allWords = event.getDescription().concat(" " + event.getName()).concat(" " + event.getName());
+		String[] description = allWords.
+				replaceAll("[^a-zA-Z ]", " ").split(REGEX_WHITESPACE);
+		return description;
+	}
+	
+	/**
+	 * Removes all formatting of the word - current includes removal of 
+	 * "ing" and "ed", and converts to all lowercase.
+	 * @param word
+	 * @return
+	 */
+	private String removeFormatting(String word) {
+		word = word.toLowerCase();
+		
+		String endingPresent = "ing";
+		String endingPast = "ed";
+		
+		if (word.length() >= endingPast.length()) {
+			word = removeSuffix(word, endingPast);
+		} else if (word.length() >= endingPresent.length()) {
+			word = removeSuffix(word, endingPresent);
+		}
+
+		return word;
+	}
+	
+	/**
+	 * invariant: suffix must have size less than or equal to size of word
+	 * @param word
+	 * @param suffix
+	 * @return
+	 */
+	private String removeSuffix(String word, String suffix) {
+		int suffixOffset = word.length() - suffix.length();
+
+		if ( word.substring(suffixOffset).equals(suffix) ) {
+			word = word.substring(0, suffixOffset + 1);
+		}
+		
+		return word;
+	}
+	
+	private boolean inTrivialWordList(String word) {
+		if (trivialWords.contains(word)) {
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -71,9 +141,16 @@ public class BagOfWords {
 			double eventWordPoll[] = new double[this.wordIndexMap.size()]; 
 			
 			/* Tokenize on whitespace */
-			String[] description = event.getDescription().split(REGEX_WHITESPACE);
+			String[] description = sanitizeDescription(event);
 			
 			for (String word: description) {
+				word = removeFormatting(word);
+				
+				if ( inTrivialWordList(word) ) {
+					/* We don't need to consider the word */
+					continue;
+				}
+				
 				eventWordPoll[this.wordIndexMap.get(word)]++;
 			}
 
@@ -104,5 +181,28 @@ public class BagOfWords {
 	 */
 	public ArrayList<double[]> getPollResult() {
 		return this.allPolls;
+	}
+	
+	/**
+	 * Prints contents of bag of words into logcat
+	 */
+	public void log() {
+		Log.i("evie_debug", "BAGOFWORDS RESULTS");
+		for (double[] wordCount: this.allPolls) {
+			String currentCount = "[";
+			for (double count: wordCount) {
+				currentCount += count + ", ";
+			}
+			currentCount += "]";
+
+			Log.i("evie_debug", "wordcount " + currentCount);
+		}
+		
+	}
+	
+	public void logWords() {
+		for (String word : this.wordIndexMap.keySet()) {
+			Log.i("evie_debug", "Word: " + word);
+		}
 	}
 }

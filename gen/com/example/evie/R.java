@@ -29,6 +29,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+        public static final int b_rescan=0x7f0b0007;
         public static final int button1=0x7f0b001b;
         public static final int checkBox1=0x7f0b0013;
         public static final int checkBox2=0x7f0b0014;
@@ -57,7 +58,6 @@ public final class R {
         public static final int textView6=0x7f0b0010;
         public static final int tv_event_detail_description=0x7f0b0001;
         public static final int tv_event_detail_name=0x7f0b0000;
-        public static final int tv_free_food_text=0x7f0b0007;
         public static final int tv_header=0x7f0b0003;
     }
     public static final class integer {
@@ -77,6 +77,7 @@ public final class R {
     }
     public static final class raw {
         public static final int rawtrainingdata=0x7f040000;
+        public static final int testdata=0x7f040001;
     }
     public static final class string {
         public static final int academicKey=0x7f070017;

@@ -8,7 +8,7 @@ public class KMeans {
 	 * K-means implementation for classifying event descriptions into`
 	 * unlabeled clusters.
 	 */
-	private static final int DEFAULT_K = 2;
+	private static final int DEFAULT_K = 3;
 	
 	private int k;
 	

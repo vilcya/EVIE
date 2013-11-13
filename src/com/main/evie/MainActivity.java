@@ -10,12 +10,14 @@ import java.util.ArrayList;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -44,7 +46,7 @@ public class MainActivity extends Activity {
     private static boolean mobileConnected = true; 
     public static String sPref = null;
 
-	private static DynamicEventList dynamicEvents;
+	private static DynamicEventList dynamicEvents = new DynamicEventList();
 	private WifiScanClickListener scanListener;
 	
 	ArrayList<double[]> trainingResults;
@@ -76,10 +78,12 @@ public class MainActivity extends Activity {
 		loadEvents();
 		
 		/* Setup location scan button */
-		/* this.scanListener = new WifiScanClickListener(this);
+		/*
+		this.scanListener = new WifiScanClickListener(this);
 		Button scanLocationButton = (Button) this.findViewById(R.id.b_rescan);
 		scanLocationButton.setOnClickListener(this.scanListener);
-		this.scanListener.registerReceiver(); */
+		this.scanListener.registerReceiver();
+		*/
 
 		/* Setup free food toggle */
 		ToggleButton freeFoodToggle = (ToggleButton) this.findViewById(R.id.tb_free_food);
@@ -101,13 +105,18 @@ public class MainActivity extends Activity {
 	 * 		1. Triggers k-means training if it is needed 
 	 */
 	private void setupSmartSystem() {
+    	UpdateEventsCallback eventCallback = new UpdateEventsCallback(this, dynamicEvents);
+		eventCallback.updateList();
+    	Handler eventChangeHandler = new Handler(Looper.getMainLooper(), eventCallback);
+		dynamicEvents.setHandler(eventChangeHandler);
+
 		Toast.makeText(getApplicationContext(), "Setting up smart system", Toast.LENGTH_LONG).show();
 
 		String filename = this.getResources().getString(R.string.filename_trained_data);
 		File file = this.getApplicationContext().getFileStreamPath(filename); 
 
 		Toast.makeText(getApplicationContext(), "Got the file", Toast.LENGTH_LONG).show();
-		
+
 		if (file.exists()) {
 			/* We've already trained on this data */
 			Toast.makeText(getApplicationContext(), "File exists", Toast.LENGTH_LONG).show();
@@ -117,8 +126,7 @@ public class MainActivity extends Activity {
 		Toast.makeText(getApplicationContext(), "File does not exist", Toast.LENGTH_LONG).show();
 		
 		/* Loads training data into dynamicEvents */
-		InputStream stream = this.getResources().openRawResource(R.raw.rawtrainingdata);
-		dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(stream);
+		dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(true, this);
 
 		this.bagOfWords = new BagOfWords(dynamicEvents);
 		ArrayList<double[]> trainingData = this.bagOfWords.pollWords();
@@ -128,20 +136,29 @@ public class MainActivity extends Activity {
 		KMeans kmeans = new KMeans();
 		this.trainingResults = kmeans.train(trainingData);
 
-		 // TEMPORARY
-		/*String resultsString = "";
-		
-		for (double[] means: this.trainingResults) {
-			for (double mean: means) {
-				resultsString += mean;
-			}
-		}*/
+		/* Remove this if no want results */
+		//logResults();
 		
 		Toast.makeText(getApplicationContext(), "Training RESULTS: " + this.trainingResults, Toast.LENGTH_LONG).show();
 
 		populateCategorySpinner();
 	}
 	
+	private void logResults() {
+		bagOfWords.log();
+		
+		Log.i("evie_debug", "TRAINING RESULTS");
+		for (double[] wordCount: this.trainingResults) {
+			String currentCount = "[";
+			for (double count: wordCount) {
+				currentCount += count + ", ";
+			}
+			currentCount += "]";
+
+			Log.i("evie_debug", "wordcount " + currentCount);
+		}
+	}
+
 	private void populateCategorySpinner() {
 		Spinner categorySpinner = (Spinner) findViewById(R.id.s_category);
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -154,22 +171,19 @@ public class MainActivity extends Activity {
 	
     // Uses AsyncTask to download the events XML from Teudu
     private void loadEvents() {
+    	/*
         if((wifiConnected || mobileConnected)) {
             //new DownloadEventsXmlTask().execute(URL);
         	try {
-	            dynamicEvents = new DownloadEventsXmlTask().loadXmlFromNetwork(URL);
+				dynamicEvents = new DownloadEventsXmlTask().loadXmlFromNetwork(URL);
 	        } catch (IOException e) {
 	            return;
 	        } catch (XmlPullParserException e) {
 	            return;
 	        }
-        }
+        }*/
 
-		UpdateEventsCallback eventCallback = new UpdateEventsCallback(this, dynamicEvents);
-		eventCallback.updateList();
-		Handler eventChangeHandler = new Handler(Looper.getMainLooper(), eventCallback);
-		dynamicEvents.setHandler(eventChangeHandler);
-		
+    	dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(false, this);
 		dynamicEvents.categorize(this.trainingResults, this.bagOfWords);
     }
 
@@ -183,14 +197,18 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onPause() {
 		super.onPause();
-		//this.scanListener.deregisterReceiver();
+		if (this.scanListener != null) {
+			this.scanListener.deregisterReceiver();
+		}
 		/* TODO: clean up listeners */
 	}
 	
 	@Override
 	protected void onResume() {
 		super.onResume();
-		//this.scanListener.registerReceiver();
+		if (this.scanListener != null) {
+			this.scanListener.registerReceiver();
+		}
 		/* TODO: re-register listeners */
 	}
 
@@ -206,8 +224,8 @@ public class MainActivity extends Activity {
 	
 	/* ---- EVENT DOWNLOADING ---- */
 	
-	private class DownloadEventsXmlTask extends AsyncTask<String, Void, DynamicEventList> {
-		@Override
+	private class DownloadEventsXmlTask /*extends AsyncTask<String, Void, DynamicEventList> */{
+		/*@Override
 	    protected DynamicEventList doInBackground(String... urls) {
 	        try {
 	            return loadXmlFromNetwork(urls[0]);
@@ -221,7 +239,7 @@ public class MainActivity extends Activity {
 		@Override
 	    protected void onPostExecute(DynamicEventList result) {  
 	        dynamicEvents = result;
-	    }
+	    }*/
 
 		// Uploads XML from teudu, parses it, and combines it with
 		// HTML markup. Returns HTML string.
@@ -250,7 +268,13 @@ public class MainActivity extends Activity {
 		/**
 		 * Used for training
 		 */
-		private DynamicEventList loadXmlFromFile(InputStream stream) {
+		private DynamicEventList loadXmlFromFile(boolean training, Context context) {
+			InputStream stream = null;
+			if (training) {
+				stream = context.getResources().openRawResource(R.raw.rawtrainingdata);
+			} else {
+				stream = context.getResources().openRawResource(R.raw.testdata);
+			}
 			TeuduEventParser teuduEventParser = new TeuduEventParser();
 			DynamicEventList events = null;
 

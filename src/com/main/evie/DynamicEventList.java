@@ -19,19 +19,10 @@ import com.smart.evie.KMeans;
 public class DynamicEventList{
 	
 	/** Includes all events */
-	private ArrayList<Event> allEvents;
+	private static ArrayList<Event> allEvents = new ArrayList<Event>();
 	/** Events that the user sees at a given time */
-	private ArrayList<Event> filteredEvents;
+	private static ArrayList<Event> filteredEvents = new ArrayList<Event>();
 	private static Handler eventChangeHandler = null;
-	
-	public DynamicEventList() {
-		this.allEvents = new ArrayList<Event>();
-		this.filteredEvents = new ArrayList<Event>();
-		
-		if (eventChangeHandler != null) { 
-			sendChangeEventMessage();
-		}
-	}
 	
 	public void setHandler(Handler eventChangeHandler) {
 		DynamicEventList.eventChangeHandler = eventChangeHandler;
@@ -52,8 +43,8 @@ public class DynamicEventList{
 					String location, String imgUrl, String categories, boolean cancelled) {
 		Event newEvent = new Event(id, name, description, startTime, endTime, location, imgUrl, categories, cancelled);
 		id++;
-		this.allEvents.add(newEvent);
-		this.filteredEvents.add(newEvent);
+		DynamicEventList.allEvents.add(newEvent);
+		DynamicEventList.filteredEvents.add(newEvent);
 	}
 
 	/**
@@ -63,18 +54,18 @@ public class DynamicEventList{
 	 * @return Event at the given position
 	 */
 	public Event getEventAt(int position) throws ArrayIndexOutOfBoundsException {
-		return allEvents.get(position);
+		return DynamicEventList.allEvents.get(position);
 	}
 	
 	public ArrayList<Event> getEvents() {
-		return this.filteredEvents;
+		return DynamicEventList.filteredEvents;
 	}
 
 	public void filterFreeFood() {
-		this.filteredEvents.clear();
-		for (Event event: this.allEvents) {
+		DynamicEventList.filteredEvents.clear();
+		for (Event event: DynamicEventList.allEvents) {
 			if (event.getDescription().toLowerCase(Locale.getDefault()).contains("food")) {
-				this.filteredEvents.add(event);
+				DynamicEventList.filteredEvents.add(event);
 			}
 		}
 		
@@ -87,29 +78,41 @@ public class DynamicEventList{
 	}
 
 	public void filterByCategory(int label) {
-		this.filteredEvents.clear();
-		for (Event event: this.allEvents) {
+		DynamicEventList.filteredEvents.clear();
+		for (Event event: DynamicEventList.allEvents) {
 			if (event.getLabel() == label) {
-				this.filteredEvents.add(event);
+				DynamicEventList.filteredEvents.add(event);
 			}
 		}
-		
+
 		sendChangeEventMessage();
 	}
 	
 	public void removeFilters() {
-		this.filteredEvents = new ArrayList<Event>(this.allEvents);
+		DynamicEventList.filteredEvents = new ArrayList<Event>(DynamicEventList.allEvents);
 		sendChangeEventMessage();
 	}
 
 	public void categorize(ArrayList<double[]> trainingData, BagOfWords bagOfWords) {
 
-		for (Event event: this.filteredEvents) {
+		for (Event event: DynamicEventList.filteredEvents) {
 			double[] featureVector = bagOfWords.poll(event.getDescription());
 			KMeans classifier = new KMeans();
 			int category = classifier.label(trainingData, featureVector);
 			event.categorize(category);
 		}
+		
+		sendChangeEventMessage();
+	}
+	
+	/**
+	 * Clears all events - hack for Teudu event parser - will later 
+	 * 	look for duplicates using ID
+	 */
+	public void clear() {
+		DynamicEventList.allEvents.clear();
+		DynamicEventList.filteredEvents.clear();
+		sendChangeEventMessage();
 	}
 	
 	/**
