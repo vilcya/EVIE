@@ -273,7 +273,7 @@ public class MainActivity extends Activity {
 			if (training) {
 				stream = context.getResources().openRawResource(R.raw.testdata);
 			} else {
-				stream = context.getResources().openRawResource(R.raw.testdata);
+				stream = context.getResources().openRawResource(R.raw.rawtrainingdata);
 			}
 			TeuduEventParser teuduEventParser = new TeuduEventParser();
 			DynamicEventList events = null;
