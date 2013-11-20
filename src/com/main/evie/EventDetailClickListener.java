@@ -12,7 +12,9 @@ import com.example.evie.R;
 public class EventDetailClickListener implements OnItemClickListener {
 
 	private final Context context;
-	EventDetailClickListener(Context context, DynamicEventList dynamicEvents) {
+	private DynamicEventList events = new DynamicEventList();
+	
+	EventDetailClickListener(Context context) {
 		this.context = context;
 	}
 
@@ -22,6 +24,8 @@ public class EventDetailClickListener implements OnItemClickListener {
 	}
 	
 	private void goToEventDetails(int eventPosition) {
+		events.updateUserPreference(eventPosition);
+
 		Intent eventDetailsIntent = new Intent(context, EventDetails.class);
 		eventDetailsIntent.putExtra(context.getString(R.string.event_position), eventPosition);
 		context.startActivity(eventDetailsIntent);

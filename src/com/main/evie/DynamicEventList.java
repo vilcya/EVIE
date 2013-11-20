@@ -11,6 +11,7 @@ import android.os.Message;
 
 import com.smart.evie.BagOfWords;
 import com.smart.evie.KMeans;
+import com.smart.evie.UserPreference;
 
 /**
  * Contains list of events that dynamically updates based on location changes.
@@ -22,6 +23,7 @@ public class DynamicEventList{
 	private static ArrayList<Event> allEvents = new ArrayList<Event>();
 	/** Events that the user sees at a given time */
 	private static ArrayList<Event> filteredEvents = new ArrayList<Event>();
+	private static UserPreference userPreferences = new UserPreference();
 	private static Handler eventChangeHandler = null;
 	
 	public void setHandler(Handler eventChangeHandler) {
@@ -103,6 +105,10 @@ public class DynamicEventList{
 		}
 		
 		sendChangeEventMessage();
+	}
+	
+	public void updateUserPreference(int position) {
+		userPreferences.addInterestedEvent(DynamicEventList.filteredEvents.get(position));
 	}
 	
 	/**
