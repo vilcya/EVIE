@@ -114,6 +114,10 @@ public class MainActivity extends Activity {
 
 		String filename = this.getResources().getString(R.string.filename_trained_data);
 		File file = this.getApplicationContext().getFileStreamPath(filename); 
+		
+		Availability a = new Availability(getApplicationContext());
+		int numEvents = a.numEvents();
+		Toast.makeText(getApplicationContext(), "Number of Events: " + Integer.toString(numEvents), Toast.LENGTH_LONG).show();
 
 		Toast.makeText(getApplicationContext(), "Got the file", Toast.LENGTH_LONG).show();
 
