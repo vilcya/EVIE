@@ -26,7 +26,7 @@ public class UpdateEventsCallback implements Handler.Callback {
 		EventAdapter adapter = new EventAdapter(this.context, R.layout.event_grid_item, this.dynamicEvents.getEvents());
 		GridView gridView = (GridView) ((MainActivity)this.context).findViewById(R.id.gv_main);
 		gridView.setAdapter(adapter);
-		gridView.setOnItemClickListener(new EventDetailClickListener(this.context, this.dynamicEvents));
+		gridView.setOnItemClickListener(new EventDetailClickListener(this.context));
 	}
 
 	@Override

@@ -76,9 +76,13 @@ public class BagOfWords {
 
 	private String[] sanitizeDescription(Event event) {
 		String allWords = event.getDescription().concat(" " + event.getName()).concat(" " + event.getName());
-		String[] description = allWords.
+		return sanitizeWords(allWords);
+	}
+	
+	private String[] sanitizeWords(String words) {
+		String[] sanitizedWords = words.
 				replaceAll("[^a-zA-Z ]", " ").split(REGEX_WHITESPACE);
-		return description;
+		return sanitizedWords;
 	}
 	
 	/**
@@ -163,9 +167,12 @@ public class BagOfWords {
 	public double[] poll(String words) {
 		double[] featureVector = new double[wordIndexMap.size()];
 		
-		for (String word: words.split(REGEX_WHITESPACE)) {
+		for (String word: sanitizeWords(words)) {
 			/* CURRENTLY IGNORES NEW WORDS - UPDATE THIS!!! */
-			if (this.wordIndexMap.containsKey(word)) { 
+			
+			word = removeFormatting(word);
+
+			if (!inTrivialWordList(word) && this.wordIndexMap.containsKey(word)) { 
 				featureVector[this.wordIndexMap.get(word)]++;
 			}
 		}
