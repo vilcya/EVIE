@@ -12,7 +12,7 @@ import com.main.evie.Event;
  * Bag of Words
  * 
  * Example: 
- * 		BagOfWords bag = new BagOfWords(DynamicEventList);
+ * 		BagOfWords bag = new BagOfWords();
  * 		ArrayList<int[]> results = bag.pollWords();
  * 
  * Later access of same results (note pollWords must have been called before):
