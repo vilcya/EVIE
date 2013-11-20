@@ -8,6 +8,7 @@ import java.util.Locale;
 import android.net.wifi.ScanResult;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 
 import com.smart.evie.BagOfWords;
 import com.smart.evie.KMeans;
@@ -23,7 +24,7 @@ public class DynamicEventList{
 	private static ArrayList<Event> allEvents = new ArrayList<Event>();
 	/** Events that the user sees at a given time */
 	private static ArrayList<Event> filteredEvents = new ArrayList<Event>();
-	private static UserPreference userPreferences = new UserPreference();
+	private static UserPreference userPreference = new UserPreference();
 	private static Handler eventChangeHandler = null;
 	
 	public void setHandler(Handler eventChangeHandler) {
@@ -61,6 +62,10 @@ public class DynamicEventList{
 	
 	public ArrayList<Event> getEvents() {
 		return DynamicEventList.filteredEvents;
+	}
+	
+	public ArrayList<Event> getAllEvents() {
+		return DynamicEventList.allEvents;
 	}
 
 	public void filterFreeFood() {
@@ -108,7 +113,11 @@ public class DynamicEventList{
 	}
 	
 	public void updateUserPreference(int position) {
-		userPreferences.addInterestedEvent(DynamicEventList.filteredEvents.get(position));
+		String words = DynamicEventList.filteredEvents.get(position).extractImportantText(); 
+		DynamicEventList.filteredEvents.clear();
+		DynamicEventList.filteredEvents = this.userPreference.addWords(words);
+		
+		sendChangeEventMessage();
 	}
 	
 	/**

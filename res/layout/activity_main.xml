@@ -47,12 +47,14 @@
         android:layout_alignTop="@+id/tb_free_food"
         android:text="Scan Location" />
 
-    <Spinner
-        android:id="@+id/s_category"
+    <Button
+        android:id="@+id/b_showall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/tb_free_food"
         android:layout_toLeftOf="@+id/tb_free_food"
-        android:layout_toRightOf="@+id/b_rescan" />
+        android:layout_toRightOf="@+id/b_rescan" 
+        android:text="Show All Events"/>
+    
 
 </RelativeLayout>

@@ -123,4 +123,8 @@ public class Event {
 	public void categorize(int category) {
 		this.category = category;
 	}
+	
+	public String extractImportantText() {
+		return this.description.concat(" " + this.name);
+	}
 }

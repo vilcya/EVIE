@@ -1,10 +1,7 @@
 package com.smart.evie;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Hashtable;
-import java.util.Set;
 
 import android.util.Log;
 
@@ -25,41 +22,35 @@ import com.main.evie.Event;
  *
  */
 public class BagOfWords {
-	private static final String REGEX_WHITESPACE = "\\s+";
-
 	/** Hashtable that maps words to its index **/
 	private Hashtable<String, Integer> wordIndexMap;
 	
 	/** List of all word pollings across events **/
 	private ArrayList<double[]> allPolls;
 	
-	/** The events instance that is used for allPolls **/
-	private final DynamicEventList events;
-	
-	/** List of trivial words we don't want to include in classification **/
-	private Set<String> trivialWords = new HashSet<String>
-							(Arrays.asList("the", "a", "of", "is", "in", "an", "and", "or"));
-	
-	public BagOfWords(DynamicEventList events) {
+	private StringFormatting format;
+
+	public BagOfWords() {
 		int wordCount = 0;
 		this.wordIndexMap = new Hashtable<String, Integer>();
-		this.events = events;
-
+		this.format = new StringFormatting();
+		DynamicEventList events = new DynamicEventList();
+		
 		if (events == null) {
 			return;
 		}
-		
+
 		/* Count words and create mappings of words to indices */
-		for (Event event: events.getEvents()) {
+		for (Event event: events.getAllEvents()) {
 			/* Remove all punctuation, lowercase, and tokenize on whitespace */
-			String[] description = sanitizeDescription(event);
+			String[] description = sanitizeEvent(event);
 			
 			/* Map each word to indices */
 			for (String word: description) {
 
-				word = removeFormatting(word);
+				word = this.format.removeFormatting(word);
 				
-				if ( inTrivialWordList(word) ) {
+				if ( this.format.inTrivialWordList(word) ) {
 					/* We don't need to consider the word */
 					continue;
 				}
@@ -70,64 +61,14 @@ public class BagOfWords {
 				}
 			}
 		}
-		
 		//logWords();
 	}
-
-	private String[] sanitizeDescription(Event event) {
-		String allWords = event.getDescription().concat(" " + event.getName()).concat(" " + event.getName());
-		return sanitizeWords(allWords);
+	
+	private String[] sanitizeEvent(Event event) {
+		String words = event.extractImportantText();
+		return format.sanitizeWords(words);
 	}
 	
-	private String[] sanitizeWords(String words) {
-		String[] sanitizedWords = words.
-				replaceAll("[^a-zA-Z ]", " ").split(REGEX_WHITESPACE);
-		return sanitizedWords;
-	}
-	
-	/**
-	 * Removes all formatting of the word - current includes removal of 
-	 * "ing" and "ed", and converts to all lowercase.
-	 * @param word
-	 * @return
-	 */
-	private String removeFormatting(String word) {
-		word = word.toLowerCase();
-		
-		String endingPresent = "ing";
-		String endingPast = "ed";
-		
-		if (word.length() >= endingPast.length()) {
-			word = removeSuffix(word, endingPast);
-		} else if (word.length() >= endingPresent.length()) {
-			word = removeSuffix(word, endingPresent);
-		}
-
-		return word;
-	}
-	
-	/**
-	 * invariant: suffix must have size less than or equal to size of word
-	 * @param word
-	 * @param suffix
-	 * @return
-	 */
-	private String removeSuffix(String word, String suffix) {
-		int suffixOffset = word.length() - suffix.length();
-
-		if ( word.substring(suffixOffset).equals(suffix) ) {
-			word = word.substring(0, suffixOffset + 1);
-		}
-		
-		return word;
-	}
-	
-	private boolean inTrivialWordList(String word) {
-		if (trivialWords.contains(word)) {
-			return true;
-		}
-		return false;
-	}
 
 	/**
 	 * Counts words in each description
@@ -135,22 +76,22 @@ public class BagOfWords {
 	 * 
 	 * @return New arraylist - could be empty if no events or no descriptions 
 	 */
-	public ArrayList<double[]> pollWords() {
+	public ArrayList<double[]> pollWords(ArrayList<Event> events) {
 		allPolls = new ArrayList<double[]>();
 		
 		/* Run through events and poll for each one */
-		for (Event event: events.getEvents()) {
+		for (Event event: events) {
 			
 			/* Default value on initialization guaranteed to be 0 */
 			double eventWordPoll[] = new double[this.wordIndexMap.size()]; 
 			
 			/* Tokenize on whitespace */
-			String[] description = sanitizeDescription(event);
+			String[] words = sanitizeEvent(event);
 			
-			for (String word: description) {
-				word = removeFormatting(word);
+			for (String word: words) {
+				word = format.removeFormatting(word);
 				
-				if ( inTrivialWordList(word) ) {
+				if ( format.inTrivialWordList(word) ) {
 					/* We don't need to consider the word */
 					continue;
 				}
@@ -167,17 +108,21 @@ public class BagOfWords {
 	public double[] poll(String words) {
 		double[] featureVector = new double[wordIndexMap.size()];
 		
-		for (String word: sanitizeWords(words)) {
+		for (String word: format.sanitizeWords(words)) {
 			/* CURRENTLY IGNORES NEW WORDS - UPDATE THIS!!! */
 			
-			word = removeFormatting(word);
+			word = format.removeFormatting(word);
 
-			if (!inTrivialWordList(word) && this.wordIndexMap.containsKey(word)) { 
+			if (!format.inTrivialWordList(word) && this.wordIndexMap.containsKey(word)) { 
 				featureVector[this.wordIndexMap.get(word)]++;
 			}
 		}
 
 		return featureVector;
+	}
+	
+	public int getSize() {
+		return this.wordIndexMap.size();
 	}
 	
 	/**

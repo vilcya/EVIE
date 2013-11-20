@@ -13,19 +13,18 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -57,7 +56,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		setupSmartSystem();
+		//setupSmartSystem();
 		setupStartPageFeatures();
 	}
 
@@ -97,6 +96,9 @@ public class MainActivity extends Activity {
 				}
 			}
 		});
+		
+		Button showAllEvents = (Button) this.findViewById(R.id.b_showall);
+		showAllEvents.setOnClickListener(new ShowAllEventsButtonListener());
 	}
 	
 	/**
@@ -128,8 +130,8 @@ public class MainActivity extends Activity {
 		/* Loads training data into dynamicEvents */
 		dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(true, this);
 
-		this.bagOfWords = new BagOfWords(dynamicEvents);
-		ArrayList<double[]> trainingData = this.bagOfWords.pollWords();
+		this.bagOfWords = new BagOfWords();
+		ArrayList<double[]> trainingData = this.bagOfWords.pollWords(dynamicEvents.getAllEvents());
 
 		Toast.makeText(getApplicationContext(), "TRAINING DATA: " + trainingData.toString(), Toast.LENGTH_LONG).show();
 		
@@ -141,7 +143,7 @@ public class MainActivity extends Activity {
 		
 		Toast.makeText(getApplicationContext(), "Training RESULTS: " + this.trainingResults, Toast.LENGTH_LONG).show();
 
-		populateCategorySpinner();
+	
 	}
 	
 	private void logResults() {
@@ -158,7 +160,7 @@ public class MainActivity extends Activity {
 			Log.i("evie_debug", "wordcount " + currentCount);
 		}
 	}
-
+/*
 	private void populateCategorySpinner() {
 		Spinner categorySpinner = (Spinner) findViewById(R.id.s_category);
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -167,10 +169,15 @@ public class MainActivity extends Activity {
 		categorySpinner.setAdapter(adapter);
 
 		categorySpinner.setOnItemSelectedListener(new CategorySortSpinnerListener());
-	}
+	}*/
 	
     // Uses AsyncTask to download the events XML from Teudu
     private void loadEvents() {
+    	UpdateEventsCallback eventCallback = new UpdateEventsCallback(this, dynamicEvents);
+		eventCallback.updateList();
+    	Handler eventChangeHandler = new Handler(Looper.getMainLooper(), eventCallback);
+		dynamicEvents.setHandler(eventChangeHandler);
+
     	/*
         if((wifiConnected || mobileConnected)) {
             //new DownloadEventsXmlTask().execute(URL);
@@ -184,7 +191,7 @@ public class MainActivity extends Activity {
         }*/
 
     	dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(false, this);
-		dynamicEvents.categorize(this.trainingResults, this.bagOfWords);
+		//dynamicEvents.categorize(this.trainingResults, this.bagOfWords);
     }
 
 	@Override
@@ -271,9 +278,9 @@ public class MainActivity extends Activity {
 		private DynamicEventList loadXmlFromFile(boolean training, Context context) {
 			InputStream stream = null;
 			if (training) {
-				stream = context.getResources().openRawResource(R.raw.testdata);
-			} else {
 				stream = context.getResources().openRawResource(R.raw.rawtrainingdata);
+			} else {
+				stream = context.getResources().openRawResource(R.raw.testdata);
 			}
 			TeuduEventParser teuduEventParser = new TeuduEventParser();
 			DynamicEventList events = null;
@@ -312,6 +319,15 @@ public class MainActivity extends Activity {
 		@Override
 		public void onNothingSelected(AdapterView<?> arg0) {
 			/* Do nothing */
+		}
+		
+	}
+	
+	private static class ShowAllEventsButtonListener implements OnClickListener {
+
+		@Override
+		public void onClick(View view) {
+			MainActivity.dynamicEvents.removeFilters();
 		}
 		
 	}
