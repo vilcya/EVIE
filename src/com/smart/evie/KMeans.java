@@ -13,6 +13,8 @@ public class KMeans {
 	private static final int DEFAULT_K = 5;
 	
 	private int k;
+	private VectorUtil vectorUtil = new VectorUtil();
+	
 	
 	public KMeans() {
 		this(DEFAULT_K);
@@ -56,7 +58,7 @@ public class KMeans {
 			// assign training data to a cluster
 			for (double[] featureVector : trainingData) {
 				int clusterLabel = label(means, featureVector);
-				clusterSums.set(clusterLabel, sumVectors(clusterSums.get(clusterLabel), featureVector));
+				clusterSums.set(clusterLabel, vectorUtil.sumVectors(clusterSums.get(clusterLabel), featureVector));
 				clusterSizes.set(clusterLabel, clusterSizes.get(clusterLabel) + 1);
 			}
 			
@@ -65,14 +67,14 @@ public class KMeans {
 			boolean allSame = true;
 			for (int clusterIndex = 0; clusterIndex < clusterSums.size(); ++clusterIndex) {
 				int clusterSize = clusterSizes.get(clusterIndex);
-				double[] clusterMean = divideVector(clusterSums.get(clusterIndex), clusterSize == 0? 1 : clusterSize);
+				double[] clusterMean = vectorUtil.divideVector(clusterSums.get(clusterIndex), clusterSize == 0? 1 : clusterSize);
 				
-				double similarity = this.cosineSimilarity(means.get(clusterIndex), clusterMean);
+				double similarity = vectorUtil.cosineSimilarity(means.get(clusterIndex), clusterMean);
 				
 				if ( similarity < 1-epsilon) { 
 					allSame = false;
 				}
-				Log.i("evie_debug", "SIMILARITY " + similarity);
+				//Log.i("evie_debug", "SIMILARITY " + similarity);
 
 				means.set(clusterIndex, clusterMean);
 			}
@@ -81,6 +83,7 @@ public class KMeans {
 			stop = allSame;
 		}
 
+		/*
 		for (double[] meanList : means) {
 			Log.i("evie_debug", "start cluster");
 			for (double mean : meanList) {
@@ -89,6 +92,7 @@ public class KMeans {
 					
 			Log.i("evie_debug", "end cluster");
 		}
+		*/
 		
 		return means;
 	}
@@ -103,70 +107,15 @@ public class KMeans {
 		double maxCosine = -1;
 		
 		for (int meanIndex = 0; meanIndex < means.size(); ++meanIndex) {
-			double distance = cosineSimilarity(means.get(meanIndex), toTrainFeatures);
+			double distance = vectorUtil.cosineSimilarity(means.get(meanIndex), toTrainFeatures);
 			if (distance > maxCosine) {
 				clusterLabel = meanIndex;
 				maxCosine = distance;
 			}
 		}
 		
-		Log.i("evie_debug", "Cluster labelled as " + Double.toString(clusterLabel));
+		//Log.i("evie_debug", "Cluster labelled as " + Double.toString(clusterLabel));
 		return clusterLabel;
 	}
 	
-	private double euclideanDistance(double[] v1, double[] v2) {
-		double sum = 0;
-		
-		/*
-		 *  Want this to throw an exception if the two aren't the same size,
-		 *  so have it iterate to the max size of the two vectors
-		 */
-		for (int i = 0; i < Math.max(v1.length, v2.length); ++i ) {
-			sum += Math.pow((v1[i] - v2[i]),2);
-		}
-
-		return Math.sqrt(sum);
-	}
-	
-	private double cosineSimilarity(double[] v1, double[] v2) {
-		return dotProduct(v1, v2)/(magnitude(v1)*magnitude(v2));
-	}
-	
-	private double dotProduct(double[] v1, double[] v2) {
-		double sum = 0;
-		
-		for (int i = 0; i < Math.max(v1.length, v2.length); ++i) {
-			sum += v1[i]*v2[i];
-		}
-		
-		return sum;
-	}
-	
-	private double magnitude(double[] v) {
-		double sum = 0;
-		
-		for (int i = 0; i < v.length; ++i) {
-			sum += Math.pow(v[i],2);
-		}
-		
-		return Math.sqrt(sum);
-	}
-	
-	private double[] sumVectors(double[] v1, double[] v2) {
-		double[] sums = new double[Math.max(v1.length, v2.length)];
-		
-		for (int i = 0; i < sums.length; ++i) {
-			sums[i] = v1[i] + v2[i];	
-		}
-		
-		return sums;
-	}
-	
-	private double[] divideVector(double[] v, double scalar) {
-		for (int vIndex = 0; vIndex < v.length; ++vIndex) {
-			v[vIndex] = v[vIndex]/scalar;
-		}
-		
-		return v;
-	}
 }

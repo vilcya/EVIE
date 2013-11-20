@@ -27,6 +27,8 @@ public class EventDetails extends Activity {
 		this.event = new DynamicEventList().getEventAt(eventPosition);
 		
 		setEventDetailsView();
+		
+		new DynamicEventList().updateUserPreference(eventPosition);
 	}
 	
 	private void setEventDetailsView() {
