@@ -3,6 +3,7 @@
 
     <!-- Default string for placeholder purposes -->
     <string name="hello_world">Hello world!</string>
+    <string name="recommendations">Recommendations</string>
     
     <string name="app_name">EVIE</string>
     <string name="action_settings">Settings</string>

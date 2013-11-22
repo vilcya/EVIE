@@ -18,16 +18,20 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class EventAdapter extends ArrayAdapter<Event>{
-
+	
+	private static int numColors;
 	private static ArrayList<Event> events; 
 	private static Context context;
 	private static int resource;
+	private static int count;
 	
 	public EventAdapter(Context context, int resource, ArrayList<Event> events) {
 		super(context, resource, events);
+		this.count = 0;
 		this.context = context;
 		this.resource = resource;
 		this.events = events;
+		this.numColors = this.context.getResources().getInteger(R.integer.num_colors);
 	}
 
 	@Override
@@ -41,8 +45,13 @@ public class EventAdapter extends ArrayAdapter<Event>{
 			
 			eventViews = new EventViewComponents();
 			eventViews.eventName = (TextView) row.findViewById(R.id.event_name);
-			eventViews.eventImage = (ImageView) row.findViewById(R.id.event_icon);
+			
+			//eventViews.eventImage = (ImageView) row.findViewById(R.id.event_icon);
 			row.setTag(eventViews);
+			
+			int color = context.getResources().obtainTypedArray(R.array.eventbg).getColor(count % numColors, 0);
+			row.setBackgroundColor(color);
+			count++;
 		} else {
 			eventViews = (EventViewComponents) row.getTag();
 		}

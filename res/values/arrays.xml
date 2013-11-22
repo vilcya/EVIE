@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="eventbg">
+    	<item>#E94E77</item>
+    	<item>#82345B</item>
+    	<item>#C8CD6B</item>
+    	<item>#91D5E8</item>
+    </array>
+</resources>
