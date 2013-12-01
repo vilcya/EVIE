@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
+import com.main.evie.Availability;
 import com.main.evie.DynamicEventList;
 import com.main.evie.Event;
 
@@ -14,6 +17,7 @@ public class UserPreference {
 	private static final int RECOMMENDATIONS = 10;
 	private static final int RECENT_WEIGHT = 3;
 	private static final double DECAY = 0.8;
+	private static final double EVENT_CAP_WEIGHT = -0.8;
 
 	private double means[];
 	private int meanNumber;
@@ -29,7 +33,7 @@ public class UserPreference {
 		this.meanNumber = 0;
 	}
 
-	public ArrayList<Event> addWords(String words) {
+	public ArrayList<Event> addWords(String words, int numEvents) {
 		this.bag = new BagOfWords();
 		ArrayList<double[]> allPollResults = this.bag.pollWords(this.events.getAllEvents());
 		double poll[] = this.bag.poll(words);
@@ -47,8 +51,12 @@ public class UserPreference {
 		}
 		
 		ArrayList<Event> topRecommendations = new ArrayList<Event>();
+		int event_size_cap = Math.min(queue.size(), 
+				(int)Math.ceil(EVENT_CAP_WEIGHT*numEvents + (numEvents+5)));
+		
+		Log.i("evie_debug", "showing" + event_size_cap + " events out of " + queue.size());
 
-		for (int i = 0; i < RECOMMENDATIONS; i++ ) {
+		for (int i = 0; i < event_size_cap; i++ ) {
 			if (queue.isEmpty()) {
 				Log.i("evie_debug", "queue is empty");
 				break;

@@ -34,10 +34,6 @@ public class Availability {
 		Calendar beginTime = Calendar.getInstance();
 		long startMillis = beginTime.getTimeInMillis();
 		Calendar endTime = Calendar.getInstance();
-		//endTime.set(Calendar.YEAR, 2013);
-		//endTime.set(Calendar.DAY_OF_MONTH, 10);
-		//endTime.set(Calendar.MONTH, Calendar.DECEMBER);
-		//endTime.set(2013, Calendar.DECEMBER, 10, 8, 0);
 		endTime.add(Calendar.WEEK_OF_YEAR,2);
 		long endMillis = endTime.getTimeInMillis();
 		DateFormat format = new SimpleDateFormat("MM/dd/yyyy");
