@@ -19,11 +19,11 @@ import android.widget.TextView;
 
 public class EventAdapter extends ArrayAdapter<Event>{
 	
-	private static int numColors;
-	private static ArrayList<Event> events; 
-	private static Context context;
-	private static int resource;
-	private static int count;
+	private int numColors;
+	private final ArrayList<Event> events; 
+	private Context context;
+	private int resource;
+	private int count;
 	
 	public EventAdapter(Context context, int resource, ArrayList<Event> events) {
 		super(context, resource, events);
@@ -69,7 +69,7 @@ public class EventAdapter extends ArrayAdapter<Event>{
 		return row;
 	}
 	
-	private static class EventViewComponents {
+	private class EventViewComponents {
 		ImageView eventImage;
 		TextView eventName;
 	}

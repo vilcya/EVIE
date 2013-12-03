@@ -19,13 +19,19 @@ import com.smart.evie.UserPreference;
  *
  */
 public class DynamicEventList{
+	private static final int FILTER_ALL = 0;
+	private static final int FILTER_RECOMMENDED = 1;
+	private static final int FILTER_NEARBY = 2;
+	private static final int FILTER_FOOD = 3;
 	
 	/** Includes all events */
 	private static ArrayList<Event> allEvents = new ArrayList<Event>();
 	/** Events that the user sees at a given time */
+	private static ArrayList<Event> recommendedEvents = new ArrayList<Event>();
 	private static ArrayList<Event> filteredEvents = new ArrayList<Event>();
 	private static UserPreference userPreference = new UserPreference();
 	private static Handler eventChangeHandler = null;
+	private static String location = "";
 	
 	public void setHandler(Handler eventChangeHandler) {
 		DynamicEventList.eventChangeHandler = eventChangeHandler;
@@ -47,7 +53,6 @@ public class DynamicEventList{
 		Event newEvent = new Event(id, name, description, startTime, endTime, location, imgUrl, categories, cancelled);
 		id++;
 		DynamicEventList.allEvents.add(newEvent);
-		DynamicEventList.filteredEvents.add(newEvent);
 	}
 
 	/**
@@ -68,6 +73,27 @@ public class DynamicEventList{
 		return DynamicEventList.allEvents;
 	}
 
+	public void filter(int position) {
+		switch (position) {
+		case FILTER_ALL:
+			removeFilters();
+			break;
+		case FILTER_RECOMMENDED:
+			filterByRecommended();
+			break;
+		case FILTER_NEARBY:
+			filterByLocation();
+			break;
+		case FILTER_FOOD:
+			filterFreeFood();
+			break;
+		default:
+			Log.w("evie_debug", "WARNING: INDEX OUT OF BOUNDS");
+		};
+
+		sendChangeEventMessage();
+	}
+
 	public void filterFreeFood() {
 		DynamicEventList.filteredEvents.clear();
 		for (Event event: DynamicEventList.allEvents) {
@@ -75,13 +101,19 @@ public class DynamicEventList{
 				DynamicEventList.filteredEvents.add(event);
 			}
 		}
-		
-		sendChangeEventMessage();
 	}
 	
-	public void filterByLocation(List<ScanResult> scanResults) {
-		filterFreeFood();
-		sendChangeEventMessage();
+	public void updateLocation(String location) {
+		DynamicEventList.location = location;
+	}
+	
+	public void filterByLocation () {
+		DynamicEventList.filteredEvents.clear();
+		for (Event event:DynamicEventList.allEvents) {
+			if (DynamicEventList.location.equals(event.getLocation())) {
+				DynamicEventList.filteredEvents.add(event);
+			}
+		}
 	}
 
 	public void filterByCategory(int label) {
@@ -91,13 +123,14 @@ public class DynamicEventList{
 				DynamicEventList.filteredEvents.add(event);
 			}
 		}
-
-		sendChangeEventMessage();
+	}
+	
+	public void filterByRecommended() {
+		DynamicEventList.filteredEvents = new ArrayList<Event>(DynamicEventList.recommendedEvents);
 	}
 	
 	public void removeFilters() {
 		DynamicEventList.filteredEvents = new ArrayList<Event>(DynamicEventList.allEvents);
-		sendChangeEventMessage();
 	}
 
 	public void categorize(ArrayList<double[]> trainingData, BagOfWords bagOfWords) {
@@ -113,11 +146,9 @@ public class DynamicEventList{
 	}
 	
 	public void updateUserPreference(int position) {
-		String words = DynamicEventList.filteredEvents.get(position).extractImportantText(); 
-		DynamicEventList.filteredEvents.clear();
-		DynamicEventList.filteredEvents = this.userPreference.addWords(words);
-		
-		sendChangeEventMessage();
+		String words = DynamicEventList.filteredEvents.get(position).extractImportantText();
+		DynamicEventList.recommendedEvents.clear();
+		DynamicEventList.recommendedEvents = this.userPreference.addWords(words);
 	}
 	
 	/**
