@@ -17,6 +17,8 @@
         android:id="@+id/event_name"
     	android:layout_width="150dp"
     	android:layout_height="150dp"
+    	android:paddingLeft="20dp"
+    	android:paddingRight="20dp"
     	android:text="Dummy event"
     	android:gravity="center"
     	android:textSize="15dp"

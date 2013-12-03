@@ -18,15 +18,17 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.Button;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -34,7 +36,7 @@ import android.widget.ToggleButton;
 import com.example.evie.R;
 import com.smart.evie.BagOfWords;
 import com.smart.evie.KMeans;
-import com.wifi.evie.WifiScanClickListener;
+import com.wifi.evie.PeriodicWifiScanner;
 
 public class MainActivity extends Activity {
 	public static final String WIFI = "Wi-Fi";
@@ -42,13 +44,13 @@ public class MainActivity extends Activity {
     private static final String URL = "http://teudu.andrew.cmu.edu/events.xml";
    
     // Whether there is a Wi-Fi connection.
-    private static boolean wifiConnected = false; 
+    private static boolean wifiConnected = false;
     // Whether there is a mobile connection.
-    private static boolean mobileConnected = true; 
+    private static boolean mobileConnected = true;
     public static String sPref = null;
 
 	private static DynamicEventList dynamicEvents = new DynamicEventList();
-	private WifiScanClickListener scanListener;
+	private PeriodicWifiScanner scanListener;
 	
 	ArrayList<double[]> trainingResults;
 	BagOfWords bagOfWords;
@@ -74,16 +76,16 @@ public class MainActivity extends Activity {
 		
 		/* Setup welcome text */
 		TextView headerText = (TextView) this.findViewById(R.id.tv_header);
-		headerText.setText("Hello " + userData.getString(getString(R.string.nameKey), "world") + "! You are in Gates 4307.");
+		headerText.setText("Please wait while we look up your location ...");
 
+		/* Setup drawer */
+		setupDrawer();
+		
 		loadEvents();
 		/* Setup location scan button */
-		/*
-		this.scanListener = new WifiScanClickListener(this);
-		Button scanLocationButton = (Button) this.findViewById(R.id.b_rescan);
-		scanLocationButton.setOnClickListener(this.scanListener);
+		this.scanListener = new PeriodicWifiScanner(this);
 		this.scanListener.registerReceiver();
-		*/
+		this.scanListener.startPeriodicScans();
 
 		/* Setup free food toggle */
 		ToggleButton freeFoodToggle = (ToggleButton) this.findViewById(R.id.tb_free_food);
@@ -97,9 +99,25 @@ public class MainActivity extends Activity {
 				}
 			}
 		});
+	}
+	
+	/**
+	 * Populates the drawer with relevant options
+	 */
+	private void setupDrawer() {
+		TextView header = new TextView(this);
+		header.setText("Filter Options");
+		header.setTextColor(getResources().getColor(R.color.Bisque));
+		header.setBottom(50);
+		header.setGravity(Gravity.CENTER);
+		header.setTextSize(30);
+
+		ListView drawerList = (ListView) findViewById(R.id.ll_drawer);
+		drawerList.addHeaderView(header, R.layout.event_list_item, false);
 		
-		Button showAllEvents = (Button) this.findViewById(R.id.b_showall);
-		showAllEvents.setOnClickListener(new ShowAllEventsButtonListener());
+		String[] menu = getResources().getStringArray(R.array.drawermenu);
+		drawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.event_list_item, menu));
+		drawerList.setOnItemClickListener(new DrawerMenuClickListener(this));
 	}
 	
 	/**
@@ -162,16 +180,6 @@ public class MainActivity extends Activity {
 			Log.i("evie_debug", "wordcount " + currentCount);
 		}
 	}
-/*
-	private void populateCategorySpinner() {
-		Spinner categorySpinner = (Spinner) findViewById(R.id.s_category);
-		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-		        R.array.categories_array, android.R.layout.simple_spinner_item);
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		categorySpinner.setAdapter(adapter);
-
-		categorySpinner.setOnItemSelectedListener(new CategorySortSpinnerListener());
-	}*/
 	
     // Uses AsyncTask to download the events XML from Teudu
     private void loadEvents() {
@@ -311,26 +319,29 @@ public class MainActivity extends Activity {
 		}
 	}
 	
-	private static class CategorySortSpinnerListener implements OnItemSelectedListener {
+	private static class DrawerMenuClickListener implements OnItemClickListener {
 
-		@Override
-		public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-			MainActivity.dynamicEvents.filterByCategory(pos);
-		}
-
-		@Override
-		public void onNothingSelected(AdapterView<?> arg0) {
-			/* Do nothing */
+		private Context context;
+		
+		DrawerMenuClickListener(Context context) {
+			this.context = context;
 		}
 		
-	}
-	
-	private static class ShowAllEventsButtonListener implements OnClickListener {
-
 		@Override
-		public void onClick(View view) {
-			MainActivity.dynamicEvents.removeFilters();
+		public void onItemClick(AdapterView<?> parent, View view, int position,
+				long id) {
+			
+			Log.i("evie_debug", "DRAWER DEBUG position: " + position);
+			
+			DrawerLayout drawer = (DrawerLayout) ((MainActivity)this.context).findViewById(R.id.drawer_layout);
+			drawer.closeDrawer(Gravity.LEFT);
+			
+			String[] menu = ((MainActivity)this.context).getResources().getStringArray(R.array.drawermenu);
+			TextView headerFilter = (TextView) ((MainActivity)this.context).findViewById(R.id.tv_filter);
+			headerFilter.setText(menu[position-1]);
+			
+			MainActivity.dynamicEvents.filter(position-1, this.context);
 		}
-		
+
 	}
 }

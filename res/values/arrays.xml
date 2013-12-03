@@ -6,4 +6,10 @@
     	<item>#C8CD6B</item>
     	<item>#91D5E8</item>
     </array>
+    <array name="drawermenu">
+        <item>All</item>
+        <item>Recommended</item>
+        <item>Nearby</item>
+    	<item>Food</item>
+    </array>
 </resources>

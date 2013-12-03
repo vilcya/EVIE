@@ -2,11 +2,12 @@ package com.main.evie;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.evie.R;
 
@@ -19,22 +20,17 @@ public class EventDetails extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_event_details);
 
-		Intent myIntent = getIntent(); 
+		Intent myIntent = getIntent();
 
 		int eventPosition = myIntent.getIntExtra(getString(R.string.event_position), -1);
 		if (eventPosition == -1) {
 			throw new IllegalArgumentException("There is no event information for event details!");
 		}
+		
 		this.event = new DynamicEventList().getEventAt(eventPosition);
-		
 		setEventDetailsView();
-		
-		Availability a = new Availability(getApplicationContext());
-		int numEvents = a.numEvents();
-		
-		Toast.makeText(getApplicationContext(), Integer.toString(numEvents), Toast.LENGTH_SHORT).show();
-		
-		new DynamicEventList().updateUserPreference(eventPosition, numEvents);
+
+		new DynamicEventList().updateUserPreference(eventPosition, 0);
 	}
 	
 	private void setEventDetailsView() {
@@ -44,7 +40,11 @@ public class EventDetails extends Activity {
 		eventDescription.setText(this.event.getDescription());
 		
 		ImageView eventImage = (ImageView) this.findViewById(R.id.iv_event_detail_image);
-		eventImage.setImageBitmap(this.event.getImageBitmap());
+		Bitmap bitmap = this.event.getImageBitmap();
+		if (bitmap == null) {
+			bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.logo);
+		}
+		eventImage.setImageBitmap(bitmap);
 	}
 
 	@Override

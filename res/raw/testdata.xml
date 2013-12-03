@@ -6,7 +6,7 @@
     <description>When it comes down to it, TSA is simply a group of students who come together to have fun with each other and to participate in all the cool things CMU has to offer. Our activities can be as small as getting late-night together or as involved as building booth for the annual CMU spring carnival. We are a non-exclusive org; in fact, more than half our members aren't of Taiwanese descent! Please check us out during orientation week and over the course of the school year. We're excited to meet you!
     
     Come find out more about the members of the Taiwanese Students Organization and the org itself at Monday's general body meeting! </description>
-    <location>West Wing TV Lounge </location>
+    <location>6th Floor Lounge</location>
     <start-time>2013-09-09 18:00</start-time>
     <end-time>2013-09-09 18:30</end-time>
     <event-start type="datetime">2013-09-09T14:00:00-04:00</event-start>
@@ -23,7 +23,7 @@
     <created-at type="datetime">2013-09-01T15:12:31-04:00</created-at>
     <updated-at type="datetime">2013-09-01T15:12:31-04:00</updated-at>
     <summary>When it comes down to it, TSA is simply a group of students who come together to have fun with each other and to participate in all the cool things CMU has to offer. Our activities can be as small as getting late-night together or as involved as building booth for the annual CMU spring carnival. We are a non-exclusive org; in fact, more than half our members aren't of Taiwanese descent! Please check us out during orientation week and over the course of the school year. We're excited to meet you!
-    
+
     Come find out more about the members of the Taiwanese Students Organization and the org itself at Monday's general body meeting! </summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">38</organization-id>
@@ -40,7 +40,7 @@
 SCS4ALL is open to all students in the Carnegie Mellon School of Computer Science (SCS) as well as any friends of SCS4ALL. We want ALL communities in SCS to feel included in shaping the organization and the events we run.
 
 We hope to have lots of opportunities for Outreach. Students who are interested in reaching out can come to our biweekly General Meetings.</description>
-    <location>GHC 7101</location>
+    <location>6th Floor Lounge</location>
     <start-time>2013-09-10 17:00</start-time>
     <end-time>2013-09-10 18:00</end-time>
     <event-start type="datetime">2013-10-09T13:00:00-04:00</event-start>
@@ -75,7 +75,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     
     Spiceworks will be giving CMU students the chance to '93show off their smarts'94 and win. They will have a scavenger hunt style programming game and will be giving away 10 Raspberry Pi'92s and maybe more :)
 </description>
-    <location>GHC 4405</location>
+    <location>Rashid</location>
     <start-time>2013-09-10 18:00</start-time>
     <end-time>2013-09-10 19:30</end-time>
     <event-start type="datetime">2013-10-09T14:00:00-04:00</event-start>
@@ -104,7 +104,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <description>For over 70 years, Samsung has been dedicated to making a better world through diverse businesses that today span advanced technology, semiconductors, skyscraper and plant construction, petrochemicals, fashion, medicine, finance, hotels, and more. Our flagship company, Samsung Electronics, leads the global market in high-tech electronics manufacturing and digital media.
 
 Through innovative, reliable products and services; talented people; a responsible approach to business and global citizenship; and collaboration with our partners and customers, Samsung is taking the world in imaginative new directions.</description>
-    <location>Margaret Morrison A14</location>
+    <location>Rashid</location>
     <start-time>2013-09-10 18:00</start-time>
     <end-time>2013-09-10 19:00</end-time>
     <event-start type="datetime">2013-10-09T14:00:00-04:00</event-start>
@@ -156,7 +156,7 @@ Through innovative, reliable products and services; talented people; a responsib
     <id type="integer">87</id>
     <name>SCS Day Auditions</name>
     <description>SCS Day is a celebration of diversity in the School of Computer Science at Carnegie Mellon University. SCS Day is a dynamic event including free food, art exhibits, an evening talent show and CS swag. All the members of the SCS Community - undergraduate and graduate students, faculty, staff, and alumi - are invited to display their talents and share their skills in a fun and relaxed atmosphere. This year, it will be held on Friday, March 1, 2013. Showcase your amazing skills at the Talent Show!</description>
-    <location>GHC 6115</location>
+    <location>Rashid</location>
     <start-time>2013-10-02 15:30</start-time>
     <end-time>2013-10-02 18:00</end-time>
     <event-start type="datetime">2013-02-10T10:30:00-05:00</event-start>
@@ -214,7 +214,7 @@ Interested in learning more about study abroad?
 Where you can go, what you can do?
 
 Come to a brief information session to learn more about the possibility of study abroad!</description>
-    <location>Dowd Room, UC</location>
+    <location>Rashid</location>
     <start-time>2013-10-09 12:00</start-time>
     <end-time>2013-10-09 13:00</end-time>
     <event-start type="datetime">2013-09-10T08:00:00-04:00</event-start>
@@ -270,7 +270,7 @@ Come to a brief information session to learn more about the possibility of study
     <id type="integer">101</id>
     <name>Temple University Education Abroad Programs</name>
     <description>If you are interested in study abroad and want to learn more, please feel free to connect with representative Jim Sawyer, who will be hosting an informal information session from 10:00 - 11:00 AM on Monday, February 11th regarding Temple University's study abroad programs available to Carnegie Mellon students.</description>
-    <location>Dowd, University Center </location>
+    <location>Rashid</location>
     <start-time>2013-11-02 10:00</start-time>
     <end-time>2013-11-02 11:00</end-time>
     <event-start type="datetime">2013-02-11T05:00:00-05:00</event-start>
@@ -346,9 +346,9 @@ Come to a brief information session to learn more about the possibility of study
   </event>
   <event>
     <id type="integer">202</id>
-    <name>SAC Meeting, GHC 8102</name>
+    <name>SAC Meeting</name>
     <description>An SCS Event</description>
-    <location>Unknown</location>
+    <location>6th Floor Lounge</location>
     <start-time>2013-11-11 16:30</start-time>
     <end-time>2013-11-11 17:30</end-time>
     <event-start type="datetime">2013-11-11T11:30:00-05:00</event-start>
@@ -372,9 +372,9 @@ Come to a brief information session to learn more about the possibility of study
   </event>
   <event>
     <id type="integer">188</id>
-    <name>Poster Session: Independent Study &amp;amp; Senior Thesis</name>
+    <name>Poster Session: Independent Study &amp; Senior Thesis</name>
     <description>A poster session or poster presentation is the presentation of research information by an individual or representatives of research teams at a congress or conference with an academic or professional focus. The work is usually peer reviewed. Poster sessions are particularly prominent at scientific conferences such as medical congresses.</description>
-    <location>TBA</location>
+    <location>Tazza</location>
     <start-time>2013-11-12 12:00</start-time>
     <end-time>2013-11-12 14:00</end-time>
     <event-start type="datetime">2013-12-11T07:00:00-05:00</event-start>
@@ -399,7 +399,7 @@ Come to a brief information session to learn more about the possibility of study
   <event>
     <id type="integer">100</id>
     <name>Study Abroad Information Session</name>
-    <description>Over 500 CMU students, from all majors, study abroad annually.  All are welcome to attend this overview of study abroad, from general curriculum compatibility to finances.  Returned students will also speak about their individual study abroad experiences and will be available for a Q &amp;amp; A.</description>
+    <description>Over 500 CMU students, from all majors, study abroad annually.  All are welcome to attend this overview of study abroad, from general curriculum compatibility to finances.  Returned students will also speak about their individual study abroad experiences and will be available for a Q &amp; A.</description>
     <location>Dowd, University Center </location>
     <start-time>2013-12-02 14:00</start-time>
     <end-time>2013-12-02 15:00</end-time>
@@ -416,7 +416,7 @@ Come to a brief information session to learn more about the possibility of study
     <flyer-updated-at type="datetime">2013-02-10T14:57:11-05:00</flyer-updated-at>
     <created-at type="datetime">2013-02-10T14:57:11-05:00</created-at>
     <updated-at type="datetime">2013-02-10T14:57:11-05:00</updated-at>
-    <summary>Over 500 CMU students, from all majors, study abroad annually.  All are welcome to attend this overview of study abroad, from general curriculum compatibility to finances.  Returned students will also speak about their individual study abroad experiences and will be available for a Q &amp;amp; A.</summary>
+    <summary>Over 500 CMU students, from all majors, study abroad annually.  All are welcome to attend this overview of study abroad, from general curriculum compatibility to finances.  Returned students will also speak about their individual study abroad experiences and will be available for a Q &amp; A.</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">15</organization-id>
     <user-id type="integer">6</user-id>
@@ -429,12 +429,12 @@ Come to a brief information session to learn more about the possibility of study
     
     Origami Club will be selling beautiful Origami Roses!  Come buy your sweetheart a rose that will last forever, just like your love! 
 
-We will be selling on February 12 and 13, from 5-9PM in the UC
+We will be selling on February 12 and 13, from 5-9PM near Tazza
 
 One rose for $2
 
 Three roses for $5.</description>
-    <location>UC</location>
+    <location>Tazza</location>
     <start-time>2013-12-02 17:00</start-time>
     <end-time>2013-12-02 21:00</end-time>
     <event-start type="datetime">2013-02-12T12:00:00-05:00</event-start>
@@ -461,7 +461,7 @@ Three roses for $5.</description>
     <id type="integer">134</id>
     <name>Silver Linings Playbook 9:30, 12 </name>
     <description>After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his ex-wife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own. An AB Films Movie</description>
-    <location>Unknown</location>
+    <location>6th Floor Lounge</location>
     <start-time>2013-12-04 00:00</start-time>
     <end-time>2013-13-04 00:00</end-time>
     <event-start type="datetime">2013-04-11T20:00:00-04:00</event-start>
@@ -549,7 +549,7 @@ Craig Schoedler will be at Skibo Cafe Wednesday, Feb. 13 at 6:00pm.</description
     <description>In 1980 the black Falashas in Ethiopia are recognised as genuine Jews. In turn they are secretly carried to Israel. The day before the transport the son of a Jewish mother dies. In his place and with his name (Schlomo) she takes a Christian 9-year-old boy. Upon arrival this second mother dies. Schlomo is adopted by a good family but remains depressed until he secretly sends a letter to his real mother. From the beginning he experiences large and small racist difficulties. In his teens he and Sarah fall in love. Her father is an extreme racist. Schlomo tries to gain "real Jewishness" by winning a competition in Bible interpretation. No change of Sarah's father's attitude. Disappointed he goes to the police and reports himself as not being a Jew. But the police officer just gives him a scolding. "The newspapers are full of that stuff, the Falashas are no Jews. Now they begin to believe it themselves." His adoptive parents send him to France to study medicine. When he afterwards marries Sarah she loses her family and her status as a "white Jew". But he dares not tell her the truth until she becomes pregnant. She leaves him, but only because he had not trusted that she would love him as much anyway. His adoptive mother reconciles them. Sarah's first line when she returns: "Unbelievable what three mothers would do for you." But she makes a condition for returning: Schlomo must meet his real mother again. As a doctor he takes a job in the Ethiopian fugitive camp where she is still alive.
     
     An AB Films Movie</description>
-    <location>Unknown</location>
+    <location>6th Floor Lounge</location>
     <start-time>2013-13-04 00:00</start-time>
     <end-time>2013-14-04 00:00</end-time>
     <event-start type="datetime">2013-04-12T20:00:00-04:00</event-start>
@@ -579,7 +579,7 @@ Craig Schoedler will be at Skibo Cafe Wednesday, Feb. 13 at 6:00pm.</description
 SCS4ALL is open to all students in the Carnegie Mellon School of Computer Science (SCS) as well as any friends of SCS4ALL. We want ALL communities in SCS to feel included in shaping the organization and the events we run.
 
 We hope to have lots of opportunities for Outreach. Students who are interested in reaching out can come to our biweekly General Meetings. Undergrad Pre-registration Event</description>
-    <location>GHC 4405</location>
+    <location>Rashid</location>
     <start-time>2013-13-11 16:30</start-time>
     <end-time>2013-13-11 18:00</end-time>
     <event-start type="datetime">2013-11-13T11:30:00-05:00</event-start>
@@ -713,7 +713,7 @@ $3 Student/$5 General
 
 Show times are:
 February 15th at 8pm
-February 16th at 2pm &amp;amp; 6pm
+February 16th at 2pm &amp; 6pm
 
 Director: James Alexander
 Assistant Director: Ethan Crystal
@@ -756,7 +756,7 @@ Bailiff: Billy Veer</description>
   </event>
   <event>
     <id type="integer">102</id>
-    <name>Mocktails &amp;amp; Karaoke</name>
+    <name>Mocktails &amp; Karaoke</name>
     <description>Come out for a night of fun singing karaoke with friends or sing solo.... or just watch your friends singing ridiculous songs while enjoying mocktail beverages!</description>
     <location>UC Commons </location>
     <start-time>2013-15-02 21:00</start-time>
@@ -866,7 +866,7 @@ This is an awesome opportunity to see freestyle battles and to be exposed to hip
     <id type="integer">149</id>
     <name>University Hacker Olympics Qualifying Round</name>
     <description>Hacker Olympics is a new, interactive spin on the basic hackathon. Hackers participate in a tournament, where diverse knowledge and skills help them to conquer a wide range of challenges. Accumulate points in a race to Hacker Olympics supremacy. An event hosted by the Association for Computing Machinery</description>
-    <location>Unknown</location>
+    <location>Tazza</location>
     <start-time>2013-16-04 18:00</start-time>
     <end-time>2013-16-04 22:30</end-time>
     <event-start type="datetime">2013-04-16T14:00:00-04:00</event-start>
@@ -970,11 +970,11 @@ Above, you can learn a little bit more about all of these events, and maybe this
   </event>
   <event>
     <id type="integer">148</id>
-    <name>Olympus Show &amp;amp; Tell Event</name>
+    <name>Olympus Show &amp; Tell Event</name>
     <description>Project Olympus, a Carnegie Mellon innovation center, operates at the earliest stages of the value creation chain. It aims to augment and accelerate the process of moving cutting-edge research and great ideas to development and business stages through licensing, creating start-ups, and through corporate collaboration and strategic partnerships. Olympus provides start-up advice, micro-grants, incubator space, and connections for faculty and students across campus and with the wider regional, national and global business communities. How to work with us
 
 A main goal is to create a climate, culture and community to enable talent and ideas to grow, creating a dynamic commercialization eco-system. An initiative of the School of Computer Science, Project Olympus works collaboratively with all members of the university’s Innovation Eco-system. Based within the university’s academic sector, Olympus can easily tap into promising innovations that build on the wealth of university research and student ingenuity. Fostering collaborations, both on and off campus, Olympus leverages considerable community expertise and resources.</description>
-    <location>Unknown</location>
+    <location>Tazza</location>
     <start-time>2013-18-04 16:30</start-time>
     <end-time>2013-18-04 18:00</end-time>
     <event-start type="datetime">2013-04-18T12:30:00-04:00</event-start>
@@ -1133,7 +1133,7 @@ A main goal is to create a climate, culture and community to enable talent and i
     <name>Zumba Networking Mixer</name>
     <description>You've never networked like this! Join the Hispanic and Latino Alumni Association for a 30 minute Zumba session and refreshments. Don't know what Zumba is? Now is your opportunity to see what all the excitement is about. Plan to move your body! 
 </description>
-    <location>Activities Room, UC</location>
+    <location>Tazza</location>
     <start-time>2013-20-04 11:00</start-time>
     <end-time>2013-20-04 13:00</end-time>
     <event-start type="datetime">2013-04-20T07:00:00-04:00</event-start>
@@ -1186,7 +1186,7 @@ A main goal is to create a climate, culture and community to enable talent and i
     <id type="integer">154</id>
     <name>Lupe Fiasco Concert</name>
     <description>Wasalu Muhammad Jaco (born February 16, 1982), better known by his stage name Lupe Fiasco, is an American rapper, record producer, and entrepreneur. He rose to fame in 2006 following the success of his debut album, Lupe Fiasco's Food &amp; Liquor. He also performs as the frontman of rock band Japanese Cartoon under his real name. As an entrepreneur, Fiasco is the chief executive officer of 1st and 15th Entertainment. Activities Board Spring Carnival Concert: Lupe Fiasco with CMU Turntables</description>
-    <location>UC Wiegand Gym</location>
+    <location>Tazza</location>
     <start-time>2013-20-04 20:00</start-time>
     <end-time>2013-20-04 22:00</end-time>
     <event-start type="datetime">2013-04-20T16:00:00-04:00</event-start>
@@ -1216,7 +1216,7 @@ A main goal is to create a climate, culture and community to enable talent and i
 SCS4ALL is open to all students in the Carnegie Mellon School of Computer Science (SCS) as well as any friends of SCS4ALL. We want ALL communities in SCS to feel included in shaping the organization and the events we run.
 
 We hope to have lots of opportunities for Outreach. Students who are interested in reaching out can come to our biweekly General Meetings </description>
-    <location>GHC 7101</location>
+    <location>6th Floor Lounge</location>
     <start-time>2013-20-11 17:00</start-time>
     <end-time>2013-20-11 18:00</end-time>
     <event-start type="datetime">2013-11-20T12:00:00-05:00</event-start>
@@ -1324,7 +1324,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
 SCS4ALL is open to all students in the Carnegie Mellon School of Computer Science (SCS) as well as any friends of SCS4ALL. We want ALL communities in SCS to feel included in shaping the organization and the events we run.
 
 We hope to have lots of opportunities for Outreach. Students who are interested in reaching out can come to our biweekly General Meetings  An SCS Event</description>
-    <location>GHC 9115</location>
+    <location>6th Floor Lounge</location>
     <start-time>2013-23-10 17:00</start-time>
     <end-time>2013-23-10 18:00</end-time>
     <event-start type="datetime">2013-10-23T13:00:00-04:00</event-start>
@@ -1352,7 +1352,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <description>Hack+ is a semester long hackathon, and you will be given resources and mentors to help you produce those awesome application ideas. What you receive from it is equivalent to what you dedicate. This means you set your own pace, your own time, and develop your own ideas. You can meet with your team weekly, monthly, or even finish your project during your own 24-hour hackathon!
  
  Some time to finish up and then it all ends :( Be prepared to dazzle all with the culmination of your semester's work and admire the work of others. There will be judges, prizes, and fun!</description>
-    <location>TBA</location>
+    <location>Rashid</location>
     <start-time>2013-23-11 13:00</start-time>
     <end-time>2013-23-11 21:00</end-time>
     <event-start type="datetime">2013-11-23T08:00:00-05:00</event-start>
@@ -1404,7 +1404,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <id type="integer">65</id>
     <name>Free Agent Mixer</name>
     <description>Find project partners for TartanHacks!</description>
-    <location>GHC</location>
+    <location>Tazza</location>
     <start-time>2013-24-01 19:30</start-time>
     <end-time>2013-24-01 20:30</end-time>
     <event-start type="datetime">2013-01-24T14:30:00-05:00</event-start>
@@ -1432,7 +1432,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <description>With more than 124 million active users globally, eBay is the world's largest online marketplace, where practically anyone can buy and sell practically anything. Founded in 1995, eBay connects a diverse and passionate community of individual buyers and sellers, as well as small businesses. Their collective impact on ecommerce is staggering, and more than 500 million items are listed on eBay. 
     
     Learn about the eBay API</description>
-    <location>TBA</location>
+    <location>Tazza</location>
     <start-time>2013-25-01 16:30</start-time>
     <end-time>2013-25-01 17:30</end-time>
     <event-start type="datetime">2013-01-25T11:30:00-05:00</event-start>
@@ -1648,7 +1648,7 @@ Beware of lead poisoning.</summary>
     <description>You must complete a submission to the Audition submission system, available through TartanHacks' OnStage platform before 6:00:00PM EST on Saturday, January 26th, 2013.
 
 Hacks submitted late will not be eligible for prizes.</description>
-    <location>Gates-Hillman Center</location>
+    <location>6th Floor Lounge</location>
     <start-time>2013-26-01 18:00</start-time>
     <end-time>2013-26-01 18:30</end-time>
     <event-start type="datetime">2013-01-26T13:00:00-05:00</event-start>
@@ -1753,7 +1753,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <id type="integer">74</id>
     <name>Breakfast</name>
     <description>Eat breakfast, the most important meal of the day!</description>
-    <location>Gates-Hillman Center</location>
+    <location>6th Floor Lounge</location>
     <start-time>2013-26-01 8:00</start-time>
     <end-time>2013-26-01 8:30</end-time>
     <event-start type="datetime">2013-01-26T03:00:00-05:00</event-start>
@@ -2406,7 +2406,7 @@ This comedy/drama is loaded with stars - Bruce Willis, Bill Murray, Frances McDo
     <id type="integer">49</id>
     <name>Demosplash</name>
     <description>Demosplash is a computer art festival in the spirit of the demoscene, going into greater depth on the artistic and technical skills of the demoscene through a series of short talks, tutorial/hacking events, and several competitions. In addition to demos, of course. Check out www.demosplash.org for a list of events and more information.</description>
-    <location>GHC 4th floor</location>
+    <location>6th Floor Lounge</location>
     <start-time>2012-12-10 15:00</start-time>
     <end-time>2012-13-10 16:00</end-time>
     <event-start type="datetime">2012-10-12T11:00:00-04:00</event-start>
@@ -2600,7 +2600,7 @@ Director/Writer Christopher Nolan is back with the second installment in his tri
     <id type="integer">41</id>
     <name>Tartans Abroad Group Showcase</name>
     <description>Come hear summer Tartans Abroad Group scholarship recipients, SIFE Nicaragua and Project Rwanda, discuss and present their work abroad.  Learn how you can also be involved in Short-Term service experiences abroad.  Light refreshments will be served.</description>
-    <location>UC McKenna/Peter</location>
+    <location>6th Floor Lounge</location>
     <start-time>2012-17-09 16:30</start-time>
     <end-time>2012-17-09 17:30</end-time>
     <event-start type="datetime">2012-09-17T12:30:00-04:00</event-start>
@@ -3987,7 +3987,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <id type="integer">209</id>
     <name>SCS4ALL Meeting</name>
     <description>An SCS Event</description>
-    <location>GHC 7101</location>
+    <location>6th Floor Lounge</location>
     <start-time>2013-04-12 17:00</start-time>
     <end-time>2013-04-12 18:00</end-time>
     <event-start type="datetime">2013-12-04T12:00:00-05:00</event-start>
@@ -4299,7 +4299,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <id type="integer">207</id>
     <name>SCS4ALL Meeting</name>
     <description>An SCS Event</description>
-    <location>GHC 7101</location>
+    <location>6th Floor Lounge</location>
     <start-time>2013-06-11 17:00</start-time>
     <end-time>2013-06-11 18:00</end-time>
     <event-start type="datetime">2013-11-06T12:00:00-05:00</event-start>
