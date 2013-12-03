@@ -60,11 +60,11 @@ public class EventAdapter extends ArrayAdapter<Event>{
 		
 		eventViews.eventName.setText(event.getName());
 
-		try {
+		/*try {
 			eventViews.eventImage.setImageBitmap(event.getImageBitmap());
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
+		}*/
 
 		return row;
 	}

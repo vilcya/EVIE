@@ -2,12 +2,12 @@ package com.main.evie;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.evie.R;
 
@@ -40,7 +40,11 @@ public class EventDetails extends Activity {
 		eventDescription.setText(this.event.getDescription());
 		
 		ImageView eventImage = (ImageView) this.findViewById(R.id.iv_event_detail_image);
-		eventImage.setImageBitmap(this.event.getImageBitmap());
+		Bitmap bitmap = this.event.getImageBitmap();
+		if (bitmap == null) {
+			bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.logo);
+		}
+		eventImage.setImageBitmap(bitmap);
 	}
 
 	@Override

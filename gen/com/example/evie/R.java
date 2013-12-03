@@ -205,8 +205,8 @@ public final class R {
         public static final int textView5=0x7f0c0018;
         public static final int textView6=0x7f0c0016;
         public static final int tv_drawermenu=0x7f0c0023;
-        public static final int tv_event_detail_description=0x7f0c0001;
-        public static final int tv_event_detail_name=0x7f0c0000;
+        public static final int tv_event_detail_description=0x7f0c0000;
+        public static final int tv_event_detail_name=0x7f0c0001;
         public static final int tv_filter=0x7f0c000c;
         public static final int tv_header=0x7f0c0004;
         public static final int tv_rec=0x7f0c0005;
