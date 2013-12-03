@@ -779,7 +779,7 @@ For more information about registration and directions, please visit http://www.
     <id type="integer">15</id>
     <name>18th Annual Mobot Races, 15th Awards Presentation</name>
     <description>The School of Computer Science invites all members of the Carnegie Mellon community to participate in The 18th Annual Carnegie Mellon Mobot Races. Participants will race autonomous vehicles ("MObile roBOTs") they have built along a slalon-type course on the paved walk in front of Wean Hall. Races are followed by an Awards Presentation and Wrap-Up event in Gates and Hillman Rashid Auditorium. </description>
-    <location>Mobot Course in front of Wean Hall, Gates 4401</location>
+    <location>Rashid</location>
     <start-time>2012-20-04 12:00</start-time>
     <end-time>2012-20-04 17:00</end-time>
     <event-start type="datetime">2012-04-20T08:00:00-04:00</event-start>
@@ -1917,7 +1917,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <id type="integer">209</id>
     <name>SCS4ALL Meeting</name>
     <description>An SCS Event</description>
-    <location>GHC 7101</location>
+    <location>Rashid</location>
     <start-time>2013-04-12 17:00</start-time>
     <end-time>2013-04-12 18:00</end-time>
     <event-start type="datetime">2013-12-04T12:00:00-05:00</event-start>
@@ -2229,7 +2229,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <id type="integer">207</id>
     <name>SCS4ALL Meeting</name>
     <description>An SCS Event</description>
-    <location>GHC 7101</location>
+    <location>Rashid</location>
     <start-time>2013-06-11 17:00</start-time>
     <end-time>2013-06-11 18:00</end-time>
     <event-start type="datetime">2013-11-06T12:00:00-05:00</event-start>

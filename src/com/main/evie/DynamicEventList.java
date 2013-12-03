@@ -2,10 +2,9 @@ package com.main.evie;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
-import android.net.wifi.ScanResult;
+import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
@@ -73,7 +72,7 @@ public class DynamicEventList{
 		return DynamicEventList.allEvents;
 	}
 
-	public void filter(int position) {
+	public void filter(int position, Context context) {
 		switch (position) {
 		case FILTER_ALL:
 			removeFilters();
@@ -82,7 +81,7 @@ public class DynamicEventList{
 			filterByRecommended();
 			break;
 		case FILTER_NEARBY:
-			filterByLocation();
+			filterByLocation(context);
 			break;
 		case FILTER_FOOD:
 			filterFreeFood();
@@ -103,17 +102,23 @@ public class DynamicEventList{
 		}
 	}
 	
-	public void updateLocation(String location) {
-		DynamicEventList.location = location;
+	public void updateLocation(String location, Context context) {
+		DynamicEventList.location = location.toLowerCase();
+		
+		filterByLocation(context);
+		sendChangeEventMessage();
 	}
 	
-	public void filterByLocation () {
+	public void filterByLocation(Context context) {
 		DynamicEventList.filteredEvents.clear();
 		for (Event event:DynamicEventList.allEvents) {
-			if (DynamicEventList.location.equals(event.getLocation())) {
+			if (event.getLocation().toLowerCase().contains(DynamicEventList.location)) {
 				DynamicEventList.filteredEvents.add(event);
 			}
 		}
+
+		NotifyLocationEvents notification = new NotifyLocationEvents(context);
+		notification.notifyEvents(DynamicEventList.filteredEvents.size());
 	}
 
 	public void filterByCategory(int label) {
@@ -146,7 +151,7 @@ public class DynamicEventList{
 	}
 
 	public void updateUserPreference(int position, int numEvents) {
-		String words = DynamicEventList.filteredEvents.get(position).extractImportantText(); 
+		String words = DynamicEventList.filteredEvents.get(position).extractImportantText();
 		DynamicEventList.filteredEvents.clear();
 		DynamicEventList.filteredEvents = this.userPreference.addWords(words, numEvents);
 

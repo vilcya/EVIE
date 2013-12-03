@@ -339,7 +339,7 @@ public class MainActivity extends Activity {
 			TextView headerFilter = (TextView) ((MainActivity)this.context).findViewById(R.id.tv_filter);
 			headerFilter.setText(menu[position-1]);
 			
-			MainActivity.dynamicEvents.filter(position-1);
+			MainActivity.dynamicEvents.filter(position-1, this.context);
 		}
 
 	}

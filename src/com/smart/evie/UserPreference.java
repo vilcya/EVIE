@@ -14,7 +14,7 @@ import com.main.evie.Event;
 
 
 public class UserPreference {
-	private static final int RECOMMENDATIONS = 10;
+	private static final int RECOMMENDATIONS = 14;
 	private static final int RECENT_WEIGHT = 3;
 	private static final double DECAY = 0.8;
 	private static final double EVENT_CAP_WEIGHT = -0.8;
@@ -53,8 +53,8 @@ public class UserPreference {
 		
 		ArrayList<Event> topRecommendations = new ArrayList<Event>();
 		int event_size_cap = 0;
-		
-		if (numEvents <= 14) {
+
+		if (numEvents <= RECOMMENDATIONS) {
 			event_size_cap = queue.size();
 		}
 		else {
@@ -74,11 +74,7 @@ public class UserPreference {
 			Log.i("evie_debug", "found tuple! index " + current.index + " similarity " + current.similarity);
 			topRecommendations.add(this.events.getAllEvents().get(current.index));
 		}
-		Log.i("evie_debug", "start printing events");
-		for (Event event: topRecommendations) {
-			Log.i("evie_debug", "event " + event.getName());
-		}
-		Log.i("evie_debug", "finish printing events");
+
 		return topRecommendations;
 	}
 	

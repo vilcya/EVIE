@@ -12,7 +12,6 @@ import com.example.evie.R;
 public class PeriodicWifiScanner implements Runnable {
 
 	private final Context context;
-	private final Toast toast;
 	private final WifiManager wifiManager;
 	private final WifiScanReceiver scanReceiver;
 
@@ -21,15 +20,13 @@ public class PeriodicWifiScanner implements Runnable {
 		this.wifiManager = (WifiManager) this.context.getSystemService(Context.WIFI_SERVICE);
 		this.scanReceiver = new WifiScanReceiver(this.wifiManager);
 
-		this.toast = Toast.makeText(this.context, R.string.hello_world, Toast.LENGTH_LONG);
-		this.toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
 		setupWifi();
 	}
 	
 	public void registerReceiver() {
 		this.context.registerReceiver(this.scanReceiver, new IntentFilter(WifiManager.SCAN_RESULTS_AVAILABLE_ACTION));
 	}
-	
+
 	public void deregisterReceiver() {
 		this.context.unregisterReceiver(this.scanReceiver);
 	}
@@ -39,21 +36,18 @@ public class PeriodicWifiScanner implements Runnable {
 		if (this.wifiManager.isWifiEnabled()) {
 			return true;
 		} else {
-			this.toast.setText(R.string.wifi_enable_unsuccessful);
-			this.toast.show();
+			Log.i("evie_debug", "" + R.string.wifi_enable_unsuccessful);
 			this.wifiManager.setWifiEnabled(true);
 		}
 		
 		/* If it's still not enabled, we have no power over what's wrong */
 		if (!this.wifiManager.isWifiEnabled()) {
-			this.toast.setText(R.string.wifi_enable_unsuccessful);
-			this.toast.show();
+			Log.i("evie_debug", "" + R.string.wifi_enable_unsuccessful);
 			return false;
 		}
 
 		/* Successfully enabled */
-		this.toast.setText(this.context.getString(R.string.wifi_enable_successful));
-		this.toast.show();
+		Log.i("evie_debug", "" + R.string.wifi_enable_successful);
 		return true;
 	}
 
@@ -74,16 +68,15 @@ public class PeriodicWifiScanner implements Runnable {
 	
 			/* Wifi is setup correctly - check if scan is initiated */
 			if (this.wifiManager.startScan()) {
-				this.toast.setText(R.string.wifi_scan_successful);
+				Log.i("evie_debug", "" + R.string.wifi_enable_successful);
 			} else {
-				this.toast.setText(R.string.wifi_scan_unsuccessful);
+				Log.i("evie_debug", "" + R.string.wifi_enable_unsuccessful);
 			}
-			this.toast.show();
 			
 			Log.i("evie_debug", "now sleeping ....");
 			
 			try {
-				Thread.sleep(60000);
+				Thread.sleep(45000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

@@ -30,7 +30,6 @@ public class WifiScanReceiver extends BroadcastReceiver {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		Toast.makeText(context, "Scan completed", Toast.LENGTH_LONG).show();
 		
 		/** Grab the location */
 		ArrayList<String> scanResults = parseScanResults(this.wifiManager.getScanResults());
@@ -42,7 +41,7 @@ public class WifiScanReceiver extends BroadcastReceiver {
 		headerView.setText("You are near " + location + ".");
 		
 		/** Notify events */
-		dynamicEvents.updateLocation(location);
+		dynamicEvents.updateLocation(location, context);
 	}
 	
 	private ArrayList<String> parseScanResults(List<ScanResult> scanResults) {
