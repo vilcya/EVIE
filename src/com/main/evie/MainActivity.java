@@ -24,13 +24,9 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ToggleButton;
 
 import com.example.evie.R;
 import com.smart.evie.BagOfWords;
@@ -84,7 +80,7 @@ public class MainActivity extends Activity {
 		setupDrawer();
 		
 		loadEvents();
-		
+
 		/* Setup location scan */
 		this.scanListener = new PeriodicWifiScanner(this);
 		this.scanListener.registerReceiver();

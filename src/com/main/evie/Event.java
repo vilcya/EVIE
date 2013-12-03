@@ -6,12 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 
-import android.content.res.Resources;
+import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.util.Log;
-
-import com.example.evie.R;
 
 /**
  * Contains data from event.
@@ -30,6 +26,7 @@ public class Event {
 	private int labelledCategory;
 	private final boolean cancelled;
 	private Bitmap bitmap;
+	private ArrayList<String> hashtags;
 	
 	Event(int id, String name, String description, Date startTime, Date endTime, 
 			String location, String imgUrl, String categories,
