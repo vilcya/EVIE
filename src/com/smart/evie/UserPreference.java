@@ -18,6 +18,7 @@ public class UserPreference {
 	private static final int RECENT_WEIGHT = 3;
 	private static final double DECAY = 0.8;
 	private static final double EVENT_CAP_WEIGHT = -0.8;
+	private static final double MIN_NUM_EVENTS_SHOWN = 5.0;
 
 	private double means[];
 	private int meanNumber;
@@ -51,8 +52,15 @@ public class UserPreference {
 		}
 		
 		ArrayList<Event> topRecommendations = new ArrayList<Event>();
-		int event_size_cap = Math.min(queue.size(), 
-				(int)Math.ceil(EVENT_CAP_WEIGHT*numEvents + (numEvents+5)));
+		int event_size_cap = 0;
+		
+		if (numEvents <= 14) {
+			event_size_cap = queue.size();
+		}
+		else {
+			event_size_cap = Math.min(queue.size(), 
+				(int)Math.ceil(EVENT_CAP_WEIGHT*numEvents + (numEvents+MIN_NUM_EVENTS_SHOWN)));
+		}
 		
 		Log.i("evie_debug", "showing" + event_size_cap + " events out of " + queue.size());
 
