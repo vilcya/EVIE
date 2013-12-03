@@ -8,7 +8,9 @@ import java.util.Arrays;
 import java.util.Date;
 
 import com.example.evie.R;
+import com.smart.evie.ContentExtraction;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -30,13 +32,15 @@ public class Event {
 	private int labelledCategory;
 	private final boolean cancelled;
 	private static Bitmap defaultBitmap;
+	private ArrayList<String> hashtags;
 	
 	Event(int id, String name, String description, Date startTime, Date endTime, 
 			String location, String imgUrl, String categories,
-			boolean cancelled) {
+			boolean cancelled, Context context) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
+		this.hashtags = ContentExtraction.findHashTags(description, context);
 		
 		// Do error checking on start/end time later
 		this.startTime = startTime;

@@ -7,6 +7,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
+import opennlp.tools.namefind.TokenNameFinderModel;
+
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.app.Activity;
@@ -75,7 +77,6 @@ public class MainActivity extends Activity {
 		headerText.setText("Hello " + userData.getString(getString(R.string.nameKey), "world") + "! You are in Gates 4307.");
 
 		loadEvents();
-		
 		/* Setup location scan button */
 		/*
 		this.scanListener = new WifiScanClickListener(this);

@@ -221,8 +221,21 @@ public final class R {
         public static final int sign_up=0x7f0b0002;
     }
     public static final class raw {
-        public static final int rawtrainingdata=0x7f040000;
-        public static final int testdata=0x7f040001;
+        public static final int chunker=0x7f040000;
+        public static final int chunking=0x7f040001;
+        public static final int date=0x7f040002;
+        public static final int location=0x7f040003;
+        public static final int maxent=0x7f040004;
+        public static final int money=0x7f040005;
+        public static final int organization=0x7f040006;
+        public static final int percentage=0x7f040007;
+        public static final int perceptron=0x7f040008;
+        public static final int person=0x7f040009;
+        public static final int rawtrainingdata=0x7f04000a;
+        public static final int sent=0x7f04000b;
+        public static final int testdata=0x7f04000c;
+        public static final int time=0x7f04000d;
+        public static final int token=0x7f04000e;
     }
     public static final class string {
         public static final int academicKey=0x7f090018;
