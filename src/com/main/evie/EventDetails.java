@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -44,6 +45,7 @@ public class EventDetails extends Activity {
 		
 		TextView eventDescription = (TextView) this.findViewById(R.id.tv_event_detail_description);
 		eventDescription.setText(this.event.getDescription());
+		eventDescription.setMovementMethod(new ScrollingMovementMethod());
 		
 		ImageView eventImage = (ImageView) this.findViewById(R.id.iv_event_detail_image);
 		Bitmap bitmap = this.event.getImageBitmap();

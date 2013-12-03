@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
 		/* Setup welcome text */
 		TextView headerText = (TextView) this.findViewById(R.id.tv_header);
 		headerText.setText("Please wait while we look up your location ...");
-
+		
 		/* Setup drawer */
 		setupDrawer();
 		

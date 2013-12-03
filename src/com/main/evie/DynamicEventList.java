@@ -152,6 +152,7 @@ public class DynamicEventList{
 	public void updateUserPreference(int position, int numEvents) {
 		String words = DynamicEventList.filteredEvents.get(position).extractImportantText();
 		this.recommendedEvents = this.userPreference.addWords(words, numEvents);
+		sendUpdatedPreference(this.recommendedEvents.size(), numEvents);
 	}
 	
 	/**
@@ -170,6 +171,14 @@ public class DynamicEventList{
 	private void sendChangeEventMessage() {
 		Message message = Message.obtain();
 		message.what = 0;
+		eventChangeHandler.sendMessage(message);
+	}
+	
+	private void sendUpdatedPreference(int numRecommended, int scheduledEvents) {
+		Message message = Message.obtain();
+		message.what = 1;
+		message.arg1 = numRecommended;
+		message.arg2 = scheduledEvents;
 		eventChangeHandler.sendMessage(message);
 	}
 }

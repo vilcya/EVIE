@@ -23,7 +23,7 @@ public class NotifyLocationEvents {
 		mNotificationBuilder = new NotificationCompat.Builder(mContext)
 				.setContentTitle("Events near your location")
 				.setContentText(CONTENT_TEXT)
-				.setSmallIcon(R.drawable.logo);
+				.setSmallIcon(R.drawable.logo_small);
 	}
 	
 	public void notifyEvents(int numEvents) {

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="message_update_events" type="integer">0</item>
+    <item name="message_update_busy" type="integer">1</item>
     <item name="num_colors" type="integer">4</item>
 </resources>

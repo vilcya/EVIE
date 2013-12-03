@@ -3,6 +3,7 @@
 
     <!-- Default string for placeholder purposes -->
     <string name="hello_world">Hello world!</string>
+    <string name="initial_cal">Tapping into your calendar ... browse some events to get our recommendation system working!</string>
     <string name="nearby">Nearby</string>
     
     <string name="app_name">EVIE</string>
