@@ -115,9 +115,12 @@ public class DynamicEventList{
 				DynamicEventList.filteredEvents.add(event);
 			}
 		}
-		
+
 		NotifyLocationEvents notification = new NotifyLocationEvents(context);
-		notification.notifyEvents(DynamicEventList.filteredEvents.size());
+		int size = DynamicEventList.filteredEvents.size();
+		if (size > 0) {
+			notification.notifyEvents(size);
+		}
 	}
 
 	public void filterByCategory(int label) {
