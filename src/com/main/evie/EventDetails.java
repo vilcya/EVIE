@@ -29,13 +29,20 @@ public class EventDetails extends Activity {
 		
 		this.event = new DynamicEventList().getEventAt(eventPosition);
 		setEventDetailsView();
+		
+		Availability a = new Availability(getApplicationContext());
+		int numEvents = a.numEvents();
 
-		new DynamicEventList().updateUserPreference(eventPosition, 0);
+		new DynamicEventList().updateUserPreference(eventPosition, numEvents);
 	}
 	
 	private void setEventDetailsView() {
 		TextView eventName = (TextView) this.findViewById(R.id.tv_event_detail_name);
 		eventName.setText(this.event.getName());
+		
+		TextView eventHashtags = (TextView) this.findViewById(R.id.tv_event_detail_hashtags);
+		eventHashtags.setText(this.event.getHashtags());
+		
 		TextView eventDescription = (TextView) this.findViewById(R.id.tv_event_detail_description);
 		eventDescription.setText(this.event.getDescription());
 		
