@@ -81,10 +81,6 @@ public class MainActivity extends Activity {
 		
 		loadEvents();
 		
-		Availability a = new Availability(getApplicationContext());
-		int numEvents = a.numEvents();
-		Toast.makeText(getApplicationContext(), "Number of Events: " + Integer.toString(numEvents), Toast.LENGTH_LONG).show();
-		
 		/* Setup location scan button */
 		this.scanListener = new PeriodicWifiScanner(this);
 		this.scanListener.registerReceiver();

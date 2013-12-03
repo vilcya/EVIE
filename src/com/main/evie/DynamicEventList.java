@@ -144,11 +144,13 @@ public class DynamicEventList{
 		
 		sendChangeEventMessage();
 	}
-	
-	public void updateUserPreference(int position) {
-		String words = DynamicEventList.filteredEvents.get(position).extractImportantText();
-		DynamicEventList.recommendedEvents.clear();
-		DynamicEventList.recommendedEvents = this.userPreference.addWords(words);
+
+	public void updateUserPreference(int position, int numEvents) {
+		String words = DynamicEventList.filteredEvents.get(position).extractImportantText(); 
+		DynamicEventList.filteredEvents.clear();
+		DynamicEventList.filteredEvents = this.userPreference.addWords(words, numEvents);
+
+		sendChangeEventMessage();
 	}
 	
 	/**

@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.evie.R;
 
@@ -29,7 +30,7 @@ public class EventDetails extends Activity {
 		this.event = new DynamicEventList().getEventAt(eventPosition);
 		setEventDetailsView();
 
-		new DynamicEventList().updateUserPreference(eventPosition);
+		new DynamicEventList().updateUserPreference(eventPosition, 0);
 	}
 	
 	private void setEventDetailsView() {
