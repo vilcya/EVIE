@@ -15,6 +15,7 @@ import com.main.evie.Event;
 
 public class UserPreference {
 	private static final int RECOMMENDATIONS = 14;
+	private static final int BUSY_CAP = 15;
 	private static final int RECENT_WEIGHT = 3;
 	private static final double DECAY = 0.8;
 	private static final double EVENT_CAP_WEIGHT = -0.8;
@@ -55,7 +56,7 @@ public class UserPreference {
 		int event_size_cap = 0;
 
 		if (numEvents <= RECOMMENDATIONS) {
-			event_size_cap = queue.size();
+			event_size_cap = BUSY_CAP;
 		}
 		else {
 			event_size_cap = Math.min(queue.size(), 

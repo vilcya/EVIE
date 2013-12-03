@@ -26,13 +26,13 @@ public class EventDetails extends Activity {
 		if (eventPosition == -1) {
 			throw new IllegalArgumentException("There is no event information for event details!");
 		}
-		
+	
 		this.event = new DynamicEventList().getEventAt(eventPosition);
 		setEventDetailsView();
 
 		new DynamicEventList().updateUserPreference(eventPosition, 0);
 	}
-	
+
 	private void setEventDetailsView() {
 		TextView eventName = (TextView) this.findViewById(R.id.tv_event_detail_name);
 		eventName.setText(this.event.getName());
@@ -41,10 +41,9 @@ public class EventDetails extends Activity {
 		
 		ImageView eventImage = (ImageView) this.findViewById(R.id.iv_event_detail_image);
 		Bitmap bitmap = this.event.getImageBitmap();
-		if (bitmap == null) {
-			bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.logo);
+		if (bitmap != null) {
+			eventImage.setImageBitmap(bitmap);
 		}
-		eventImage.setImageBitmap(bitmap);
 	}
 
 	@Override

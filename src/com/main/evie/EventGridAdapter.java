@@ -17,7 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class EventAdapter extends ArrayAdapter<Event>{
+public class EventGridAdapter extends ArrayAdapter<Event>{
 	
 	private int numColors;
 	private final ArrayList<Event> events; 
@@ -25,7 +25,7 @@ public class EventAdapter extends ArrayAdapter<Event>{
 	private int resource;
 	private int count;
 	
-	public EventAdapter(Context context, int resource, ArrayList<Event> events) {
+	public EventGridAdapter(Context context, int resource, ArrayList<Event> events) {
 		super(context, resource, events);
 		this.count = 0;
 		this.context = context;

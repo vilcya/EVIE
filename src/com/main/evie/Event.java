@@ -1,17 +1,17 @@
 package com.main.evie;
 
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 
-import com.example.evie.R;
-
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Log;
+
+import com.example.evie.R;
 
 /**
  * Contains data from event.
@@ -29,7 +29,7 @@ public class Event {
 	private int category;
 	private int labelledCategory;
 	private final boolean cancelled;
-	private static Bitmap defaultBitmap;
+	private Bitmap bitmap;
 	
 	Event(int id, String name, String description, Date startTime, Date endTime, 
 			String location, String imgUrl, String categories,
@@ -50,9 +50,10 @@ public class Event {
 			this.imgUrl = new URL("http://teudu.andrew.cmu.edu" + imgUrl);
 		} catch (MalformedURLException e) {
 			this.imgUrl = null;
+			this.bitmap = null;
 			e.printStackTrace();
 		}
-		
+
 		// Do category validation
 		if (categories != null) {
 			this.categories = new ArrayList<String>(Arrays.asList(categories.split(",")));
@@ -60,24 +61,15 @@ public class Event {
 			this.categories = null;
 		}
 		this.cancelled = cancelled;
-		
-		this.defaultBitmap = BitmapFactory.decodeResource(Resources.getSystem(), R.drawable.ic_launcher);
 	}
 
 	/* TEMP Function to use android launcher icon as placeholder */
 	public Bitmap getImageBitmap() {
-		//return this.defaultBitmap;	/* For efficiency - temporary */
-		
-		if (this.imgUrl == null) {
-			return this.defaultBitmap;
-		}
-		
-		try {
-			return BitmapFactory.decodeStream(this.imgUrl.openConnection().getInputStream());
-		} catch (Exception e) {
-			e.printStackTrace();
-			return null;
-		}
+		return this.bitmap;
+	}
+	
+	public void setBitmap(Bitmap bitmap) {
+		this.bitmap = bitmap;
 	}
 	
 	public int getId() {

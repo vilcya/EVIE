@@ -16,6 +16,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.StrictMode;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Gravity;
@@ -58,6 +59,9 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+	    StrictMode.setThreadPolicy(policy);
+	    
 		//setupSmartSystem();
 		setupStartPageFeatures();
 	}
@@ -81,41 +85,28 @@ public class MainActivity extends Activity {
 		
 		loadEvents();
 		
-		/* Setup location scan button */
+		/* Setup location scan */
 		this.scanListener = new PeriodicWifiScanner(this);
 		this.scanListener.registerReceiver();
 		this.scanListener.startPeriodicScans();
-
-		/* Setup free food toggle */
-		ToggleButton freeFoodToggle = (ToggleButton) this.findViewById(R.id.tb_free_food);
-		freeFoodToggle.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-			@Override
-			public void onCheckedChanged(CompoundButton button, boolean on) {
-				if (on) {
-					MainActivity.dynamicEvents.filterFreeFood();
-				} else {
-					MainActivity.dynamicEvents.removeFilters();
-				}
-			}
-		});
 	}
 	
 	/**
 	 * Populates the drawer with relevant options
 	 */
 	private void setupDrawer() {
-		TextView header = new TextView(this);
+		/*TextView header = new TextView(this);
 		header.setText("Filter Options");
 		header.setTextColor(getResources().getColor(R.color.Bisque));
-		header.setBottom(50);
+		header.setPadding(0, 50, 0, 50);
 		header.setGravity(Gravity.CENTER);
-		header.setTextSize(30);
+		header.setTextSize(30);*/
 
 		ListView drawerList = (ListView) findViewById(R.id.ll_drawer);
-		drawerList.addHeaderView(header, R.layout.event_list_item, false);
+		//drawerList.addHeaderView(header, R.layout.event_list_item, false);
 		
 		String[] menu = getResources().getStringArray(R.array.drawermenu);
-		drawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.event_list_item, menu));
+		drawerList.setAdapter(new EventListAdapter(this, R.layout.event_list_item, menu));
 		drawerList.setOnItemClickListener(new DrawerMenuClickListener(this));
 	}
 	
@@ -337,9 +328,9 @@ public class MainActivity extends Activity {
 			
 			String[] menu = ((MainActivity)this.context).getResources().getStringArray(R.array.drawermenu);
 			TextView headerFilter = (TextView) ((MainActivity)this.context).findViewById(R.id.tv_filter);
-			headerFilter.setText(menu[position-1]);
+			headerFilter.setText(menu[position]);
 			
-			MainActivity.dynamicEvents.filter(position-1, this.context);
+			MainActivity.dynamicEvents.filter(position, this.context);
 		}
 
 	}

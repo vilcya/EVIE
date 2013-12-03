@@ -25,6 +25,7 @@ public final class R {
         public static final int Beige=0x7f060027;
         public static final int Bisque=0x7f06000d;
         public static final int Black=0x7f06008b;
+        public static final int BlackTrans=0x7f06008c;
         public static final int BlanchedAlmond=0x7f06000b;
         public static final int Blue=0x7f060087;
         public static final int BlueViolet=0x7f06005a;
@@ -190,11 +191,10 @@ public final class R {
         public static final int editText2=0x7f0c0015;
         public static final int event_name=0x7f0c0022;
         public static final int gv_main=0x7f0c0006;
+        public static final int imageView1=0x7f0c000b;
         public static final int iv_event_detail_image=0x7f0c0002;
         public static final int ll_drawer=0x7f0c000a;
-        public static final int ll_eventtype=0x7f0c000b;
         public static final int ll_food_toggle=0x7f0c000e;
-        public static final int ll_gridviews=0x7f0c000d;
         public static final int relativeLayout1=0x7f0c000f;
         public static final int spinner1=0x7f0c0017;
         public static final int tb_free_food=0x7f0c0007;
@@ -204,11 +204,12 @@ public final class R {
         public static final int textView4=0x7f0c0014;
         public static final int textView5=0x7f0c0018;
         public static final int textView6=0x7f0c0016;
-        public static final int tv_drawermenu=0x7f0c0023;
         public static final int tv_event_detail_description=0x7f0c0000;
         public static final int tv_event_detail_name=0x7f0c0001;
-        public static final int tv_filter=0x7f0c000c;
+        public static final int tv_filter=0x7f0c000d;
         public static final int tv_header=0x7f0c0004;
+        public static final int tv_header2=0x7f0c000c;
+        public static final int tv_menuname=0x7f0c0023;
         public static final int tv_rec=0x7f0c0005;
     }
     public static final class integer {

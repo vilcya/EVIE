@@ -23,7 +23,7 @@ public class UpdateEventsCallback implements Handler.Callback {
 	 * Updates the adapter for the new filtered items
 	 */
 	protected void updateList() {
-		EventAdapter adapter = new EventAdapter(this.context, R.layout.event_grid_item, this.dynamicEvents.getEvents());
+		EventGridAdapter adapter = new EventGridAdapter(this.context, R.layout.event_grid_item, this.dynamicEvents.getEvents());
 		GridView gridView = (GridView) ((MainActivity)this.context).findViewById(R.id.gv_main);
 		gridView.setAdapter(adapter);
 		gridView.setOnItemClickListener(new EventDetailClickListener(this.context));		
