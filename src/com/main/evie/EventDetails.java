@@ -28,6 +28,10 @@ public class EventDetails extends Activity {
 		}
 	
 		this.event = new DynamicEventList().getEventAt(eventPosition);
+		if (this.event.getImageBitmap() == null) {
+			new ImageDownloader(this.event);
+		}
+		
 		setEventDetailsView();
 		
 		Availability a = new Availability(getApplicationContext());
