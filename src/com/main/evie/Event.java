@@ -10,7 +10,6 @@ import java.util.Date;
 import com.example.evie.R;
 import com.smart.evie.ContentExtraction;
 
-import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -32,15 +31,18 @@ public class Event {
 	private int labelledCategory;
 	private final boolean cancelled;
 	private static Bitmap defaultBitmap;
-	private ArrayList<String> hashtags;
+	private String hashtags;
 	
 	Event(int id, String name, String description, Date startTime, Date endTime, 
 			String location, String imgUrl, String categories,
-			boolean cancelled, Context context) {
+			boolean cancelled) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
-		this.hashtags = ContentExtraction.findHashTags(description, context);
+		
+		for (String tag : ContentExtraction.findHashtags(this.description)) {
+			this.hashtags += " #" + tag;
+		}
 		
 		// Do error checking on start/end time later
 		this.startTime = startTime;
@@ -130,5 +132,17 @@ public class Event {
 	
 	public String extractImportantText() {
 		return this.description.concat(" " + this.name);
+	}
+	
+	public String getHashtags() {
+		return this.hashtags;
+	}
+	
+	public void setHashtags(ArrayList<String> hts) {
+		String concatHashtags = "";
+		for (String tag : hts) {
+			concatHashtags += " #" + tag;
+		}
+		this.hashtags = concatHashtags;
 	}
 }

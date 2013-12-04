@@ -7,8 +7,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-import opennlp.tools.namefind.TokenNameFinderModel;
-
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.app.Activity;
@@ -18,6 +16,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.StrictMode;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Gravity;
@@ -35,6 +34,8 @@ import android.widget.ToggleButton;
 
 import com.example.evie.R;
 import com.smart.evie.BagOfWords;
+import com.smart.evie.ContentExtraction;
+//import com.smart.evie.ContentExtraction;
 import com.smart.evie.KMeans;
 import com.wifi.evie.PeriodicWifiScanner;
 
@@ -52,6 +53,8 @@ public class MainActivity extends Activity {
 	private static DynamicEventList dynamicEvents = new DynamicEventList();
 	private PeriodicWifiScanner scanListener;
 	
+	//public ContentExtraction mContentExtractor = null;
+	
 	ArrayList<double[]> trainingResults;
 	BagOfWords bagOfWords;
 	
@@ -61,6 +64,9 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		//setupSmartSystem();
+		//mContentExtractor = new ContentExtraction(getApplicationContext());
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+	    StrictMode.setThreadPolicy(policy);
 		setupStartPageFeatures();
 	}
 
@@ -148,7 +154,7 @@ public class MainActivity extends Activity {
 		Toast.makeText(getApplicationContext(), "We have not trained ... training ....", Toast.LENGTH_LONG).show();
 		
 		/* Loads training data into dynamicEvents */
-		dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(true, this);
+		dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(true);
 
 		this.bagOfWords = new BagOfWords();
 		ArrayList<double[]> trainingData = this.bagOfWords.pollWords(dynamicEvents.getAllEvents());
@@ -187,6 +193,8 @@ public class MainActivity extends Activity {
 		eventCallback.updateList();
     	Handler eventChangeHandler = new Handler(Looper.getMainLooper(), eventCallback);
 		dynamicEvents.setHandler(eventChangeHandler);
+		
+		//Log.i("evie_debug", ContentExtraction.findHashtags("Hello World").toString());
 
     	/*
         if((wifiConnected || mobileConnected)) {
@@ -199,8 +207,7 @@ public class MainActivity extends Activity {
 	            return;
 	        }
         }*/
-
-    	dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(false, this);
+    	dynamicEvents = new DownloadEventsXmlTask().loadXmlFromFile(false);
 		//dynamicEvents.categorize(this.trainingResults, this.bagOfWords);
     }
 
@@ -271,7 +278,7 @@ public class MainActivity extends Activity {
 		         	         	         
 		    try {
 		        stream = downloadUrl(urlString);        
-		        events = teuduEventParser.parse(stream);
+		        events = teuduEventParser.parse(stream, null);
 		    // Makes sure that the InputStream is closed after the app is
 		    // finished using it.
 		    } finally {
@@ -285,8 +292,9 @@ public class MainActivity extends Activity {
 		/**
 		 * Used for training
 		 */
-		private DynamicEventList loadXmlFromFile(boolean training, Context context) {
+		private DynamicEventList loadXmlFromFile(boolean training) {
 			InputStream stream = null;
+			Context context = getApplicationContext();
 			if (training) {
 				stream = context.getResources().openRawResource(R.raw.rawtrainingdata);
 			} else {
@@ -296,7 +304,7 @@ public class MainActivity extends Activity {
 			DynamicEventList events = null;
 
 			try {
-				events = teuduEventParser.parse(stream);
+				events = teuduEventParser.parse(stream, null);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

@@ -10,6 +10,7 @@ import android.os.Message;
 import android.util.Log;
 
 import com.smart.evie.BagOfWords;
+import com.smart.evie.ContentExtraction;
 import com.smart.evie.KMeans;
 import com.smart.evie.UserPreference;
 
@@ -48,8 +49,11 @@ public class DynamicEventList{
 
 	
 	public void createEvent(int id, String name, String description, Date startTime, Date endTime, 
-					String location, String imgUrl, String categories, boolean cancelled) {
+					String location, String imgUrl, String categories, boolean cancelled, ContentExtraction contentExtractor) {
 		Event newEvent = new Event(id, name, description, startTime, endTime, location, imgUrl, categories, cancelled);
+		/*if (contentExtractor != null) {
+			newEvent.setHashtags(contentExtractor.findHashtags(newEvent.getDescription()));
+		}*/
 		id++;
 		DynamicEventList.allEvents.add(newEvent);
 	}

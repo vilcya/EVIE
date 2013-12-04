@@ -12,6 +12,9 @@ import java.util.List;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
+import com.smart.evie.ContentExtraction;
+
+import android.content.Context;
 import android.util.Xml;
 
 public class TeuduEventParser {
@@ -23,13 +26,13 @@ public class TeuduEventParser {
 		events.clear();
 	}
 	
-	public DynamicEventList parse(InputStream in) throws XmlPullParserException, IOException {
+	public DynamicEventList parse(InputStream in, ContentExtraction contentExtract) throws XmlPullParserException, IOException {
 		try {
 			XmlPullParser parser = Xml.newPullParser();
 			parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
 			parser.setInput(in, null);
 			parser.nextTag();
-			return readEvents(parser);
+			return readEvents(parser, contentExtract);
 		} catch(XmlPullParserException e) {
 			System.out.println(e.getMessage());
 			return null;
@@ -38,7 +41,7 @@ public class TeuduEventParser {
 		}
 	}
 	
-	private DynamicEventList readEvents(XmlPullParser parser) throws XmlPullParserException, IOException {
+	private DynamicEventList readEvents(XmlPullParser parser, ContentExtraction contentExtract) throws XmlPullParserException, IOException {
 		parser.require(XmlPullParser.START_TAG, ns, "events");
 		while (parser.next() != XmlPullParser.END_TAG) {
 			if (parser.getEventType() != XmlPullParser.START_TAG) {
@@ -46,7 +49,7 @@ public class TeuduEventParser {
 			}
 			String name = parser.getName();
 			if (name.equals("event")) {
-				readEvent(parser);
+				readEvent(parser, contentExtract);
 			} else {
 				skip(parser);
 			}
@@ -54,7 +57,7 @@ public class TeuduEventParser {
 		return events;
 	}
 	
-	private void readEvent(XmlPullParser parser) throws XmlPullParserException, IOException {
+	private void readEvent(XmlPullParser parser, ContentExtraction contentExtract) throws XmlPullParserException, IOException {
 		parser.require(XmlPullParser.START_TAG, ns, "event");
 		int id = -1;
 		String name = null;
@@ -107,7 +110,7 @@ public class TeuduEventParser {
 		}
 
 		events.createEvent(id, name, description, null, null, 
-				location, imgUrl, categories, cancelled);
+				location, imgUrl, categories, cancelled, contentExtract);
 	}
 	
 	private int readID(XmlPullParser parser) throws XmlPullParserException, IOException {
