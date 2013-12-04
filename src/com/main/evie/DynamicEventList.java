@@ -23,11 +23,13 @@ public class DynamicEventList{
 	private static final int FILTER_RECOMMENDED = 1;
 	private static final int FILTER_NEARBY = 2;
 	private static final int FILTER_FOOD = 3;
+	private static int currentFilter = FILTER_NEARBY;
 	
 	/** Includes all events */
 	private static ArrayList<Event> allEvents = new ArrayList<Event>();
 	/** Events that the user sees at a given time */
 	private static ArrayList<Event> recommendedEvents = new ArrayList<Event>();
+	private static ArrayList<Event> nearbyEvents = new ArrayList<Event>();
 	private static ArrayList<Event> filteredEvents = new ArrayList<Event>();
 	private static UserPreference userPreference = new UserPreference();
 	private static Handler eventChangeHandler = null;
@@ -37,23 +39,11 @@ public class DynamicEventList{
 		DynamicEventList.eventChangeHandler = eventChangeHandler;
 	}
 
-	/*public void initiateDummyEvents() {
-		DynamicEventList.allEvents.clear();
-		DynamicEventList.filteredEvents.clear();
-		createEvent("Intelligence Lab", "It's demo time!", null, null);
-		createEvent("Random Tech Talk", "Come join us for free food!", null, null);
-		createEvent("Spontaneous BBQ", "JOIN US FOR STEAK AND MORE FOODS!", null, null);
-		createEvent("SCS Day", "We haz talents too.", null, null);
-		createEvent("Puppy Stress Relief", "Puppies!", null, null);
-	}*/
-
 	
 	public void createEvent(int id, String name, String description, Date startTime, Date endTime, 
 					String location, String imgUrl, String categories, boolean cancelled, ContentExtraction contentExtractor) {
 		Event newEvent = new Event(id, name, description, startTime, endTime, location, imgUrl, categories, cancelled);
-		/*if (contentExtractor != null) {
-			newEvent.setHashtags(contentExtractor.findHashtags(newEvent.getDescription()));
-		}*/
+		//new ImageDownloader(newEvent);
 		id++;
 		DynamicEventList.allEvents.add(newEvent);
 	}
@@ -80,15 +70,19 @@ public class DynamicEventList{
 		switch (position) {
 		case FILTER_ALL:
 			removeFilters();
+			currentFilter = FILTER_ALL;
 			break;
 		case FILTER_RECOMMENDED:
 			filterByRecommended();
+			currentFilter = FILTER_RECOMMENDED;
 			break;
 		case FILTER_NEARBY:
 			filterByLocation(context);
+			currentFilter = FILTER_NEARBY;
 			break;
 		case FILTER_FOOD:
 			filterFreeFood();
+			currentFilter = FILTER_FOOD;
 			break;
 		default:
 			Log.w("evie_debug", "WARNING: INDEX OUT OF BOUNDS");
@@ -109,8 +103,10 @@ public class DynamicEventList{
 	public void updateLocation(String location, Context context) {
 		DynamicEventList.location = location.toLowerCase();
 		
-		filterByLocation(context);
-		sendChangeEventMessage();
+		if (currentFilter == FILTER_NEARBY) {
+			filterByLocation(context);
+			sendChangeEventMessage();
+		}
 	}
 	
 	public void filterByLocation(Context context) {
@@ -122,7 +118,10 @@ public class DynamicEventList{
 		}
 
 		NotifyLocationEvents notification = new NotifyLocationEvents(context);
-		notification.notifyEvents(DynamicEventList.filteredEvents.size());
+		int size = DynamicEventList.filteredEvents.size();
+		if (size > 0) {
+			notification.notifyEvents(size);
+		}
 	}
 
 	public void filterByCategory(int label) {
@@ -157,6 +156,7 @@ public class DynamicEventList{
 	public void updateUserPreference(int position, int numEvents) {
 		String words = DynamicEventList.filteredEvents.get(position).extractImportantText();
 		this.recommendedEvents = this.userPreference.addWords(words, numEvents);
+		sendUpdatedPreference(this.recommendedEvents.size(), numEvents);
 	}
 	
 	/**
@@ -175,6 +175,14 @@ public class DynamicEventList{
 	private void sendChangeEventMessage() {
 		Message message = Message.obtain();
 		message.what = 0;
+		eventChangeHandler.sendMessage(message);
+	}
+	
+	private void sendUpdatedPreference(int numRecommended, int scheduledEvents) {
+		Message message = Message.obtain();
+		message.what = 1;
+		message.arg1 = numRecommended;
+		message.arg2 = scheduledEvents;
 		eventChangeHandler.sendMessage(message);
 	}
 }

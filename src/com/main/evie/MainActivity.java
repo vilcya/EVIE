@@ -24,13 +24,9 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ToggleButton;
 
 import com.example.evie.R;
 import com.smart.evie.BagOfWords;
@@ -63,10 +59,11 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		//setupSmartSystem();
-		//mContentExtractor = new ContentExtraction(getApplicationContext());
 		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 	    StrictMode.setThreadPolicy(policy);
+	    
+		//setupSmartSystem();
+		//mContentExtractor = new ContentExtraction(getApplicationContext());
 		setupStartPageFeatures();
 	}
 
@@ -83,46 +80,34 @@ public class MainActivity extends Activity {
 		/* Setup welcome text */
 		TextView headerText = (TextView) this.findViewById(R.id.tv_header);
 		headerText.setText("Please wait while we look up your location ...");
-
+		
 		/* Setup drawer */
 		setupDrawer();
 		
 		loadEvents();
-		/* Setup location scan button */
+
+		/* Setup location scan */
 		this.scanListener = new PeriodicWifiScanner(this);
 		this.scanListener.registerReceiver();
 		this.scanListener.startPeriodicScans();
-
-		/* Setup free food toggle */
-		ToggleButton freeFoodToggle = (ToggleButton) this.findViewById(R.id.tb_free_food);
-		freeFoodToggle.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-			@Override
-			public void onCheckedChanged(CompoundButton button, boolean on) {
-				if (on) {
-					MainActivity.dynamicEvents.filterFreeFood();
-				} else {
-					MainActivity.dynamicEvents.removeFilters();
-				}
-			}
-		});
 	}
 	
 	/**
 	 * Populates the drawer with relevant options
 	 */
 	private void setupDrawer() {
-		TextView header = new TextView(this);
+		/*TextView header = new TextView(this);
 		header.setText("Filter Options");
 		header.setTextColor(getResources().getColor(R.color.Bisque));
-		header.setBottom(50);
+		header.setPadding(0, 50, 0, 50);
 		header.setGravity(Gravity.CENTER);
-		header.setTextSize(30);
+		header.setTextSize(30);*/
 
 		ListView drawerList = (ListView) findViewById(R.id.ll_drawer);
-		drawerList.addHeaderView(header, R.layout.event_list_item, false);
+		//drawerList.addHeaderView(header, R.layout.event_list_item, false);
 		
 		String[] menu = getResources().getStringArray(R.array.drawermenu);
-		drawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.event_list_item, menu));
+		drawerList.setAdapter(new EventListAdapter(this, R.layout.event_list_item, menu));
 		drawerList.setOnItemClickListener(new DrawerMenuClickListener(this));
 	}
 	
@@ -346,9 +331,9 @@ public class MainActivity extends Activity {
 			
 			String[] menu = ((MainActivity)this.context).getResources().getStringArray(R.array.drawermenu);
 			TextView headerFilter = (TextView) ((MainActivity)this.context).findViewById(R.id.tv_filter);
-			headerFilter.setText(menu[position-1]);
+			headerFilter.setText(menu[position]);
 			
-			MainActivity.dynamicEvents.filter(position-1, this.context);
+			MainActivity.dynamicEvents.filter(position, this.context);
 		}
 
 	}

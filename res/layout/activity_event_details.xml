@@ -14,10 +14,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/tv_event_detail_name"
-        android:layout_marginLeft="34dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/hello_world" 
-        android:gravity="center"/>
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:text="@string/hello_world"
+        android:textColor="@color/CadetBlue"
+        android:textColorLink="@color/CadetBlue" />
     
     <TextView
         android:id="@+id/tv_event_detail_description"

@@ -36,15 +36,11 @@ public class Location {
 	 * @return
 	 */
 	public boolean macIdExists(String userMacId) {
-		//Log.i("evie_debug", name + "NAME IS " + userMacId);
 		for (String macId : macIds) {
-			//Log.i("evie_debug", name + "NAME OF EXISTING IS " + macId);
 			if (macId.equals(userMacId)) {
-				Log.i("evie_debug", name + "NAME OF EXISTING IS " + macId + "NAME of USER is " + userMacId);
 				return true;
 			}
 		}
-		Log.i("evie_debug", "DONE\n\n");
 		return this.macIds.contains(name);
 	}
 }

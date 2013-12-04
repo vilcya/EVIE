@@ -1,13 +1,14 @@
 package com.main.evie;
 
 
-import com.example.evie.R;
-
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
+import android.widget.TextView;
+
+import com.example.evie.R;
 
 public class NotifyLocationEvents {
 	Context mContext;
@@ -22,7 +23,7 @@ public class NotifyLocationEvents {
 		mNotificationBuilder = new NotificationCompat.Builder(mContext)
 				.setContentTitle("Events near your location")
 				.setContentText(CONTENT_TEXT)
-				.setSmallIcon(R.drawable.logo);
+				.setSmallIcon(R.drawable.logo_small);
 	}
 	
 	public void notifyEvents(int numEvents) {

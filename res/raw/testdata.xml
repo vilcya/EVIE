@@ -11,7 +11,7 @@
     <end-time>2013-09-09 18:30</end-time>
     <event-start type="datetime">2013-09-09T14:00:00-04:00</event-start>
     <event-end type="datetime">2013-09-09T14:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/171/original/tsagbm.jpg?1378062751</flyer>
+    <image>/system/flyers/171/original/tsagbm.jpg?1378062751</image>
     <pattern type="integer" nil="true"/>
     <categories>8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -45,7 +45,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-09-10 18:00</end-time>
     <event-start type="datetime">2013-10-09T13:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-09T14:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/206/original/Screen_Shot_2013-10-09_at_12.19.02_PM.png?1381336139</flyer>
+    <image>/system/flyers/206/original/Screen_Shot_2013-10-09_at_12.19.02_PM.png?1381336139</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -80,7 +80,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-09-10 19:30</end-time>
     <event-start type="datetime">2013-10-09T14:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-09T15:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/180/original/spiceworks.jpg?1381333568</flyer>
+    <image>/system/flyers/180/original/spiceworks.jpg?1381333568</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -109,7 +109,7 @@ Through innovative, reliable products and services; talented people; a responsib
     <end-time>2013-09-10 19:00</end-time>
     <event-start type="datetime">2013-10-09T14:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-09T15:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/212/original/Samsung-Logo.jpg?1381334988</flyer>
+    <image>/system/flyers/212/original/Samsung-Logo.jpg?1381334988</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -135,7 +135,7 @@ Through innovative, reliable products and services; talented people; a responsib
     <end-time>2013-18-12 00:00</end-time>
     <event-start type="datetime">2013-12-08T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-12-17T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/182/original/finals.jpg?1381334359</flyer>
+    <image>/system/flyers/182/original/finals.jpg?1381334359</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -161,7 +161,7 @@ Through innovative, reliable products and services; talented people; a responsib
     <end-time>2013-10-02 18:00</end-time>
     <event-start type="datetime">2013-02-10T10:30:00-05:00</event-start>
     <event-end type="datetime">2013-02-10T13:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/87/original/talent_show2.gif?1359921702</flyer>
+    <image>/system/flyers/87/original/talent_show2.gif?1359921702</image>
     <pattern type="integer" nil="true"/>
     <categories>4,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -187,7 +187,7 @@ Through innovative, reliable products and services; talented people; a responsib
     <end-time>2013-10-09 13:30</end-time>
     <event-start type="datetime">2013-09-10T07:30:00-04:00</event-start>
     <event-end type="datetime">2013-09-10T09:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/172/original/PACE.jpg?1378062848</flyer>
+    <image>/system/flyers/172/original/PACE.jpg?1378062848</image>
     <pattern type="integer" nil="true"/>
     <categories>8,9</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -219,7 +219,7 @@ Come to a brief information session to learn more about the possibility of study
     <end-time>2013-10-09 13:00</end-time>
     <event-start type="datetime">2013-09-10T08:00:00-04:00</event-start>
     <event-end type="datetime">2013-09-10T09:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/173/original/studyabroad.jpg?1378062959</flyer>
+    <image>/system/flyers/173/original/studyabroad.jpg?1378062959</image>
     <pattern type="integer" nil="true"/>
     <categories>4,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -249,7 +249,7 @@ Come to a brief information session to learn more about the possibility of study
     <end-time>2013-11-10 00:00</end-time>
     <event-start type="datetime">2013-10-09T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-10T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/178/original/Screen_Shot_2013-10-09_at_11.43.28_AM.png?1381333431</flyer>
+    <image>/system/flyers/178/original/Screen_Shot_2013-10-09_at_11.43.28_AM.png?1381333431</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -275,7 +275,7 @@ Come to a brief information session to learn more about the possibility of study
     <end-time>2013-11-02 11:00</end-time>
     <event-start type="datetime">2013-02-11T05:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-11T06:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/101/original/d62dd4b26cd64ac9bd94f3fc3148358c.jpg?1360526345</flyer>
+    <image>/system/flyers/101/original/d62dd4b26cd64ac9bd94f3fc3148358c.jpg?1360526345</image>
     <pattern type="integer" nil="true"/>
     <categories>4,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -301,7 +301,7 @@ Come to a brief information session to learn more about the possibility of study
     <end-time>2013-12-04 00:00</end-time>
     <event-start type="datetime">2013-04-10T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-11T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/133/original/MV5BMTcwMjAyMTUzMl5BMl5BanBnXkFtZTcwODgxNzk1OA__._V1_SY317_CR0_0_214_317_.jpg?1364160850</flyer>
+    <image>/system/flyers/133/original/MV5BMTcwMjAyMTUzMl5BMl5BanBnXkFtZTcwODgxNzk1OA__._V1_SY317_CR0_0_214_317_.jpg?1364160850</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -327,7 +327,7 @@ Come to a brief information session to learn more about the possibility of study
     <end-time>2013-11-09 18:00</end-time>
     <event-start type="datetime">2013-09-11T13:00:00-04:00</event-start>
     <event-end type="datetime">2013-09-11T14:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/174/original/modelun2.jpg?1378063087</flyer>
+    <image>/system/flyers/174/original/modelun2.jpg?1378063087</image>
     <pattern type="integer" nil="true"/>
     <categories>4,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -353,7 +353,7 @@ Come to a brief information session to learn more about the possibility of study
     <end-time>2013-11-11 17:30</end-time>
     <event-start type="datetime">2013-11-11T11:30:00-05:00</event-start>
     <event-end type="datetime">2013-11-11T12:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/202/original/Screen_Shot_2013-10-09_at_12.30.10_PM.png?1381336201</flyer>
+    <image>/system/flyers/202/original/Screen_Shot_2013-10-09_at_12.30.10_PM.png?1381336201</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -379,7 +379,7 @@ Come to a brief information session to learn more about the possibility of study
     <end-time>2013-11-12 14:00</end-time>
     <event-start type="datetime">2013-12-11T07:00:00-05:00</event-start>
     <event-end type="datetime">2013-12-11T09:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/188/original/poster2.jpg?1381334785</flyer>
+    <image>/system/flyers/188/original/poster2.jpg?1381334785</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -405,7 +405,7 @@ Come to a brief information session to learn more about the possibility of study
     <end-time>2013-12-02 15:00</end-time>
     <event-start type="datetime">2013-02-12T09:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-12T10:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/100/original/0689643621af4172a38c51cfe628a39a.jpg?1360526231</flyer>
+    <image>/system/flyers/100/original/0689643621af4172a38c51cfe628a39a.jpg?1360526231</image>
     <pattern type="integer" nil="true"/>
     <categories>4,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -439,7 +439,7 @@ Three roses for $5.</description>
     <end-time>2013-12-02 21:00</end-time>
     <event-start type="datetime">2013-02-12T12:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-12T16:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/98/original/6ad4463efa0140c38e46352779ebe5f9.jpg?1360525396</flyer>
+    <image>/system/flyers/98/original/6ad4463efa0140c38e46352779ebe5f9.jpg?1360525396</image>
     <pattern type="integer" nil="true"/>
     <categories>8,9</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -466,7 +466,7 @@ Three roses for $5.</description>
     <end-time>2013-13-04 00:00</end-time>
     <event-start type="datetime">2013-04-11T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-12T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/134/original/Silver-Linings-Playbook-poster.jpeg?1364160882</flyer>
+    <image>/system/flyers/134/original/Silver-Linings-Playbook-poster.jpeg?1364160882</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -498,7 +498,7 @@ Palantir is headquartered in downtown Palo Alto, CA, with offices around the wor
     <end-time>2013-13-02 19:00</end-time>
     <event-start type="datetime">2013-02-13T13:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-13T14:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/89/original/palantir.jpg?1359921660</flyer>
+    <image>/system/flyers/89/original/palantir.jpg?1359921660</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -526,7 +526,7 @@ Craig Schoedler will be at Skibo Cafe Wednesday, Feb. 13 at 6:00pm.</description
     <end-time>2013-13-02 20:00</end-time>
     <event-start type="datetime">2013-02-13T13:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-13T15:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/97/original/9b3a5260244542d7b440c786731a8fb6.jpg?1360525169</flyer>
+    <image>/system/flyers/97/original/9b3a5260244542d7b440c786731a8fb6.jpg?1360525169</image>
     <pattern type="integer" nil="true"/>
     <categories>1,5</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -554,7 +554,7 @@ Craig Schoedler will be at Skibo Cafe Wednesday, Feb. 13 at 6:00pm.</description
     <end-time>2013-14-04 00:00</end-time>
     <event-start type="datetime">2013-04-12T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-13T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/135/original/images.jpeg?1364160916</flyer>
+    <image>/system/flyers/135/original/images.jpeg?1364160916</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -584,7 +584,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-13-11 18:00</end-time>
     <event-start type="datetime">2013-11-13T11:30:00-05:00</event-start>
     <event-end type="datetime">2013-11-13T13:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/211/original/gates.png?1381335303</flyer>
+    <image>/system/flyers/211/original/gates.png?1381335303</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -627,7 +627,7 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <end-time>2013-14-02 23:30</end-time>
     <event-start type="datetime">2013-02-14T14:30:00-05:00</event-start>
     <event-end type="datetime">2013-02-14T18:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/94/original/e372511f92144d379be25fd2aeb51f67.jpg?1360524740</flyer>
+    <image>/system/flyers/94/original/e372511f92144d379be25fd2aeb51f67.jpg?1360524740</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -653,7 +653,7 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <end-time>2013-15-10 00:00</end-time>
     <event-start type="datetime">2013-10-13T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-14T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/196/original/Screen_Shot_2013-10-09_at_12.26.36_PM.png?1381335988</flyer>
+    <image>/system/flyers/196/original/Screen_Shot_2013-10-09_at_12.26.36_PM.png?1381335988</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -686,7 +686,7 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <end-time>2013-15-02 23:30</end-time>
     <event-start type="datetime">2013-02-15T14:30:00-05:00</event-start>
     <event-end type="datetime">2013-02-15T18:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/93/original/a02ff50df3c54b0c88cbd257b9714f04.jpg?1360524641</flyer>
+    <image>/system/flyers/93/original/a02ff50df3c54b0c88cbd257b9714f04.jpg?1360524641</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -737,7 +737,7 @@ Bailiff: Billy Veer</description>
     <end-time>2013-16-02 18:00</end-time>
     <event-start type="datetime">2013-02-15T15:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-16T13:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/96/original/3a8889f86744407093012139f437830a.jpg?1360525002</flyer>
+    <image>/system/flyers/96/original/3a8889f86744407093012139f437830a.jpg?1360525002</image>
     <pattern type="integer" nil="true"/>
     <categories>1,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -763,7 +763,7 @@ Bailiff: Billy Veer</description>
     <end-time>2013-16-02 1:00</end-time>
     <event-start type="datetime">2013-02-15T16:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-15T20:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/102/original/5f9f2a7f8d3c46088c54d56eacefb1de.jpg?1360526418</flyer>
+    <image>/system/flyers/102/original/5f9f2a7f8d3c46088c54d56eacefb1de.jpg?1360526418</image>
     <pattern type="integer" nil="true"/>
     <categories>5,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -789,7 +789,7 @@ Bailiff: Billy Veer</description>
     <end-time>2013-16-02 14:00</end-time>
     <event-start type="datetime">2013-02-16T06:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-16T09:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/99/original/d2245bc087d5433f8450428c1ccd0093.jpg?1360525518</flyer>
+    <image>/system/flyers/99/original/d2245bc087d5433f8450428c1ccd0093.jpg?1360525518</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -815,7 +815,7 @@ Bailiff: Billy Veer</description>
     <end-time>2013-16-02 18:00</end-time>
     <event-start type="datetime">2013-02-16T09:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-16T13:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/88/original/talent-show.jpg?1359921381</flyer>
+    <image>/system/flyers/88/original/talent-show.jpg?1359921381</image>
     <pattern type="integer" nil="true"/>
     <categories>4,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -843,7 +843,7 @@ This is an awesome opportunity to see freestyle battles and to be exposed to hip
     <end-time>2013-17-02 13:00</end-time>
     <event-start type="datetime">2013-02-16T16:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-17T08:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/104/original/656c55491aac48d3b376847621901a52.jpg?1360526622</flyer>
+    <image>/system/flyers/104/original/656c55491aac48d3b376847621901a52.jpg?1360526622</image>
     <pattern type="integer" nil="true"/>
     <categories>1,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -871,7 +871,7 @@ This is an awesome opportunity to see freestyle battles and to be exposed to hip
     <end-time>2013-16-04 22:30</end-time>
     <event-start type="datetime">2013-04-16T14:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-16T18:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/149/original/893691_504061362992019_1745575813_o.png?1365966543</flyer>
+    <image>/system/flyers/149/original/893691_504061362992019_1745575813_o.png?1365966543</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -897,7 +897,7 @@ This is an awesome opportunity to see freestyle battles and to be exposed to hip
     <end-time>2013-17-02 23:00</end-time>
     <event-start type="datetime">2013-02-17T14:30:00-05:00</event-start>
     <event-end type="datetime">2013-02-17T18:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/103/original/4b9fdd04f19c4649abf02f292ca10b21.jpg?1360526519</flyer>
+    <image>/system/flyers/103/original/4b9fdd04f19c4649abf02f292ca10b21.jpg?1360526519</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -923,7 +923,7 @@ This is an awesome opportunity to see freestyle battles and to be exposed to hip
     <end-time>2013-17-10 17:30</end-time>
     <event-start type="datetime">2013-10-17T12:30:00-04:00</event-start>
     <event-end type="datetime">2013-10-17T13:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/204/original/Screen_Shot_2013-10-09_at_12.30.10_PM.png?1381336243</flyer>
+    <image>/system/flyers/204/original/Screen_Shot_2013-10-09_at_12.30.10_PM.png?1381336243</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -951,7 +951,7 @@ Above, you can learn a little bit more about all of these events, and maybe this
     <end-time>2013-21-04 00:00</end-time>
     <event-start type="datetime">2013-04-17T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-20T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/145/original/carnival2013.jpg?1365966586</flyer>
+    <image>/system/flyers/145/original/carnival2013.jpg?1365966586</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -979,7 +979,7 @@ A main goal is to create a climate, culture and community to enable talent and i
     <end-time>2013-18-04 18:00</end-time>
     <event-start type="datetime">2013-04-18T12:30:00-04:00</event-start>
     <event-end type="datetime">2013-04-18T14:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/148/original/olympus_main_page.png?1365966666</flyer>
+    <image>/system/flyers/148/original/olympus_main_page.png?1365966666</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1005,7 +1005,7 @@ A main goal is to create a climate, culture and community to enable talent and i
     <end-time>2013-19-10 00:00</end-time>
     <event-start type="datetime">2013-10-17T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-18T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/181/original/Screen_Shot_2013-10-09_at_12.03.11_PM.png?1381334598</flyer>
+    <image>/system/flyers/181/original/Screen_Shot_2013-10-09_at_12.03.11_PM.png?1381334598</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1031,7 +1031,7 @@ A main goal is to create a climate, culture and community to enable talent and i
     <end-time>2013-23-11 00:00</end-time>
     <event-start type="datetime">2013-11-17T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-11-22T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/197/original/Screen_Shot_2013-10-09_at_12.28.24_PM.png?1381336097</flyer>
+    <image>/system/flyers/197/original/Screen_Shot_2013-10-09_at_12.28.24_PM.png?1381336097</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1057,7 +1057,7 @@ A main goal is to create a climate, culture and community to enable talent and i
     <end-time>2013-20-11 00:00</end-time>
     <event-start type="datetime">2013-11-18T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-11-19T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/195/original/Screen_Shot_2013-10-09_at_12.25.41_PM.png?1381335935</flyer>
+    <image>/system/flyers/195/original/Screen_Shot_2013-10-09_at_12.25.41_PM.png?1381335935</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1083,7 +1083,7 @@ A main goal is to create a climate, culture and community to enable talent and i
     <end-time>2013-20-04 12:00</end-time>
     <event-start type="datetime">2013-04-19T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-20T08:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/150/original/Buggy-20081215043432.jpg?1366408130</flyer>
+    <image>/system/flyers/150/original/Buggy-20081215043432.jpg?1366408130</image>
     <pattern type="integer" nil="true"/>
     <categories>2,4</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1110,7 +1110,7 @@ A main goal is to create a climate, culture and community to enable talent and i
     <end-time>2013-20-04 11:00</end-time>
     <event-start type="datetime">2013-04-20T06:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-20T07:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/151/original/1000px-Emblem-money.svg_.png?1366408145</flyer>
+    <image>/system/flyers/151/original/1000px-Emblem-money.svg_.png?1366408145</image>
     <pattern type="integer" nil="true"/>
     <categories>4,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1138,7 +1138,7 @@ A main goal is to create a climate, culture and community to enable talent and i
     <end-time>2013-20-04 13:00</end-time>
     <event-start type="datetime">2013-04-20T07:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-20T09:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/152/original/zumba.jpg?1366408171</flyer>
+    <image>/system/flyers/152/original/zumba.jpg?1366408171</image>
     <pattern type="integer" nil="true"/>
     <categories>2</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1165,7 +1165,7 @@ A main goal is to create a climate, culture and community to enable talent and i
     <end-time>2013-20-04 16:00</end-time>
     <event-start type="datetime">2013-04-20T08:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-20T12:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/153/original/images.jpeg?1366408181</flyer>
+    <image>/system/flyers/153/original/images.jpeg?1366408181</image>
     <pattern type="integer" nil="true"/>
     <categories>2,4</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1191,7 +1191,7 @@ A main goal is to create a climate, culture and community to enable talent and i
     <end-time>2013-20-04 22:00</end-time>
     <event-start type="datetime">2013-04-20T16:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-20T18:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/154/original/lupe-fiasco.jpg?1366408155</flyer>
+    <image>/system/flyers/154/original/lupe-fiasco.jpg?1366408155</image>
     <pattern type="integer" nil="true"/>
     <categories>4,5</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1221,7 +1221,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-20-11 18:00</end-time>
     <event-start type="datetime">2013-11-20T12:00:00-05:00</event-start>
     <event-end type="datetime">2013-11-20T13:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/208/original/Screen_Shot_2013-10-09_at_12.19.02_PM.png?1381335548</flyer>
+    <image>/system/flyers/208/original/Screen_Shot_2013-10-09_at_12.19.02_PM.png?1381335548</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1247,7 +1247,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-22-02 00:00</end-time>
     <event-start type="datetime">2013-02-20T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-21T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/111/original/phillip_morris.png?1361142281</flyer>
+    <image>/system/flyers/111/original/phillip_morris.png?1361142281</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1273,7 +1273,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-23-02 00:00</end-time>
     <event-start type="datetime">2013-02-21T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-22T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/112/original/iron_lady_ver3_xlg.jpg?1361142293</flyer>
+    <image>/system/flyers/112/original/iron_lady_ver3_xlg.jpg?1361142293</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1299,7 +1299,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-24-02 00:00</end-time>
     <event-start type="datetime">2013-02-22T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-23T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/109/original/The_Perks_of.jpeg?1361142266</flyer>
+    <image>/system/flyers/109/original/The_Perks_of.jpeg?1361142266</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1329,7 +1329,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-23-10 18:00</end-time>
     <event-start type="datetime">2013-10-23T13:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-23T14:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/205/original/Screen_Shot_2013-10-09_at_12.19.02_PM.png?1381336119</flyer>
+    <image>/system/flyers/205/original/Screen_Shot_2013-10-09_at_12.19.02_PM.png?1381336119</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1357,7 +1357,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-23-11 21:00</end-time>
     <event-start type="datetime">2013-11-23T08:00:00-05:00</event-start>
     <event-end type="datetime">2013-11-23T16:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/179/original/hack.png?1381333505</flyer>
+    <image>/system/flyers/179/original/hack.png?1381333505</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1383,7 +1383,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-24-01 16:30</end-time>
     <event-start type="datetime">2013-01-24T10:30:00-05:00</event-start>
     <event-end type="datetime">2013-01-24T11:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/64/original/tartan_hacks_201x201.jpg?1358712263</flyer>
+    <image>/system/flyers/64/original/tartan_hacks_201x201.jpg?1358712263</image>
     <pattern type="integer" nil="true"/>
     <categories>4,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1409,7 +1409,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-24-01 20:30</end-time>
     <event-start type="datetime">2013-01-24T14:30:00-05:00</event-start>
     <event-end type="datetime">2013-01-24T15:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/65/original/2775067.jpg?1358712451</flyer>
+    <image>/system/flyers/65/original/2775067.jpg?1358712451</image>
     <pattern type="integer" nil="true"/>
     <categories>4,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1437,7 +1437,7 @@ We hope to have lots of opportunities for Outreach. Students who are interested 
     <end-time>2013-25-01 17:30</end-time>
     <event-start type="datetime">2013-01-25T11:30:00-05:00</event-start>
     <event-end type="datetime">2013-01-25T12:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/75/original/eBay.jpg?1359147799</flyer>
+    <image>/system/flyers/75/original/eBay.jpg?1359147799</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1465,7 +1465,7 @@ TartanHacks tries to solve those problems. Instead of 24 hours of coders trying 
     <end-time>2013-25-01 18:00</end-time>
     <event-start type="datetime">2013-01-25T12:30:00-05:00</event-start>
     <event-end type="datetime">2013-01-25T13:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/66/original/guest-book.jpg?1358712714</flyer>
+    <image>/system/flyers/66/original/guest-book.jpg?1358712714</image>
     <pattern type="integer" nil="true"/>
     <categories>4,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1491,7 +1491,7 @@ TartanHacks tries to solve those problems. Instead of 24 hours of coders trying 
     <end-time>2013-25-01 19:00</end-time>
     <event-start type="datetime">2013-01-25T13:00:00-05:00</event-start>
     <event-end type="datetime">2013-01-25T14:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/68/original/fyVMtP8A.jpeg?1358713087</flyer>
+    <image>/system/flyers/68/original/fyVMtP8A.jpeg?1358713087</image>
     <pattern type="integer" nil="true"/>
     <categories>4,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1517,7 +1517,7 @@ TartanHacks tries to solve those problems. Instead of 24 hours of coders trying 
     <end-time>2013-25-01 19:30</end-time>
     <event-start type="datetime">2013-01-25T14:00:00-05:00</event-start>
     <event-end type="datetime">2013-01-25T14:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/76/original/google.jpg?1359147882</flyer>
+    <image>/system/flyers/76/original/google.jpg?1359147882</image>
     <pattern type="integer" nil="true"/>
     <categories>4,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1543,7 +1543,7 @@ TartanHacks tries to solve those problems. Instead of 24 hours of coders trying 
     <end-time>2013-26-04 00:00</end-time>
     <event-start type="datetime">2013-04-24T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-25T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/136/original/django_unchained_dicaprio_foxx.jpg?1364160960</flyer>
+    <image>/system/flyers/136/original/django_unchained_dicaprio_foxx.jpg?1364160960</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1569,7 +1569,7 @@ TartanHacks tries to solve those problems. Instead of 24 hours of coders trying 
     <end-time>2013-26-10 00:00</end-time>
     <event-start type="datetime">2013-10-24T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-25T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/193/original/Screen_Shot_2013-10-09_at_12.23.39_PM.png?1381335808</flyer>
+    <image>/system/flyers/193/original/Screen_Shot_2013-10-09_at_12.23.39_PM.png?1381335808</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1597,7 +1597,7 @@ Beware of lead poisoning.</description>
     <end-time>2013-26-01 00:00</end-time>
     <event-start type="datetime">2013-01-25T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-01-25T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/67/original/4149947-scottish-terrier-eating-dog-food-against-white-background.jpg?1358712983</flyer>
+    <image>/system/flyers/67/original/4149947-scottish-terrier-eating-dog-food-against-white-background.jpg?1358712983</image>
     <pattern type="integer" nil="true"/>
     <categories>1,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1625,7 +1625,7 @@ Beware of lead poisoning.</summary>
     <end-time>2013-26-01 13:00</end-time>
     <event-start type="datetime">2013-01-26T07:30:00-05:00</event-start>
     <event-end type="datetime">2013-01-26T08:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/73/original/lunch.jpeg?1358724903</flyer>
+    <image>/system/flyers/73/original/lunch.jpeg?1358724903</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1653,7 +1653,7 @@ Hacks submitted late will not be eligible for prizes.</description>
     <end-time>2013-26-01 18:30</end-time>
     <event-start type="datetime">2013-01-26T13:00:00-05:00</event-start>
     <event-end type="datetime">2013-01-26T13:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/72/original/eat.jpg?1358715246</flyer>
+    <image>/system/flyers/72/original/eat.jpg?1358715246</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1679,7 +1679,7 @@ Hacks submitted late will not be eligible for prizes.</description>
     <end-time>2013-26-01 20:30</end-time>
     <event-start type="datetime">2013-01-26T13:30:00-05:00</event-start>
     <event-end type="datetime">2013-01-26T15:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/71/original/demos.jpeg?1358715056</flyer>
+    <image>/system/flyers/71/original/demos.jpeg?1358715056</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1706,7 +1706,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-26-01 21:00</end-time>
     <event-start type="datetime">2013-01-26T15:30:00-05:00</event-start>
     <event-end type="datetime">2013-01-26T16:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/70/original/judges.jpg?1358714789</flyer>
+    <image>/system/flyers/70/original/judges.jpg?1358714789</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1732,7 +1732,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-26-01 22:00</end-time>
     <event-start type="datetime">2013-01-26T16:00:00-05:00</event-start>
     <event-end type="datetime">2013-01-26T17:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/69/original/winner.jpg?1358714365</flyer>
+    <image>/system/flyers/69/original/winner.jpg?1358714365</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1758,7 +1758,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-26-01 8:30</end-time>
     <event-start type="datetime">2013-01-26T03:00:00-05:00</event-start>
     <event-end type="datetime">2013-01-26T03:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/74/original/breakfast.jpeg?1359059792</flyer>
+    <image>/system/flyers/74/original/breakfast.jpeg?1359059792</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1784,7 +1784,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-26-02 18:00</end-time>
     <event-start type="datetime">2013-02-26T12:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-26T13:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/122/original/google_logo_244x183_244x183.jpg?1361741406</flyer>
+    <image>/system/flyers/122/original/google_logo_244x183_244x183.jpg?1361741406</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1811,7 +1811,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-27-04 00:00</end-time>
     <event-start type="datetime">2013-04-25T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-26T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/137/original/django_unchained_dicaprio_foxx.jpg?1364160971</flyer>
+    <image>/system/flyers/137/original/django_unchained_dicaprio_foxx.jpg?1364160971</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1837,7 +1837,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-27-02 18:30</end-time>
     <event-start type="datetime">2013-02-27T12:30:00-05:00</event-start>
     <event-end type="datetime">2013-02-27T13:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/119/original/unix_plate.jpg?1361741134</flyer>
+    <image>/system/flyers/119/original/unix_plate.jpg?1361741134</image>
     <pattern type="integer" nil="true"/>
     <categories>4,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1870,7 +1870,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-28-04 00:00</end-time>
     <event-start type="datetime">2013-04-26T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-27T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/138/original/the-good-the-bad-and-the-ugly.jpg?1364160999</flyer>
+    <image>/system/flyers/138/original/the-good-the-bad-and-the-ugly.jpg?1364160999</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1896,7 +1896,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-01-03 00:00</end-time>
     <event-start type="datetime">2013-02-27T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-28T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/115/original/Goldfinger_2.jpg?1361142315</flyer>
+    <image>/system/flyers/115/original/Goldfinger_2.jpg?1361142315</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1922,7 +1922,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-30-11 00:00</end-time>
     <event-start type="datetime">2013-11-27T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-11-29T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/190/original/Screen_Shot_2013-10-09_at_12.02.14_PM.png?1381334526</flyer>
+    <image>/system/flyers/190/original/Screen_Shot_2013-10-09_at_12.02.14_PM.png?1381334526</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1948,7 +1948,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-30-03 00:00</end-time>
     <event-start type="datetime">2013-03-28T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-03-29T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/124/original/the-hobbit-an-unexpected-journey-movie-2560x1600-2048x1536.jpg?1364160651</flyer>
+    <image>/system/flyers/124/original/the-hobbit-an-unexpected-journey-movie-2560x1600-2048x1536.jpg?1364160651</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -1974,7 +1974,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-03-09 12:00</end-time>
     <event-start type="datetime">2013-08-29T12:30:00-04:00</event-start>
     <event-end type="datetime">2013-09-03T08:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/161/original/intramuralsports.jpg?1378061437</flyer>
+    <image>/system/flyers/161/original/intramuralsports.jpg?1378061437</image>
     <pattern type="integer" nil="true"/>
     <categories>2,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2000,7 +2000,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-31-03 00:00</end-time>
     <event-start type="datetime">2013-03-29T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-03-30T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/125/original/The_Fellowship_Of_The_Ring.jpg?1364160690</flyer>
+    <image>/system/flyers/125/original/The_Fellowship_Of_The_Ring.jpg?1364160690</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2026,7 +2026,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-01-11 00:00</end-time>
     <event-start type="datetime">2013-10-30T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-31T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/192/original/Screen_Shot_2013-10-09_at_12.07.57_PM.png?1381334900</flyer>
+    <image>/system/flyers/192/original/Screen_Shot_2013-10-09_at_12.07.57_PM.png?1381334900</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2052,7 +2052,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>2013-31-10 20:00</end-time>
     <event-start type="datetime">2013-10-31T14:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-31T16:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/210/original/costume.png?1381335495</flyer>
+    <image>/system/flyers/210/original/costume.png?1381335495</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2079,7 +2079,7 @@ Later, a sweet startup talk to inspire you to innovate!</description>
     <end-time>15:00</end-time>
     <event-start type="datetime">2012-04-20T13:37:26-04:00</event-start>
     <event-end type="datetime">2012-04-20T13:37:26-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/29/original/Image_FGC_1.jpeg?1334943446</flyer>
+    <image>/system/flyers/29/original/Image_FGC_1.jpeg?1334943446</image>
     <pattern type="integer" nil="true"/>
     <categories>---
 - '5'
@@ -2114,7 +2114,7 @@ We will be showing:
     <end-time>2012-02-09 19:00</end-time>
     <event-start type="datetime">2012-09-01T14:00:00-04:00</event-start>
     <event-end type="datetime">2012-09-02T15:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/36/original/August_29_GBM.jpg?1346104960</flyer>
+    <image>/system/flyers/36/original/August_29_GBM.jpg?1346104960</image>
     <pattern type="integer" nil="true"/>
     <categories>6,9</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2156,7 +2156,7 @@ Hosted by Anne Witchner. Sponsored by Office of Orientation, Student Affairs, Al
     <end-time>2012-01-12 21:30</end-time>
     <event-start type="datetime">2012-12-01T13:30:00-05:00</event-start>
     <event-end type="datetime">2012-12-01T16:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/63/original/db785c1f958e48cdadfc09e7a47a5b57.jpg?1353265957</flyer>
+    <image>/system/flyers/63/original/db785c1f958e48cdadfc09e7a47a5b57.jpg?1353265957</image>
     <pattern type="integer" nil="true"/>
     <categories>8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2183,7 +2183,7 @@ Celebrate the end of the semester and welcome the holiday season with a unique d
     <end-time>2012-03-10 00:00</end-time>
     <event-start type="datetime">2012-10-01T20:00:00-04:00</event-start>
     <event-end type="datetime">2012-10-02T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/47/original/wrct.jpeg?1349028707</flyer>
+    <image>/system/flyers/47/original/wrct.jpeg?1349028707</image>
     <pattern type="integer" nil="true"/>
     <categories>1,5</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2209,7 +2209,7 @@ Celebrate the end of the semester and welcome the holiday season with a unique d
     <end-time>2012-03-11 14:00</end-time>
     <event-start type="datetime">2012-11-03T07:30:00-04:00</event-start>
     <event-end type="datetime">2012-11-03T10:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/52/original/creators1.jpeg?1349640773</flyer>
+    <image>/system/flyers/52/original/creators1.jpeg?1349640773</image>
     <pattern type="integer" nil="true"/>
     <categories>1,3</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2243,7 +2243,7 @@ Sponsored by Modern Languages, Student Affairs and the Vice Provost for Educatio
     <end-time>2012-09-10 20:30</end-time>
     <event-start type="datetime">2012-10-09T15:00:00-04:00</event-start>
     <event-end type="datetime">2012-10-09T16:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/56/original/multicultural.jpeg?1349816864</flyer>
+    <image>/system/flyers/56/original/multicultural.jpeg?1349816864</image>
     <pattern type="integer" nil="true"/>
     <categories>1,4</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2269,7 +2269,7 @@ Sponsored by Modern Languages, Student Affairs and the Vice Provost for Educatio
     <end-time>2012-09-11 20:00</end-time>
     <event-start type="datetime">2012-11-09T12:00:00-05:00</event-start>
     <event-end type="datetime">2012-11-09T15:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/59/original/81d1e37c21aa4bd9a018bcce61aaca06.jpeg?1351451283</flyer>
+    <image>/system/flyers/59/original/81d1e37c21aa4bd9a018bcce61aaca06.jpeg?1351451283</image>
     <pattern type="integer" nil="true"/>
     <categories>1,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2304,7 +2304,7 @@ Pick up your tickets at the UC Information Desk starting - TBA.</description>
     <end-time>2012-10-11 23:00</end-time>
     <event-start type="datetime">2012-11-10T15:00:00-05:00</event-start>
     <event-end type="datetime">2012-11-10T18:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/58/original/5be2b36cb2924c06a7c82bb1d6913a64.jpeg?1351451124</flyer>
+    <image>/system/flyers/58/original/5be2b36cb2924c06a7c82bb1d6913a64.jpeg?1351451124</image>
     <pattern type="integer" nil="true"/>
     <categories>5,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2331,7 +2331,7 @@ Pick up your tickets at the UC Information Desk starting - TBA.</description>
     <end-time>2012-12-09 17:00</end-time>
     <event-start type="datetime">2012-09-11T06:00:00-04:00</event-start>
     <event-end type="datetime">2012-09-12T13:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/38/original/db_suit.jpeg?1346105257</flyer>
+    <image>/system/flyers/38/original/db_suit.jpeg?1346105257</image>
     <pattern type="integer" nil="true"/>
     <categories>3</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2357,7 +2357,7 @@ Pick up your tickets at the UC Information Desk starting - TBA.</description>
     <end-time>2012-11-10 20:00</end-time>
     <event-start type="datetime">2012-10-11T15:00:00-04:00</event-start>
     <event-end type="datetime">2012-10-11T16:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/57/original/b15878a13f3d4c8699f8c90f1e4c2ca1.jpeg?1349816967</flyer>
+    <image>/system/flyers/57/original/b15878a13f3d4c8699f8c90f1e4c2ca1.jpeg?1349816967</image>
     <pattern type="integer" nil="true"/>
     <categories>2,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2385,7 +2385,7 @@ This comedy/drama is loaded with stars - Bruce Willis, Bill Murray, Frances McDo
     <end-time>2012-11-10 23:30</end-time>
     <event-start type="datetime">2012-10-11T16:00:00-04:00</event-start>
     <event-end type="datetime">2012-10-11T19:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/53/original/adbcd26da4ab492ca437bc28f41741a8.jpg?1349816083</flyer>
+    <image>/system/flyers/53/original/adbcd26da4ab492ca437bc28f41741a8.jpg?1349816083</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2411,7 +2411,7 @@ This comedy/drama is loaded with stars - Bruce Willis, Bill Murray, Frances McDo
     <end-time>2012-13-10 16:00</end-time>
     <event-start type="datetime">2012-10-12T11:00:00-04:00</event-start>
     <event-end type="datetime">2012-10-13T12:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/49/original/febc77688dc74fa484d5337fb64e7394.jpg?1349634407</flyer>
+    <image>/system/flyers/49/original/febc77688dc74fa484d5337fb64e7394.jpg?1349634407</image>
     <pattern type="integer" nil="true"/>
     <categories>8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2443,7 +2443,7 @@ This documentary explores the age of information technology, and the benefits it
     <end-time>2012-12-10 23:30</end-time>
     <event-start type="datetime">2012-10-12T15:00:00-04:00</event-start>
     <event-end type="datetime">2012-10-12T19:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/54/original/abfilmsmovie.jpeg?1349816139</flyer>
+    <image>/system/flyers/54/original/abfilmsmovie.jpeg?1349816139</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2474,7 +2474,7 @@ Watch this documentary that follows the unique story of indie games and the peop
     <end-time>2012-13-10 23:30</end-time>
     <event-start type="datetime">2012-10-13T18:00:00-04:00</event-start>
     <event-end type="datetime">2012-10-13T19:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/55/original/abfilmsmovie1.jpeg?1349816525</flyer>
+    <image>/system/flyers/55/original/abfilmsmovie1.jpeg?1349816525</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2509,7 +2509,7 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <end-time>2012-15-11 23:30</end-time>
     <event-start type="datetime">2012-11-15T14:00:00-05:00</event-start>
     <event-end type="datetime">2012-11-15T18:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/61/original/b5d8812b63754fd7b0494be2381fd20e.jpg?1352662194</flyer>
+    <image>/system/flyers/61/original/b5d8812b63754fd7b0494be2381fd20e.jpg?1352662194</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2540,7 +2540,7 @@ Johnny Depp is the voice of Rango - a regular chameleon who winds up in a lawles
     <end-time>2012-17-09 00:00</end-time>
     <event-start type="datetime">2012-09-16T14:00:00-04:00</event-start>
     <event-end type="datetime">2012-09-16T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/40/original/214b8ec489e446dcb29907e3b0dcce53.jpeg?1347773827</flyer>
+    <image>/system/flyers/40/original/214b8ec489e446dcb29907e3b0dcce53.jpeg?1347773827</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2578,7 +2578,7 @@ Director/Writer Christopher Nolan is back with the second installment in his tri
     <end-time>2012-16-11 23:30</end-time>
     <event-start type="datetime">2012-11-16T14:00:00-05:00</event-start>
     <event-end type="datetime">2012-11-16T18:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/60/original/darkknight.jpg?1352661976</flyer>
+    <image>/system/flyers/60/original/darkknight.jpg?1352661976</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2605,7 +2605,7 @@ Director/Writer Christopher Nolan is back with the second installment in his tri
     <end-time>2012-17-09 17:30</end-time>
     <event-start type="datetime">2012-09-17T12:30:00-04:00</event-start>
     <event-end type="datetime">2012-09-17T13:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/41/original/2bf483221750439abb7bde1e67e8be33.jpeg?1347773979</flyer>
+    <image>/system/flyers/41/original/2bf483221750439abb7bde1e67e8be33.jpeg?1347773979</image>
     <pattern type="integer" nil="true"/>
     <categories>7,9</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2631,7 +2631,7 @@ Director/Writer Christopher Nolan is back with the second installment in his tri
     <end-time>2012-17-09 18:00</end-time>
     <event-start type="datetime">2012-09-17T13:00:00-04:00</event-start>
     <event-end type="datetime">2012-09-17T14:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/42/original/justice.jpeg?1347774110</flyer>
+    <image>/system/flyers/42/original/justice.jpeg?1347774110</image>
     <pattern type="integer" nil="true"/>
     <categories>9</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2670,7 +2670,7 @@ Director/Writer Christopher Nolan returns for the final installment in his trilo
     <end-time>2012-17-11 23:30</end-time>
     <event-start type="datetime">2012-11-17T14:00:00-05:00</event-start>
     <event-end type="datetime">2012-11-17T18:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/62/original/7f5ef26c3f5e4065bdf839ee2ba45dcd.jpg?1352662509</flyer>
+    <image>/system/flyers/62/original/7f5ef26c3f5e4065bdf839ee2ba45dcd.jpg?1352662509</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2696,7 +2696,7 @@ Director/Writer Christopher Nolan returns for the final installment in his trilo
     <end-time>2012-18-09 19:00</end-time>
     <event-start type="datetime">2012-09-18T14:00:00-04:00</event-start>
     <event-end type="datetime">2012-09-18T15:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/43/original/computerclub.jpeg?1347774237</flyer>
+    <image>/system/flyers/43/original/computerclub.jpeg?1347774237</image>
     <pattern type="integer" nil="true"/>
     <categories>3</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2722,7 +2722,7 @@ Director/Writer Christopher Nolan returns for the final installment in his trilo
     <end-time>2012-19-04 16:00</end-time>
     <event-start type="datetime">2012-04-19T11:00:00-04:00</event-start>
     <event-end type="datetime">2012-04-19T12:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/13/original/title.png?1334773021</flyer>
+    <image>/system/flyers/13/original/title.png?1334773021</image>
     <pattern type="integer" nil="true"/>
     <categories>4</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2748,7 +2748,7 @@ Director/Writer Christopher Nolan returns for the final installment in his trilo
     <end-time>2012-19-04 17:00</end-time>
     <event-start type="datetime">2012-04-19T11:30:00-04:00</event-start>
     <event-end type="datetime">2012-04-19T13:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/20/original/kiltieband.png?1334857482</flyer>
+    <image>/system/flyers/20/original/kiltieband.png?1334857482</image>
     <pattern type="integer" nil="true"/>
     <categories>5,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2776,7 +2776,7 @@ For more information about registration and directions, please visit http://www.
     <end-time>2012-19-04 18:00</end-time>
     <event-start type="datetime">2012-04-19T12:30:00-04:00</event-start>
     <event-end type="datetime">2012-04-19T14:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/14/original/OlympusShowTell15.png?1334854397</flyer>
+    <image>/system/flyers/14/original/OlympusShowTell15.png?1334854397</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2802,7 +2802,7 @@ For more information about registration and directions, please visit http://www.
     <end-time>2012-19-04 22:00</end-time>
     <event-start type="datetime">2012-04-19T16:00:00-04:00</event-start>
     <event-end type="datetime">2012-04-19T18:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/18/original/image.png?1334869999</flyer>
+    <image>/system/flyers/18/original/image.png?1334869999</image>
     <pattern type="integer" nil="true"/>
     <categories>8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2828,7 +2828,7 @@ For more information about registration and directions, please visit http://www.
     <end-time>2012-19-09 19:30</end-time>
     <event-start type="datetime">2012-09-19T14:30:00-04:00</event-start>
     <event-end type="datetime">2012-09-19T15:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/39/original/imgres.jpeg?1346105391</flyer>
+    <image>/system/flyers/39/original/imgres.jpeg?1346105391</image>
     <pattern type="integer" nil="true"/>
     <categories>8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2854,7 +2854,7 @@ For more information about registration and directions, please visit http://www.
     <end-time>2012-20-04 17:00</end-time>
     <event-start type="datetime">2012-04-20T08:00:00-04:00</event-start>
     <event-end type="datetime">2012-04-20T13:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/15/original/MobotRaceDay-Poster11.png?1334855185</flyer>
+    <image>/system/flyers/15/original/MobotRaceDay-Poster11.png?1334855185</image>
     <pattern type="integer" nil="true"/>
     <categories>7,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2883,7 +2883,7 @@ Pre-registration is required. Please register at the following link: https://www
     <end-time>2012-20-04 18:00</end-time>
     <event-start type="datetime">2012-04-20T08:00:00-04:00</event-start>
     <event-end type="datetime">2012-04-20T14:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/16/original/NRW.jpg?1334855545</flyer>
+    <image>/system/flyers/16/original/NRW.jpg?1334855545</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2909,7 +2909,7 @@ Pre-registration is required. Please register at the following link: https://www
     <end-time>2012-20-04 13:00</end-time>
     <event-start type="datetime">2012-04-20T08:30:00-04:00</event-start>
     <event-end type="datetime">2012-04-20T09:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/21/original/aboutds_04.jpg?1334857753</flyer>
+    <image>/system/flyers/21/original/aboutds_04.jpg?1334857753</image>
     <pattern type="integer" nil="true"/>
     <categories>1,5</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2935,7 +2935,7 @@ Pre-registration is required. Please register at the following link: https://www
     <end-time>2012-20-04 13:30</end-time>
     <event-start type="datetime">2012-04-20T09:00:00-04:00</event-start>
     <event-end type="datetime">2012-04-20T09:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/22/original/41781_270540377819_4362_n.jpg?1334857730</flyer>
+    <image>/system/flyers/22/original/41781_270540377819_4362_n.jpg?1334857730</image>
     <pattern type="integer" nil="true"/>
     <categories>1,5</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2961,7 +2961,7 @@ Pre-registration is required. Please register at the following link: https://www
     <end-time>2012-20-04 14:30</end-time>
     <event-start type="datetime">2012-04-20T10:00:00-04:00</event-start>
     <event-end type="datetime">2012-04-20T10:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/23/original/chinese-yoyo-01.jpg?1334865002</flyer>
+    <image>/system/flyers/23/original/chinese-yoyo-01.jpg?1334865002</image>
     <pattern type="integer" nil="true"/>
     <categories>1,4</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -2987,7 +2987,7 @@ Pre-registration is required. Please register at the following link: https://www
     <end-time>2012-21-04 15:00</end-time>
     <event-start type="datetime">2012-04-20T10:00:00-04:00</event-start>
     <event-end type="datetime">2012-04-21T11:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/flyers/original/missing.png</flyer>
+    <image>/flyers/original/missing.png</image>
     <pattern type="integer" nil="true"/>
     <categories>1</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3013,7 +3013,7 @@ Pre-registration is required. Please register at the following link: https://www
     <end-time>2012-20-04 15:00</end-time>
     <event-start type="datetime">2012-04-20T10:00:00-04:00</event-start>
     <event-end type="datetime">2012-04-20T11:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/28/original/photos.jpeg?1334943331</flyer>
+    <image>/system/flyers/28/original/photos.jpeg?1334943331</image>
     <pattern type="integer" nil="true"/>
     <categories>4,5</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3039,7 +3039,7 @@ Pre-registration is required. Please register at the following link: https://www
     <end-time>2012-20-04 15:30</end-time>
     <event-start type="datetime">2012-04-20T10:30:00-04:00</event-start>
     <event-end type="datetime">2012-04-20T11:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/24/original/albumsmall5.png?1334858049</flyer>
+    <image>/system/flyers/24/original/albumsmall5.png?1334858049</image>
     <pattern type="integer" nil="true"/>
     <categories>5</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3067,7 +3067,7 @@ Choreography JR Wong</description>
     <end-time>2012-20-04 16:30</end-time>
     <event-start type="datetime">2012-04-20T10:30:00-04:00</event-start>
     <event-end type="datetime">2012-04-20T12:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/26/original/18.jpeg?1334858521</flyer>
+    <image>/system/flyers/26/original/18.jpeg?1334858521</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3094,7 +3094,7 @@ Choreography JR Wong</description>
     <end-time>2012-20-04 23:00</end-time>
     <event-start type="datetime">2012-04-20T16:30:00-04:00</event-start>
     <event-end type="datetime">2012-04-20T19:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/19/original/image_(1).png?1334856795</flyer>
+    <image>/system/flyers/19/original/image_(1).png?1334856795</image>
     <pattern type="integer" nil="true"/>
     <categories>5,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3120,7 +3120,7 @@ Choreography JR Wong</description>
     <end-time>2012-21-04 14:00</end-time>
     <event-start type="datetime">2012-04-21T08:00:00-04:00</event-start>
     <event-end type="datetime">2012-04-21T10:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/30/original/a-cappellas.jpeg?1334943561</flyer>
+    <image>/system/flyers/30/original/a-cappellas.jpeg?1334943561</image>
     <pattern type="integer" nil="true"/>
     <categories>5</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3146,7 +3146,7 @@ Choreography JR Wong</description>
     <end-time>2012-21-04 15:00</end-time>
     <event-start type="datetime">2012-04-21T10:00:00-04:00</event-start>
     <event-end type="datetime">2012-04-21T11:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/31/original/imgres.jpeg?1334944625</flyer>
+    <image>/system/flyers/31/original/imgres.jpeg?1334944625</image>
     <pattern type="integer" nil="true"/>
     <categories>4,5</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3172,7 +3172,7 @@ Choreography JR Wong</description>
     <end-time>2012-21-04 18:00</end-time>
     <event-start type="datetime">2012-04-21T14:00:00-04:00</event-start>
     <event-end type="datetime">2012-04-21T14:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/32/original/award-trophies-trophy2-788652.jpeg?1334943978</flyer>
+    <image>/system/flyers/32/original/award-trophies-trophy2-788652.jpeg?1334943978</image>
     <pattern type="integer" nil="true"/>
     <categories>4,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3198,7 +3198,7 @@ Choreography JR Wong</description>
     <end-time>2012-21-04 22:00</end-time>
     <event-start type="datetime">2012-04-21T15:30:00-04:00</event-start>
     <event-end type="datetime">2012-04-21T18:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/17/original/passionpitposter.jpg?1334856273</flyer>
+    <image>/system/flyers/17/original/passionpitposter.jpg?1334856273</image>
     <pattern type="integer" nil="true"/>
     <categories>5,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3231,7 +3231,7 @@ Reserve tickets now at snstheatre.org</description>
     <end-time>2012-21-09 22:00</end-time>
     <event-start type="datetime">2012-09-21T16:00:00-04:00</event-start>
     <event-end type="datetime">2012-09-21T18:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/45/original/scotchnsoda.jpeg?1347775023</flyer>
+    <image>/system/flyers/45/original/scotchnsoda.jpeg?1347775023</image>
     <pattern type="integer" nil="true"/>
     <categories>1,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3268,7 +3268,7 @@ Auditioners need to come prepared with one musical theatre song that they will s
     <end-time>2012-23-09 23:00</end-time>
     <event-start type="datetime">2012-09-22T08:00:00-04:00</event-start>
     <event-end type="datetime">2012-09-23T19:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/46/original/scotch2.jpeg?1347775144</flyer>
+    <image>/system/flyers/46/original/scotch2.jpeg?1347775144</image>
     <pattern type="integer" nil="true"/>
     <categories>1</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3296,7 +3296,7 @@ SchlagFest 2012- a carnival styled atmosphere constructed entirely by the men of
     <end-time>2012-28-09 21:00</end-time>
     <event-start type="datetime">2012-09-28T12:00:00-04:00</event-start>
     <event-end type="datetime">2012-09-28T17:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/44/original/schlag.jpeg?1347774728</flyer>
+    <image>/system/flyers/44/original/schlag.jpeg?1347774728</image>
     <pattern type="integer" nil="true"/>
     <categories>8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3337,7 +3337,7 @@ OUR HISTORY
     <end-time>2012-29-08 20:00</end-time>
     <event-start type="datetime">2012-08-29T15:00:00-04:00</event-start>
     <event-end type="datetime">2012-08-29T16:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/37/original/EWBstu_2c_CMU-med.jpg?1346104993</flyer>
+    <image>/system/flyers/37/original/EWBstu_2c_CMU-med.jpg?1346104993</image>
     <pattern type="integer" nil="true"/>
     <categories>7,9</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3368,7 +3368,7 @@ Rainn Wilson (Dwight from The Office) stars in this action comedy about an avera
     <end-time>2012-30-09 23:30</end-time>
     <event-start type="datetime">2012-09-30T14:00:00-04:00</event-start>
     <event-end type="datetime">2012-09-30T19:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/48/original/abfilms.jpeg?1349028896</flyer>
+    <image>/system/flyers/48/original/abfilms.jpeg?1349028896</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3405,7 +3405,7 @@ Nominated for 4 Oscars (2013) including Best Picture and Best Actress (Quvenzhan
     <end-time>2013-01-02 23:30</end-time>
     <event-start type="datetime">2013-02-01T15:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-01T18:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/80/original/e66c3847507445168ec3f1be8138b761.jpg?1359739721</flyer>
+    <image>/system/flyers/80/original/e66c3847507445168ec3f1be8138b761.jpg?1359739721</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3431,7 +3431,7 @@ Nominated for 4 Oscars (2013) including Best Picture and Best Actress (Quvenzhan
     <end-time>2013-02-03 00:00</end-time>
     <event-start type="datetime">2013-02-28T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-03-01T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/106/original/James_Bond_The_Spy_Who_Loved_Me_2.jpg?1361142201</flyer>
+    <image>/system/flyers/106/original/James_Bond_The_Spy_Who_Loved_Me_2.jpg?1361142201</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3457,7 +3457,7 @@ Nominated for 4 Oscars (2013) including Best Picture and Best Actress (Quvenzhan
     <end-time>2013-01-03 20:00</end-time>
     <event-start type="datetime">2013-03-01T13:00:00-05:00</event-start>
     <event-end type="datetime">2013-03-01T15:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/120/original/Gallery_Inside__3__adj_copy.JPG?1361741184</flyer>
+    <image>/system/flyers/120/original/Gallery_Inside__3__adj_copy.JPG?1361741184</image>
     <pattern type="integer" nil="true"/>
     <categories>1,4</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3484,7 +3484,7 @@ There will be FREE FOOD and SCS DAY SWAG.</description>
     <end-time>2013-01-03 21:00</end-time>
     <event-start type="datetime">2013-03-01T15:00:00-05:00</event-start>
     <event-end type="datetime">2013-03-01T16:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/121/original/Talent-show.jpg?1361741321</flyer>
+    <image>/system/flyers/121/original/Talent-show.jpg?1361741321</image>
     <pattern type="integer" nil="true"/>
     <categories>4,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3511,7 +3511,7 @@ There will be FREE FOOD and SCS DAY SWAG.</summary>
     <end-time>2013-02-05 00:00</end-time>
     <event-start type="datetime">2013-04-30T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-05-01T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/159/original/images.jpeg?1367180511</flyer>
+    <image>/system/flyers/159/original/images.jpeg?1367180511</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3543,7 +3543,7 @@ Don't miss out!</description>
     <end-time>2013-02-09 2:00</end-time>
     <event-start type="datetime">2013-09-01T18:00:00-04:00</event-start>
     <event-end type="datetime">2013-09-01T22:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/162/original/TSA.jpg?1378061794</flyer>
+    <image>/system/flyers/162/original/TSA.jpg?1378061794</image>
     <pattern type="integer" nil="true"/>
     <categories>8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3569,7 +3569,7 @@ Don't miss out!</description>
     <end-time>2013-03-02 00:00</end-time>
     <event-start type="datetime">2013-02-02T15:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-02T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/84/original/dc2e2c88f01c44d2a1408fd21038bc9c.jpg?1359740371</flyer>
+    <image>/system/flyers/84/original/dc2e2c88f01c44d2a1408fd21038bc9c.jpg?1359740371</image>
     <pattern type="integer" nil="true"/>
     <categories>8,9</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3595,7 +3595,7 @@ Don't miss out!</description>
     <end-time>2013-03-03 00:00</end-time>
     <event-start type="datetime">2013-03-01T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-03-02T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/107/original/Skyfall.jpg?1361142244</flyer>
+    <image>/system/flyers/107/original/Skyfall.jpg?1361142244</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3621,7 +3621,7 @@ Don't miss out!</description>
     <end-time>2013-03-05 00:00</end-time>
     <event-start type="datetime">2013-05-01T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-05-02T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/155/original/movie_night.jpeg?1367180377</flyer>
+    <image>/system/flyers/155/original/movie_night.jpeg?1367180377</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3647,7 +3647,7 @@ Don't miss out!</description>
     <end-time>2013-03-11 00:00</end-time>
     <event-start type="datetime">2013-11-01T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-11-02T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/177/original/187854_453892161321541_1897771564_n.jpg?1381333662</flyer>
+    <image>/system/flyers/177/original/187854_453892161321541_1897771564_n.jpg?1381333662</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3677,7 +3677,7 @@ If you're able to, bring a snack to share at the break!</description>
     <end-time>2013-03-02 20:30</end-time>
     <event-start type="datetime">2013-02-03T12:30:00-05:00</event-start>
     <event-end type="datetime">2013-02-03T15:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/82/original/c39ef344b70e4b3cb4751abfef4f316e.jpg?1359740141</flyer>
+    <image>/system/flyers/82/original/c39ef344b70e4b3cb4751abfef4f316e.jpg?1359740141</image>
     <pattern type="integer" nil="true"/>
     <categories>1,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3718,7 +3718,7 @@ In high-society Russia in the late 19th-century, Anna Karenina - an aristocratic
     <end-time>2013-03-02 23:30</end-time>
     <event-start type="datetime">2013-02-03T14:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-03T18:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/78/original/f1398d18730f4a02a02fbb75519a55a3.jpg?1359738046</flyer>
+    <image>/system/flyers/78/original/f1398d18730f4a02a02fbb75519a55a3.jpg?1359738046</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3744,7 +3744,7 @@ In high-society Russia in the late 19th-century, Anna Karenina - an aristocratic
     <end-time>2013-04-03 00:00</end-time>
     <event-start type="datetime">2013-03-02T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-03-03T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/108/original/golden-eye.jpg?1361142256</flyer>
+    <image>/system/flyers/108/original/golden-eye.jpg?1361142256</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3770,7 +3770,7 @@ In high-society Russia in the late 19th-century, Anna Karenina - an aristocratic
     <end-time>2013-04-05 00:00</end-time>
     <event-start type="datetime">2013-05-02T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-05-03T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/156/original/movie-makeup-schools.jpg?1367180387</flyer>
+    <image>/system/flyers/156/original/movie-makeup-schools.jpg?1367180387</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3796,7 +3796,7 @@ In high-society Russia in the late 19th-century, Anna Karenina - an aristocratic
     <end-time>2013-03-05 17:30</end-time>
     <event-start type="datetime">2013-05-03T12:30:00-04:00</event-start>
     <event-end type="datetime">2013-05-03T13:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/160/original/elections-backgrounds-wallpapers.jpg?1367180540</flyer>
+    <image>/system/flyers/160/original/elections-backgrounds-wallpapers.jpg?1367180540</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3822,7 +3822,7 @@ In high-society Russia in the late 19th-century, Anna Karenina - an aristocratic
     <end-time>2013-05-04 00:00</end-time>
     <event-start type="datetime">2013-04-03T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-04T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/126/original/Hyde-Park-on-Hudson.jpg?1364160714</flyer>
+    <image>/system/flyers/126/original/Hyde-Park-on-Hudson.jpg?1364160714</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3848,7 +3848,7 @@ In high-society Russia in the late 19th-century, Anna Karenina - an aristocratic
     <end-time>2013-05-05 00:00</end-time>
     <event-start type="datetime">2013-05-03T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-05-04T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/157/original/movie.gif?1367180410</flyer>
+    <image>/system/flyers/157/original/movie.gif?1367180410</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3876,7 +3876,7 @@ Recognized Student Organizations will be able to register for the Activities Fai
     <end-time>2013-04-09 18:00</end-time>
     <event-start type="datetime">2013-09-04T12:30:00-04:00</event-start>
     <event-end type="datetime">2013-09-04T14:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/163/original/activitiesfair.jpg?1378061947</flyer>
+    <image>/system/flyers/163/original/activitiesfair.jpg?1378061947</image>
     <pattern type="integer" nil="true"/>
     <categories>4,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3913,7 +3913,7 @@ If performing isn't for you, you are welcome to attend our tech interest meeting
     <end-time>2013-06-09 18:30</end-time>
     <event-start type="datetime">2013-09-04T13:30:00-04:00</event-start>
     <event-end type="datetime">2013-09-06T14:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/164/original/batboyauditions.jpg?1378062075</flyer>
+    <image>/system/flyers/164/original/batboyauditions.jpg?1378062075</image>
     <pattern type="integer" nil="true"/>
     <categories>1</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3940,7 +3940,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-05-10 19:00</end-time>
     <event-start type="datetime">2013-10-04T14:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-05T15:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/176/original/demosplash.jpg?1380483036</flyer>
+    <image>/system/flyers/176/original/demosplash.jpg?1380483036</image>
     <pattern type="integer" nil="true"/>
     <categories>1,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3966,7 +3966,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-05-11 00:00</end-time>
     <event-start type="datetime">2013-11-03T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-11-04T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/194/original/Screen_Shot_2013-10-09_at_12.24.37_PM.png?1381335866</flyer>
+    <image>/system/flyers/194/original/Screen_Shot_2013-10-09_at_12.24.37_PM.png?1381335866</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -3992,7 +3992,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-04-12 18:00</end-time>
     <event-start type="datetime">2013-12-04T12:00:00-05:00</event-start>
     <event-end type="datetime">2013-12-04T13:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/209/original/Screen_Shot_2013-10-09_at_12.19.02_PM.png?1381335530</flyer>
+    <image>/system/flyers/209/original/Screen_Shot_2013-10-09_at_12.19.02_PM.png?1381335530</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4018,7 +4018,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-06-02 18:00</end-time>
     <event-start type="datetime">2013-02-05T07:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-06T13:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/90/original/suit.jpg?1359922673</flyer>
+    <image>/system/flyers/90/original/suit.jpg?1359922673</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4044,7 +4044,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-06-04 00:00</end-time>
     <event-start type="datetime">2013-04-04T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-05T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/127/original/images.jpeg?1364160743</flyer>
+    <image>/system/flyers/127/original/images.jpeg?1364160743</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4070,7 +4070,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-05-09 18:00</end-time>
     <event-start type="datetime">2013-09-05T13:00:00-04:00</event-start>
     <event-end type="datetime">2013-09-05T14:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/165/original/modelun.jpg?1378062190</flyer>
+    <image>/system/flyers/165/original/modelun.jpg?1378062190</image>
     <pattern type="integer" nil="true"/>
     <categories>7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4096,7 +4096,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-05-09 19:30</end-time>
     <event-start type="datetime">2013-09-05T14:00:00-04:00</event-start>
     <event-end type="datetime">2013-09-05T15:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/166/original/cycling.jpg?1378062265</flyer>
+    <image>/system/flyers/166/original/cycling.jpg?1378062265</image>
     <pattern type="integer" nil="true"/>
     <categories>2,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4122,7 +4122,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-05-10 15:00</end-time>
     <event-start type="datetime">2013-10-05T09:00:00-04:00</event-start>
     <event-end type="datetime">2013-10-05T11:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/175/original/3c956bcc32644c0da862315deaa8561d.jpg?1380480039</flyer>
+    <image>/system/flyers/175/original/3c956bcc32644c0da862315deaa8561d.jpg?1380480039</image>
     <pattern type="integer" nil="true"/>
     <categories>8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4148,7 +4148,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-06-11 00:00</end-time>
     <event-start type="datetime">2013-11-04T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-11-05T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/189/original/election-day-prayer.jpg?1381335046</flyer>
+    <image>/system/flyers/189/original/election-day-prayer.jpg?1381335046</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4174,7 +4174,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-05-12 17:30</end-time>
     <event-start type="datetime">2013-12-05T11:30:00-05:00</event-start>
     <event-end type="datetime">2013-12-05T12:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/203/original/Screen_Shot_2013-10-09_at_12.30.10_PM.png?1381336224</flyer>
+    <image>/system/flyers/203/original/Screen_Shot_2013-10-09_at_12.30.10_PM.png?1381336224</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4200,7 +4200,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-06-02 13:00</end-time>
     <event-start type="datetime">2013-02-06T05:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-06T08:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/85/original/CHM-Coffee-Mug.png?1359920514</flyer>
+    <image>/system/flyers/85/original/CHM-Coffee-Mug.png?1359920514</image>
     <pattern type="integer" nil="true"/>
     <categories>3,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4226,7 +4226,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-06-02 18:00</end-time>
     <event-start type="datetime">2013-02-06T07:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-06T13:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/91/original/womens_suit2.jpg?1359922868</flyer>
+    <image>/system/flyers/91/original/womens_suit2.jpg?1359922868</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4252,7 +4252,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-07-04 00:00</end-time>
     <event-start type="datetime">2013-04-05T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-06T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/139/original/MV5BMTQ4NDI3NDg4M15BMl5BanBnXkFtZTcwMjY5OTI1OA__._V1_SX214_.jpg?1364161029</flyer>
+    <image>/system/flyers/139/original/MV5BMTQ4NDI3NDg4M15BMl5BanBnXkFtZTcwMjY5OTI1OA__._V1_SX214_.jpg?1364161029</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4278,7 +4278,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-07-05 00:00</end-time>
     <event-start type="datetime">2013-05-05T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-05-06T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/158/original/HD-wallpaper-Otife-Smiley_Book.jpg?1367180467</flyer>
+    <image>/system/flyers/158/original/HD-wallpaper-Otife-Smiley_Book.jpg?1367180467</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4304,7 +4304,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-06-11 18:00</end-time>
     <event-start type="datetime">2013-11-06T12:00:00-05:00</event-start>
     <event-end type="datetime">2013-11-06T13:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/207/original/Screen_Shot_2013-10-09_at_12.19.02_PM.png?1381335592</flyer>
+    <image>/system/flyers/207/original/Screen_Shot_2013-10-09_at_12.19.02_PM.png?1381335592</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4330,7 +4330,7 @@ co-directors, Corrine Rockoff, at crockoff@andrew.cmu.edu and Billy Veer at wav@
     <end-time>2013-07-12 00:00</end-time>
     <event-start type="datetime">2013-12-05T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-12-06T19:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/201/original/Screen_Shot_2013-10-09_at_12.23.39_PM.png?1381336160</flyer>
+    <image>/system/flyers/201/original/Screen_Shot_2013-10-09_at_12.23.39_PM.png?1381336160</image>
     <pattern type="integer" nil="true"/>
     <categories>3,7</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4363,7 +4363,7 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <end-time>2013-07-02 23:30</end-time>
     <event-start type="datetime">2013-02-07T15:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-07T18:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/77/original/86ffbe757d644bab93f4afe7bd468b98.jpg?1359737919</flyer>
+    <image>/system/flyers/77/original/86ffbe757d644bab93f4afe7bd468b98.jpg?1359737919</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4389,7 +4389,7 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <end-time>2013-08-04 00:00</end-time>
     <event-start type="datetime">2013-04-06T20:00:00-04:00</event-start>
     <event-end type="datetime">2013-04-07T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/132/original/WestSideStoryLogo.gif?1364160818</flyer>
+    <image>/system/flyers/132/original/WestSideStoryLogo.gif?1364160818</image>
     <pattern type="integer" nil="true"/>
     <categories>6</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4415,7 +4415,7 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <end-time>2013-07-09 13:00</end-time>
     <event-start type="datetime">2013-09-07T07:00:00-04:00</event-start>
     <event-end type="datetime">2013-09-07T09:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/flyers/original/missing.png</flyer>
+    <image>/flyers/original/missing.png</image>
     <pattern type="integer" nil="true"/>
     <categories>8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4441,7 +4441,7 @@ Price: $1 with CMU ID (must show ID); $3 otherwise</description>
     <end-time>2013-07-09 15:00</end-time>
     <event-start type="datetime">2013-09-07T09:00:00-04:00</event-start>
     <event-end type="datetime">2013-09-07T11:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/168/original/scotch.jpg?1378062431</flyer>
+    <image>/system/flyers/168/original/scotch.jpg?1378062431</image>
     <pattern type="integer" nil="true"/>
     <categories>1,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4479,7 +4479,7 @@ The Pittsburgh Connections program is coordinated through the Office of Student 
     <end-time>2013-07-09 16:30</end-time>
     <event-start type="datetime">2013-09-07T09:00:00-04:00</event-start>
     <event-end type="datetime">2013-09-07T12:30:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/169/original/paddleboard.jpg?1378062560</flyer>
+    <image>/system/flyers/169/original/paddleboard.jpg?1378062560</image>
     <pattern type="integer" nil="true"/>
     <categories>2,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4516,7 +4516,7 @@ Nominated for Best Animated Film for 2013, Disney's "Wreck-It Ralph" follows a v
     <end-time>2013-08-02 23:30</end-time>
     <event-start type="datetime">2013-02-08T15:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-08T18:30:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/79/original/b7c82a1e38e44bc48c43c7c08b11abb0.jpg?1359738115</flyer>
+    <image>/system/flyers/79/original/b7c82a1e38e44bc48c43c7c08b11abb0.jpg?1359738115</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4542,7 +4542,7 @@ Nominated for Best Animated Film for 2013, Disney's "Wreck-It Ralph" follows a v
     <end-time>2013-18-03 00:00</end-time>
     <event-start type="datetime">2013-03-07T19:00:00-05:00</event-start>
     <event-end type="datetime">2013-03-17T20:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/118/original/spring_break.jpg?1361741042</flyer>
+    <image>/system/flyers/118/original/spring_break.jpg?1361741042</image>
     <pattern type="integer" nil="true"/>
     <categories>4,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4588,7 +4588,7 @@ Tickets are $10 pre-sale and $12 at the door if there are any left over. We'll b
     <end-time>2013-09-02 21:00</end-time>
     <event-start type="datetime">2013-02-09T13:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-09T16:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/83/original/eaf515a7f0384936b82758480f0eceae.jpg?1359740253</flyer>
+    <image>/system/flyers/83/original/eaf515a7f0384936b82758480f0eceae.jpg?1359740253</image>
     <pattern type="integer" nil="true"/>
     <categories>4,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4620,12 +4620,12 @@ Runtime: 115 minutes (1hr 55min)
 Price: $1 with CMU ID (must show ID); $3 otherwise
 
 Winner of the Best Animated Film at the Oscars in 2005, Disney/Pixar's "The Incredibles" is the hilarious and action-filled tale about a super family trying to blend in, and the dad who can't let go of his heroic past.</description>
-    <location>UC McConomy Auditorium </location>
+    <location>Fifth and Neville</location>
     <start-time>2013-09-02 20:00</start-time>
     <end-time>2013-09-02 23:00</end-time>
     <event-start type="datetime">2013-02-09T15:00:00-05:00</event-start>
     <event-end type="datetime">2013-02-09T18:00:00-05:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/81/original/004220244a624c03b46a61180d638ce9.jpg?1359740034</flyer>
+    <image>/system/flyers/81/original/004220244a624c03b46a61180d638ce9.jpg?1359740034</image>
     <pattern type="integer" nil="true"/>
     <categories>6,8</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4642,6 +4642,8 @@ Winner of the Best Animated Film at the Oscars in 2005, Disney/Pixar's "The Incr
     <user-id type="integer">6</user-id>
     <url></url>
   </event>
+  
+  
   <event>
     <id type="integer">170</id>
     <name>CMU Bhangra Tryouts</name>
@@ -4654,7 +4656,7 @@ The tryouts involve a learning session to learn the tryout choregraphy, and an a
     <end-time>2013-15-09 17:00</end-time>
     <event-start type="datetime">2013-09-09T13:00:00-04:00</event-start>
     <event-end type="datetime">2013-09-15T13:00:00-04:00</event-end>
-    <flyer type="Paperclip::Attachment">/system/flyers/170/original/bhangra.jpg?1378062687</flyer>
+    <image>/system/flyers/170/original/bhangra.jpg?1378062687</image>
     <pattern type="integer" nil="true"/>
     <categories>1,4</categories>
     <approval-rating type="integer">100</approval-rating>
@@ -4666,6 +4668,33 @@ The tryouts involve a learning session to learn the tryout choregraphy, and an a
     <created-at type="datetime">2013-09-01T15:11:27-04:00</created-at>
     <updated-at type="datetime">2013-09-01T15:11:27-04:00</updated-at>
     <summary>Come audition for CMU Bhangra! Sign up at bit.ly/cmubhangra</summary>
+    <cancelled type="boolean">false</cancelled>
+    <organization-id type="integer">44</organization-id>
+    <user-id type="integer">6</user-id>
+    <url></url>
+  </event>
+  
+  
+  <event>
+    <id type="integer">171</id>
+    <name>Intelligence Lab Final Presentation</name>
+    <description>Final presentation to show off EVIE!</description>
+    <location>GHC 4101</location>
+    <start-time>2013-04-12 18:30</start-time>
+    <end-time>2013-04-12 20:30</end-time>
+    <event-start type="datetime">2013-09-09T13:00:00-04:00</event-start>
+    <event-end type="datetime">2013-09-15T13:00:00-04:00</event-end>
+    <pattern type="integer" nil="true"/>
+    <categories>1,4</categories>
+    <approval-rating type="integer">100</approval-rating>
+    <approver-id nil="true"/>
+    <flyer-file-name>bhangra.jpg</flyer-file-name>
+    <flyer-content-type>image/jpeg</flyer-content-type>
+    <flyer-file-size type="integer">6227</flyer-file-size>
+    <flyer-updated-at type="datetime">2013-09-01T15:11:27-04:00</flyer-updated-at>
+    <created-at type="datetime">2013-09-01T15:11:27-04:00</created-at>
+    <updated-at type="datetime">2013-09-01T15:11:27-04:00</updated-at>
+    <summary>Final presentation to show off EVIE!</summary>
     <cancelled type="boolean">false</cancelled>
     <organization-id type="integer">44</organization-id>
     <user-id type="integer">6</user-id>

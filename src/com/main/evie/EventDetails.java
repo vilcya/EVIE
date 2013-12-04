@@ -3,8 +3,8 @@ package com.main.evie;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -26,7 +26,7 @@ public class EventDetails extends Activity {
 		if (eventPosition == -1) {
 			throw new IllegalArgumentException("There is no event information for event details!");
 		}
-		
+	
 		this.event = new DynamicEventList().getEventAt(eventPosition);
 		setEventDetailsView();
 		
@@ -35,7 +35,7 @@ public class EventDetails extends Activity {
 
 		new DynamicEventList().updateUserPreference(eventPosition, numEvents);
 	}
-	
+
 	private void setEventDetailsView() {
 		TextView eventName = (TextView) this.findViewById(R.id.tv_event_detail_name);
 		eventName.setText(this.event.getName());
@@ -45,13 +45,13 @@ public class EventDetails extends Activity {
 		
 		TextView eventDescription = (TextView) this.findViewById(R.id.tv_event_detail_description);
 		eventDescription.setText(this.event.getDescription());
+		eventDescription.setMovementMethod(new ScrollingMovementMethod());
 		
 		ImageView eventImage = (ImageView) this.findViewById(R.id.iv_event_detail_image);
 		Bitmap bitmap = this.event.getImageBitmap();
-		if (bitmap == null) {
-			bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.logo);
+		if (bitmap != null) {
+			eventImage.setImageBitmap(bitmap);
 		}
-		eventImage.setImageBitmap(bitmap);
 	}
 
 	@Override
