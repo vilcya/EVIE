@@ -174,42 +174,43 @@ public final class R {
         public static final int logo_small=0x7f020002;
     }
     public static final class id {
-        public static final int b_rescan=0x7f0c0008;
-        public static final int b_showall=0x7f0c0009;
-        public static final int button1=0x7f0c0021;
-        public static final int checkBox1=0x7f0c0019;
-        public static final int checkBox2=0x7f0c001a;
-        public static final int checkBox3=0x7f0c001c;
-        public static final int checkBox4=0x7f0c001b;
-        public static final int checkBox5=0x7f0c001e;
-        public static final int checkBox6=0x7f0c001d;
-        public static final int checkBox7=0x7f0c001f;
-        public static final int checkBox8=0x7f0c0020;
-        public static final int drawer_layout=0x7f0c0003;
-        public static final int editText1=0x7f0c0013;
-        public static final int editText2=0x7f0c0015;
-        public static final int event_name=0x7f0c0022;
-        public static final int gv_main=0x7f0c0006;
-        public static final int iv_event_detail_image=0x7f0c0002;
-        public static final int ll_drawer=0x7f0c000a;
-        public static final int ll_eventtype=0x7f0c000b;
-        public static final int ll_food_toggle=0x7f0c000e;
-        public static final int ll_gridviews=0x7f0c000d;
-        public static final int relativeLayout1=0x7f0c000f;
-        public static final int spinner1=0x7f0c0017;
-        public static final int tb_free_food=0x7f0c0007;
-        public static final int textView1=0x7f0c0010;
-        public static final int textView2=0x7f0c0011;
-        public static final int textView3=0x7f0c0012;
-        public static final int textView4=0x7f0c0014;
-        public static final int textView5=0x7f0c0018;
-        public static final int textView6=0x7f0c0016;
-        public static final int tv_drawermenu=0x7f0c0023;
-        public static final int tv_event_detail_description=0x7f0c0000;
+        public static final int b_rescan=0x7f0c0009;
+        public static final int b_showall=0x7f0c000a;
+        public static final int button1=0x7f0c0022;
+        public static final int checkBox1=0x7f0c001a;
+        public static final int checkBox2=0x7f0c001b;
+        public static final int checkBox3=0x7f0c001d;
+        public static final int checkBox4=0x7f0c001c;
+        public static final int checkBox5=0x7f0c001f;
+        public static final int checkBox6=0x7f0c001e;
+        public static final int checkBox7=0x7f0c0020;
+        public static final int checkBox8=0x7f0c0021;
+        public static final int drawer_layout=0x7f0c0004;
+        public static final int editText1=0x7f0c0014;
+        public static final int editText2=0x7f0c0016;
+        public static final int event_name=0x7f0c0023;
+        public static final int gv_main=0x7f0c0007;
+        public static final int iv_event_detail_image=0x7f0c0003;
+        public static final int ll_drawer=0x7f0c000b;
+        public static final int ll_eventtype=0x7f0c000c;
+        public static final int ll_food_toggle=0x7f0c000f;
+        public static final int ll_gridviews=0x7f0c000e;
+        public static final int relativeLayout1=0x7f0c0010;
+        public static final int spinner1=0x7f0c0018;
+        public static final int tb_free_food=0x7f0c0008;
+        public static final int textView1=0x7f0c0011;
+        public static final int textView2=0x7f0c0012;
+        public static final int textView3=0x7f0c0013;
+        public static final int textView4=0x7f0c0015;
+        public static final int textView5=0x7f0c0019;
+        public static final int textView6=0x7f0c0017;
+        public static final int tv_drawermenu=0x7f0c0024;
+        public static final int tv_event_detail_description=0x7f0c0002;
+        public static final int tv_event_detail_hashtags=0x7f0c0000;
         public static final int tv_event_detail_name=0x7f0c0001;
-        public static final int tv_filter=0x7f0c000c;
-        public static final int tv_header=0x7f0c0004;
-        public static final int tv_rec=0x7f0c0005;
+        public static final int tv_filter=0x7f0c000d;
+        public static final int tv_header=0x7f0c0005;
+        public static final int tv_rec=0x7f0c0006;
     }
     public static final class integer {
         public static final int message_update_events=0x7f080000;
@@ -228,21 +229,8 @@ public final class R {
         public static final int sign_up=0x7f0b0002;
     }
     public static final class raw {
-        public static final int chunker=0x7f040000;
-        public static final int chunking=0x7f040001;
-        public static final int date=0x7f040002;
-        public static final int location=0x7f040003;
-        public static final int maxent=0x7f040004;
-        public static final int money=0x7f040005;
-        public static final int organization=0x7f040006;
-        public static final int percentage=0x7f040007;
-        public static final int perceptron=0x7f040008;
-        public static final int person=0x7f040009;
-        public static final int rawtrainingdata=0x7f04000a;
-        public static final int sent=0x7f04000b;
-        public static final int testdata=0x7f04000c;
-        public static final int time=0x7f04000d;
-        public static final int token=0x7f04000e;
+        public static final int rawtrainingdata=0x7f040000;
+        public static final int testdata=0x7f040001;
     }
     public static final class string {
         public static final int academicKey=0x7f090019;
