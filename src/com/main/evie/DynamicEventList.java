@@ -24,7 +24,7 @@ public class DynamicEventList{
 	private static final int FILTER_NEARBY = 2;
 	private static final int FILTER_FOOD = 3;
 	private static int currentFilter = FILTER_NEARBY;
-	
+
 	/** Includes all events */
 	private static ArrayList<Event> allEvents = new ArrayList<Event>();
 	/** Events that the user sees at a given time */
@@ -38,12 +38,10 @@ public class DynamicEventList{
 	public void setHandler(Handler eventChangeHandler) {
 		DynamicEventList.eventChangeHandler = eventChangeHandler;
 	}
-
 	
 	public void createEvent(int id, String name, String description, Date startTime, Date endTime, 
 					String location, String imgUrl, String categories, boolean cancelled, ContentExtraction contentExtractor) {
 		Event newEvent = new Event(id, name, description, startTime, endTime, location, imgUrl, categories, cancelled);
-		//new ImageDownloader(newEvent);
 		id++;
 		DynamicEventList.allEvents.add(newEvent);
 	}

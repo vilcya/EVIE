@@ -28,6 +28,10 @@ public class EventDetails extends Activity {
 		}
 	
 		this.event = new DynamicEventList().getEventAt(eventPosition);
+		if (this.event.getImageBitmap() == null) {
+			new ImageDownloader(this.event);
+		}
+		
 		setEventDetailsView();
 		
 		Availability a = new Availability(getApplicationContext());
@@ -37,6 +41,9 @@ public class EventDetails extends Activity {
 	}
 
 	private void setEventDetailsView() {
+		String location = "";
+		String startTime = "";
+		String endTime = "";
 		TextView eventName = (TextView) this.findViewById(R.id.tv_event_detail_name);
 		eventName.setText(this.event.getName());
 		
@@ -44,7 +51,14 @@ public class EventDetails extends Activity {
 		eventHashtags.setText(this.event.getHashtags());
 		
 		TextView eventDescription = (TextView) this.findViewById(R.id.tv_event_detail_description);
-		eventDescription.setText(this.event.getDescription());
+		location = "Location: " + this.event.getLocation() + "\n";
+		if (this.event.getStartTime() != null) {
+			startTime = "Start Time: " + this.event.getStartTime().toString() + "\n";
+		}
+		if (this.event.getEndTime() != null) {
+			endTime = "End Time: " + this.event.getEndTime().toString() + "\n";
+		}
+		eventDescription.setText(location + startTime + endTime + "\n" + this.event.getDescription());
 		eventDescription.setMovementMethod(new ScrollingMovementMethod());
 		
 		ImageView eventImage = (ImageView) this.findViewById(R.id.iv_event_detail_image);

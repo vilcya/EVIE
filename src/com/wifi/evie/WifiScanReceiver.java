@@ -21,7 +21,7 @@ public class WifiScanReceiver extends BroadcastReceiver {
 	private final WifiManager wifiManager;
 	private LocationMapping locationMapping;
 	private static DynamicEventList dynamicEvents;
-	
+
 	public WifiScanReceiver(WifiManager wifiManager) {
 		this.wifiManager = wifiManager;
 		this.locationMapping = new LocationMapping();
@@ -30,13 +30,13 @@ public class WifiScanReceiver extends BroadcastReceiver {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		
+
 		/** Grab the location */
 		ArrayList<String> scanResults = parseScanResults(this.wifiManager.getScanResults());
 		String location = this.locationMapping.getLocation(scanResults);
 
 		logScanResults(this.wifiManager.getScanResults(), location);
-		
+
 		TextView headerView = (TextView) ((MainActivity)context).findViewById(R.id.tv_header);
 		headerView.setText("You are near " + location + ".");
 		

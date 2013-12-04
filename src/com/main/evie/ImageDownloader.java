@@ -4,16 +4,17 @@ import java.net.URL;
 
 import android.graphics.BitmapFactory;
 
-public class ImageDownloader implements Runnable {
+public class ImageDownloader {
 
 	private final Event event;
 
 	ImageDownloader(Event event) {
 		this.event = event;
-		new Thread(this).start();
+		run();
+		//new Thread(this).start();
 	}
 
-	@Override
+	//@Override
 	public void run() {
 		URL imgUrl = this.event.getImgUrl();
 		if (this.event.getImgUrl() == null) {
